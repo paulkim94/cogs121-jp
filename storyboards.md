@@ -6,3 +6,7 @@ Paul's Storyboards
 TJ's Storyboards
 ![TJ's Storyboard 1](/storyboard_images/Storyboard1Grandle.JPG?raw=true)
 ![TJ's Storyboard 1](/storyboard_images/Storyboard2Grandle.JPG?raw=true)
+
+RJ's Storyboards
+![RJ's Storyboard 1](/storyboard_images/RJ_Storyboard1.jpg?raw=true)
+![RJ's Storyboard 2](/storyboard_images/RJ_Storyboard2.jpg?raw=true)
