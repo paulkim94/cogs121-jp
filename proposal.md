@@ -5,7 +5,7 @@ on budget and trip duration. It shows popular landmarks and tourist spots as
 well.
 
 Storyboard:
-[To be added by Judd]
+![Travel Storyboard](/storyboard_images/TravelStoryboard.jpg?raw=true)
 
 Description of what feedback taken from classmates/TA to settle on this idea:
 
