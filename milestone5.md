@@ -13,8 +13,10 @@ Judd Gatbonton
 - Familiarized himself with the Leaflet API and Google Maps API through their online tutorials (Quick Start and Choropleth tutorial for Leaflet & the Quick Start tutorial for Google Maps API)
 - Created the first iteration for the San Diego map for our first core map interaction
 
-Ranvijay Singh
--
+Ranvijay did:
+- storyboards
+- paper prototypes
+- leaflet tutorial on quickstart guide, mobile, custom icons and choropleth maps
 
 
 Anthony Grundle
