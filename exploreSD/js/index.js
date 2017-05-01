@@ -135,7 +135,7 @@ var musContArtSDMarker = L.marker([32.84444, -117.27806]).addTo(map);
 var mingeiIntMuseumMarker = L.marker([32.7311, -117.1510]).addTo(map);
 var maritimeMuseumMarker = L.marker([32.7209, -117.1740]).addTo(map);
 var museumOfArtMarker = L.marker([32.7322, -117.1504]).addTo(map);
-var automativeMuseumMarker = L.marker([32.7275, -117.1539]).addTo(map);
+var automotiveMuseumMarker = L.marker([32.7275, -117.1539]).addTo(map);
 var newChildrenMuseumMarker = L.marker([32.7106, -117.1652]).addTo(map);
 var starOfIndiaMarker = L.marker([32.7203, -117.1736]).addTo(map);
 var qualcommMuseumMarker = L.marker([32.897290, -117.195714]).addTo(map);
@@ -158,7 +158,7 @@ musContArtSDMarker.bindPopup("<b>Museum of Contemporary Art San Diego</b>");
 mingeiIntMuseumMarker.bindPopup("<b>Mingei International Museum</b>");
 maritimeMuseumMarker.bindPopup("<b>Maritime Museum of San Diego</b>");
 museumOfArtMarker.bindPopup("<b>San Diego Museum of Art</b>");
-automativeMuseumMarker.bindPopup("<b>San Diego Automative Museum</b>");
+automotiveMuseumMarker.bindPopup("<b>San Diego Automotive Museum</b>");
 newChildrenMuseumMarker.bindPopup("<b>The New Children's Museum</b>");
 starOfIndiaMarker.bindPopup("<b>Star of India</b>");
 qualcommMuseumMarker.bindPopup("<b>Qualcomm Museum</b>");
@@ -177,7 +177,7 @@ valleyViewCenterMarker.bindPopup("<b>Valley View Casino Center</b>");
 
 
 
-
+S
 var popup = L.popup()
     .setLatLng(latlng)
     .setContent('<p>Hello world!<br />This is a nice popup.</p>')
