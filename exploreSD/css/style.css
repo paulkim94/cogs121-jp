@@ -3,5 +3,16 @@ html, body {
 }
 
 #map {
-    height: 100%;
+    height: 600px;
+}
+
+.infoSection {
+  float: left;
+  width: 30%;
+  height: 600px;
+}
+
+.theMap {
+  width: 100%;
+  position: relative;
 }
