@@ -177,7 +177,7 @@ valleyViewCenterMarker.bindPopup("<b>Valley View Casino Center</b>");
 
 
 
-S
+
 var popup = L.popup()
     .setLatLng(latlng)
     .setContent('<p>Hello world!<br />This is a nice popup.</p>')
