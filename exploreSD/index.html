@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>Explore SD</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- leaflet css and js files -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
@@ -15,16 +24,39 @@
 </head>
 
 <body>
-  <div id="mapSection">
-    <div class="infoSection">
-      <h1>Explore SD</h1>
-      <p>nice</p>
+  <!-- Bootstrap Grid System -->
+  <div class="row">
+    <div class="col-md-3">
+      <h2 style="text-align: center">Location</h2>
+      <br>
+      <div id="instruction" style="text-align: center">
+        Click on a marker on the map to see information about that location below.
+      </div>
+      <br>
+      <div id="information" style="margin-left: 15px;">
+        <div id="name"></div>
+        <br>
+        <div id="description"></div>
+        <br>
+        <div id="address"></div>
+        <br>
+        <div id="price"></div>
+        <br>
+        <div id="category"></div>
+      </div>
     </div>
-    <div class="theMap">
+    <div class="col-md-9 text-center">
+      <h2>Map</h2>
       <!-- div for leaflet map -->
       <div id="map"></div>
-      <script src="js/index.js"></script>
     </div>
   </div>
+
+  <script src="js/index.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

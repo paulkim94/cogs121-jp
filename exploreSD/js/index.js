@@ -33,9 +33,15 @@ var nationalSaluteToBobHopeAndTheMilitaryMarker = L.marker([32.712700, -117.1755
 var SanDiegoCaliforniaTempleMarker = L.marker([32.866400, -117.228800]).addTo(map);
 var SalkInstituteMarker = L.marker([32.887047, -117.244785]).addTo(map);
 
-
-seaWorldMarker.bindPopup("<b>Sea World</b><br><u>Description</u><br> Sea World San Diego is an animal theme park, oceanarium, outside aquarium, and marine mammal park, located in San Diego, California, United States. The park is owned by SeaWorld Entertainment.<br>" +
-"<u>Price</u><br> $50+ ");
+seaWorldMarker.on('click', function(e) {
+  // $("#instruction").toggle();
+  $("#name").text("Name: Sea World");
+  $("#description").text("Description: Sea World San Diego is an animal theme park, oceanarium, outside aquarium, and marine mammal park, located in San Diego, California, United States. The park is owned by SeaWorld Entertainment.");
+  $("#address").text("Address: Mission Bay Park, 500 Sea World Dr, San Diego, CA 92109");
+  $("#price").text("Price: $50 - $70");
+  $("#category").text("Category: Attraction");
+});
+seaWorldMarker.bindPopup("<b>Sea World</b>").openPopup();
 
 ucsdMarker.bindPopup("<b>UCSD</b><br><u>Description</u><br>" +
 "The University of California, San Diego is a public research university located in the La Jolla neighborhood of San Diego, California, in the United States.<br>" +
