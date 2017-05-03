@@ -1,6 +1,6 @@
 Team Member Work Done
 
-Paul Kim
+Paul Kim:
 - Obtained data of popular locations in San Diego, specifically beaches and attractions such as zoos and theme parks
 - Placed markers on the map for the locations I researched
 - Set up a Bootstrap grid system for the web page
@@ -9,7 +9,9 @@ Paul Kim
 
 Judd Gatbonton
 
-Ranvijay
+Ranvijay Singh:
+- Obtained data of popular locations in San Diego, specifically Historical BUildings, Parks, and Hikes/Trails.
+- Inserted markers on the map for the places I discovered. 
 
 Anthony Grundle
 
