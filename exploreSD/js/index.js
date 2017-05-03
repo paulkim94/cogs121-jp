@@ -210,3 +210,139 @@ qualcommStadiumMarker.bindPopup("<b>Qualcomm Stadium</b><br><u>Description</u><b
 petcoParkMarker.bindPopup("<b>Petco Park</b>");
 delMarRaceTrackMarker.bindPopup("<b>Del Mar Racetrack</b>");
 valleyViewCenterMarker.bindPopup("<b>Valley View Casino Center</b>");
+
+
+
+
+
+
+
+// Markers for Parks, Hikes and Trails, and Historical Buildings
+var balboaParkMarker = L.marker([32.7341, -117.1446]).addTo(map);
+var oldTownSanDiegoStateHistoricParkMarker = L.marker([32.7549, -117.1979]).addTo(map);
+var torreyPinesStateNaturalReserveMarker = L.marker([32.9216, -117.2535]).addTo(map);
+var casaDeEstudilloMarker = L.marker([32.7543, -117.1968]).addTo(map);
+var santaFeDepotMarker = L.marker([32.7167, -117.1696]).addTo(map);
+var balboaTheatreMarker = L.marker([32.7144, -117.1613]).addTo(map);
+var laJollaWomensClubMarker = L.marker([32.8441, -117.2771]).addTo(map);
+var missionTrailsRegionalParkMarker = L.marker([32.8180, -117.0560]).addTo(map);
+var losPenasquitosTrailMarker = L.marker([32.931285, -117.166907]).addTo(map);
+var tecoloteCanyonNaturalParkMarker = L.marker([32.775059,-117.197619]).addTo(map);
+var lospenasquitoscanyonreserveMarker = L.marker([32.937391, -117.129750]).addTo(map);
+var sdljUnderwaterParkMarker = L.marker([32.853205, -117.261974]).addTo(map);
+var fanuelStreetParkMarker = L.marker([32.791398, -117.244227]).addTo(map);
+var sunsetCliffsNaturalParkMarker = L.marker([32.717993, -117.254845]).addTo(map);
+var presidioParkMarker = L.marker([32.758146, -117.195705]).addTo(map);
+var waterFrontParkMarker = L.marker([32.722037, -117.172243]).addTo(map);
+var missionBayParkMarker = L.marker([32.789358, -117.209541]).addTo(map);
+var shorelineParkMarker = L.marker([32.717436, -117.222340]).addTo(map);
+var whaleyHouseMarker = L.marker([32.752724, -117.194567]).addTo(map);
+var georgeWMarstonHouseMarker = L.marker([32.741711, -117.157819]).addTo(map);
+var chicanoParkMarker = L.marker([32.699606, -117.142749]).addTo(map);
+var oldPointLomaLighthouseMarker = L.marker([32.672000, -117.241000]).addTo(map);
+var hotelDelCoronadoMarker = L.marker([32.681239, -117.178416]).addTo(map);
+var japaneseFriendshipGardenMarker = L.marker([32.730028, -117.149495]).addTo(map);
+var seaportVillageMarker = L.marker([32.709194, -117.170022]).addTo(map);
+
+
+
+
+balboaParkMarker.bindPopup("<b>Balboa Park</b><br><u>Description</u><br>" +
+"<u>Description</u><br>" +
+"The University of California, San Diego is a public research university located in the La Jolla neighborhood of San Diego, California, in the United States.<br>").openPopup();
+
+oldTownSanDiegoStateHistoricParkMarker.bindPopup("<b>Old Town San Diego State Historic Park </b><br><u>Description</u><br>" +
+"Old Town San Diego State Historic Park, located in the Old Town neighborhood of San Diego, California, is a state protected historical park in San Diego<br>" +
+"<u>Price</u><br>");
+
+torreyPinesStateNaturalReserveMarker.bindPopup("<b>Torrey Pines State Natural Reserve</b><br><u>Description</u><br>" +
+"orrey Pines State Natural Reserve is 2,000 acres of coastal state park located in the community of La Jolla, in San Diego, California, off North Torrey Pines Road.<br>" +
+"<u>Price</u><br> ");
+
+casaDeEstudilloMarker.bindPopup("<b>Casa de Estudillo</b><br><u>Description</u><br>" +
+"The Casa de Estudillo, also known as the Estudillo House, is a historic adobe house in San Diego, California, United States.<br>" +
+"<u>Price</u><br>");
+
+santaFeDepotMarker.bindPopup("<b>Santa Fe Depot</b><br><u>Description</u><br>" +
+"The Santa Fe Depot in San Diego, California, USA, is a union station built by the Atchison, Topeka and Santa Fe Railway to replace the small Victorian-style structure erected in 1887 for the California Southern Railroad Company.<br>" +
+"<u>Price</u><br>Free ");
+
+balboaTheatreMarker.bindPopup("<b>Balboa Theatre</b><br><u>Description</u><br>" +
+"The Balboa Theatre is a historic vaudeville/movie theatre in downtown San Diego, built in 1924. Listed on the National Register of Historic Places, the Balboa was refurbished and reopened as a performing arts venue in 2008.<br>" +
+"<u>Price</u><br> ");
+
+laJollaWomensClubMarker.bindPopup("<b>La Jolla Women's Club </b><br><u>Description</u><br>" +
+"The La Jolla Woman's Club is a historic building in La Jolla, a neighborhood of San Diego, California.<br>" +
+"<u>Price</u><br>Free ");
+
+missionTrailsRegionalParkMarker.bindPopup("<b>Mission Trails Regional Park</b><br><u>Description</u><br>" +
+"Mission Trails Regional Park is a 5,800-acre open space preserve within the city of San Diego, California, established in 1974. It is the sixth-largest municipally owned park in the United States, and the largest in California<br>" +
+"<u>Price</u><br>Free ");
+
+losPenasquitosTrailMarker.bindPopup("<b>Los Penasquitos Trail</b><br><u>Description</u><br>" +
+"Los Penasquitos Trail is very nice and relaxing. Come and enjoy a lovely hike right here in San Diego<br>" +
+"<u>Price</u><br>Free ");
+
+tecoloteCanyonNaturalParkMarker.bindPopup("<b>Tecolote Canyon Natural Park</b><br><u>Description</u><br>" +
+"This park running along the coast & up to the mouth of Tecolote Canyon includes a visitors center.<br>" +
+"<u>Price</u><br>Free ");
+
+lospenasquitoscanyonreserveMarker.bindPopup("<b>Los Penasquitos Canyon Reserve</b><br><u>Description</u><br>" +
+"Los Peñasquitos Canyon Preserve is an urban park in San Diego, California. Stretching approximately 7 miles, the park encompasses some 4,000 acres of both Peñasquitos and Lopez canyons, and is one of the largest urban parks in the United States.<br>" +
+"<u>Price</u><br>Free ");
+
+sdljUnderwaterParkMarker.bindPopup("<b>San Diego- La Jolla Underwater Park</b><br><u>Description</u><br>" +
+"The San Diego-La Jolla Underwater Park spans 6,000 acres of ocean bottom and tidelands. The park's four distinct habitats make it a popular destination for snorkelers and scuba divers.<br>" +
+"<u>Price</u><br>Free ");
+
+fanuelStreetParkMarker.bindPopup("<b>Fanuel Street Park</b><br><u>Description</u><br>" +
+"Great place for families to visit<br>" +
+"<u>Price</u><br>Free ");
+
+sunsetCliffsNaturalParkMarker.bindPopup("<b>Sunset Cliffs</b><br><u>Description</u><br>" +
+"Natural cliffs overlooking the Pacific Ocean offer views of the coast & the occasional cliff diver.<br>" +
+"<u>Price</u><br>Free ");
+
+oldPointLomaLighthouseMarker.bindPopup("<b>Old Point Loma Lighthouse</b><br><u>Description</u><br>" +
+"The original Point Loma Lighthouse is a historic lighthouse located on the Point Loma peninsula at the mouth of San Diego Bay in San Diego, California. It is situated in the Cabrillo National Monument..<br>" +
+"<u>Price</u><br>Free ");
+
+presidioParkMarker.bindPopup("<b>Presidio Park </b><br><u>Description</u><br>" +
+"Presidio Park is a city historic park in San Diego, California. It is the site where the San Diego Presidio and the San Diego Mission, the first European settlements in what is now the western United States, were founded in 1769.<br>" +
+"<u>Price</u><br>Free ");
+
+waterFrontParkMarker.bindPopup("<b>Water Front Park</b><br><u>Description</u><br>" +
+"Public park featuring spray fountains, grassy areas & lots of play equipment for kids.<br>" +
+"<u>Price</u><br>Free ");
+
+missionBayParkMarker.bindPopup("<b>Mission Bay Park</b><br><u>Description</u><br>" +
+"Vast bayside spot popular for sand & surf sports, sunbathing, boats, picnics & dog-friendly beaches.<br>" +
+"<u>Price</u><br>Free ");
+
+shorelineParkMarker.bindPopup("<b>Shoreline Park</b><br><u>Description</u><br>" +
+"Mile-long scenic park offering a bayside promenade & fishing pier, plus picnic areas & public art. <br>" +
+"<u>Price</u><br>Free ");
+
+whaleyHouseMarker.bindPopup("<b>Whaley House</b><br><u>Description</u><br>" +
+"The Whaley House is an 1857 Greek Revival style residence, a California Historical Landmark, and museum located in Old Town, San Diego, California. It is currently maintained by Save Our Heritage Organisation. <br>" +
+"<u>Price</u><br>Free ");
+
+georgeWMarstonHouseMarker.bindPopup("<b>GeorgeWMarstonHouse</b><br><u>Description</u><br>" +
+"The George W. Marston House, or George Marston House and Gardens, also referred to as the George and Anna Marston House or the Marston House, is a museum and historic landmark located in San Diego and maintained by Save Our Heritage Organisation.<br>" +
+"<u>Price</u><br>Free ");
+
+chicanoParkMarker.bindPopup("<b>Chicano Park</b><br><u>Description</u><br>" +
+"Chicano Park is a 32,000 square meter park located beneath the San Diego-Coronado Bridge in Barrio Logan, a predominantly Mexican American and Mexican-immigrant community in central San Diego, California..<br>" +
+"<u>Price</u><br>Free ");
+
+hotelDelCoronadoMarker.bindPopup("<b>Hotel Del Coronado</b><br><u>Description</u><br>" +
+"Housed in a grand 1888 Victorian property on Coronado Island, this upscale beachside resort is a 10-minute drive from downtown San Diego.  <br>" +
+"<u>Price</u><br>Free ");
+
+japaneseFriendshipGardenMarker.bindPopup("<b>Japanese Friendship Garden</b><br><u>Description</u><br>" +
+"The Japanese Friendship Garden, also known as San Kei En is a Japanese Garden within Balboa Park, San Diego<br>" +
+"<u>Price</u><br>Free ");
+
+seaportVillageMarker.bindPopup("<b>Seaport Village</b><br><u>Description</u><br>" +
+"Seaport Village is a waterfront shopping and dining complex adjacent to San Diego Bay in downtown San Diego, California. It is located at 849 West Harbor Drive, at the intersection of Harbor Drive and Kettner.<br>" +
+"<u>Price</u><br>Free ");
