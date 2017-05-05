@@ -1,0 +1,22 @@
+[
+{
+  "name" : "Sea World San Diego",
+  "description" : "Sea World San Diego is an animal theme park, oceanarium, outside aquarium, and marine mammal park, located in San Diego, California, United States. The park is owned by SeaWorld Entertainment.",
+  "address" : "Mission Bay Park, 500 Sea World Dr, San Diego, CA 92109",
+  "price" : [50, 70],
+  "category" : "Attraction",
+  "lat" : 32.764107,
+  "longitude" : -117.226265,
+  "marker" : null
+},
+{
+  "name" : "Legoland",
+  "description" : "Legoland California is a theme park, miniature park, and aquarium located in Carlsbad, California, based on the Lego toy brand.",
+  "address" : "1 Legoland Dr, Carlsbad, CA 92008",
+  "price" : [90, 100],
+  "category" : "Attraction",
+  "lat" : 33.126033,
+  "longitude" : -117.312385,
+  "marker" : null
+}
+]

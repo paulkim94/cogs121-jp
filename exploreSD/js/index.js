@@ -9,6 +9,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x
     accessToken: 'your.mapbox.public.access.token'
 }).addTo(map);
 
+// Array of markers
+var arrayMarkers = [];
+
 // Markers for beaches & attractions
 var seaWorldMarker = L.marker([32.764107, -117.226265]).addTo(map);
 var legolandMarker = L.marker([33.126033, -117.312385]).addTo(map);
@@ -24,6 +27,9 @@ var coronadoBeach = L.marker([32.684183, -117.184432]).addTo(map);
 var pacificBeach = L.marker([32.796561, -117.255475]).addTo(map);
 var missionBeach = L.marker([32.792095, -117.232337]).addTo(map); // get correct lat/long
 
+// Later on
+// Use for loop to loop through an array of markers instead of repeating
+
 legolandMarker.bindPopup('<b>Legoland</b>');
 legolandMarker.on('mouseover', function(e) {
   //open popup;
@@ -31,6 +37,11 @@ legolandMarker.on('mouseover', function(e) {
 });
 
 sdZooSafariMarker.bindPopup('<b>San Diego Zoo Safari Park</b>');
+sdZooSafariMarker.on('mouseover', function(e) {
+  //open popup;
+  sdZooSafariMarker.openPopup();
+});
+
 sdZooMarker.bindPopup('<b>San Diego Zoo</b>');
 aquaticaMarker.bindPopup('<b>Aquatica</b>');
 laJollaShoresMarker.bindPopup('<b>La Jolla Shores</b>');
