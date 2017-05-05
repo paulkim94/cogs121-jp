@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     $.getJSON( "./locations", function( data ) {
       initializeMapMarkers(data);
     });
@@ -28,6 +28,15 @@ function initializeMapMarkers(locationsArray) {
       id: 'your.mapbox.project.id',
       accessToken: 'your.mapbox.public.access.token'
   }).addTo(map);
+
+  // Routing
+//   L.Routing.control({
+//     waypoints: [
+//         L.latLng(32.764107, -117.226265),
+//         L.latLng(33.126033, -117.312385)
+//     ],
+//     routeWhileDragging: true
+// }).addTo(map);
 
   var i, locMarker;
 

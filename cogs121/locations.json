@@ -18,5 +18,125 @@
   "lat" : 33.126033,
   "longitude" : -117.312385,
   "marker" : null
+},
+{
+  "name" : "San Diego Zoo",
+  "description" : "",
+  "address" : "",
+  "price" : [40, 50],
+  "category" : "Attraction",
+  "lat" : 32.734589,
+  "longitude" : -117.149120,
+  "marker" : null
+},
+{
+  "name" : "San Diego Zoo Safari Park",
+  "description" : "",
+  "address" : "",
+  "price" : [40, 50],
+  "category" : "Attraction",
+  "lat" : 33.097470,
+  "longitude" : -117.000201,
+  "marker" : null
+},
+{
+  "name" : "Aquatica San Diego",
+  "description" : "",
+  "address" : "",
+  "price" : [40, 50],
+  "category" : "Attraction",
+  "lat" : 32.587630,
+  "longitude" : -117.010759,
+  "marker" : null
+},
+{
+  "name" : "Birch Aquarium",
+  "description" : "",
+  "address" : "",
+  "price" : [10, 20],
+  "category" : "Attraction",
+  "lat" : 32.8678,
+  "longitude" : -117.2496,
+  "marker" : null
+},
+{
+  "name" : "La Jolla Shores",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.856787,
+  "longitude" : -117.256362,
+  "marker" : null
+},
+{
+  "name" : "Black's Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.889884,
+  "longitude" : -117.251194,
+  "marker" : null
+},
+{
+  "name" : "Torrey Pines State Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.933677,
+  "longitude" : -117.260678,
+  "marker" : null
+},
+{
+  "name" : "La Jolla Cove",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.849680,
+  "longitude" : -117.274679,
+  "marker" : null
+},
+{
+  "name" : "Solana Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.986230,
+  "longitude" : -117.271689,
+  "marker" : null
+},
+{
+  "name" : "Coronado Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.684183,
+  "longitude" : -117.184432,
+  "marker" : null
+},
+{
+  "name" : "Pacific Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.796561,
+  "longitude" : -117.255475,
+  "marker" : null
+},
+{
+  "name" : "Mission Beach",
+  "description" : "",
+  "address" : "",
+  "price" : [0, 0],
+  "category" : "Beach",
+  "lat" : 32.792095,
+  "longitude" : -117.232337,
+  "marker" : null
 }
 ]
