@@ -1,3 +1,6 @@
+// Global variables
+var route;
+
 $(document).ready(function() {
 
     $.getJSON( "./locations", function( data ) {
@@ -7,6 +10,34 @@ $(document).ready(function() {
 
 function onHover(e) {
   this.openPopup();
+}
+
+function drawRoute(start, end, map) {
+  // Review why this works exactly
+  return function(e) {
+    if(route != null) {
+      // removes route
+      map.removeControl(route);
+      // Re-create new route
+      route = L.Routing.control({
+        waypoints: [
+            start,
+            end
+        ],
+        routeWhileDragging: true
+      }).addTo(map);
+    }
+    else {
+      // Create new route
+      route = L.Routing.control({
+        waypoints: [
+            start,
+            end
+        ],
+        routeWhileDragging: true
+      }).addTo(map);
+    }
+  }
 }
 
 function onClick(e) {
@@ -29,14 +60,9 @@ function initializeMapMarkers(locationsArray) {
       accessToken: 'your.mapbox.public.access.token'
   }).addTo(map);
 
-  // Routing
-//   L.Routing.control({
-//     waypoints: [
-//         L.latLng(32.764107, -117.226265),
-//         L.latLng(33.126033, -117.312385)
-//     ],
-//     routeWhileDragging: true
-// }).addTo(map);
+
+  // Added a fixed start location marker for now
+  var startLocation = L.marker([32.872891,-117.215663]).addTo(map).bindPopup('<b>Start Location</b>').openPopup();
 
   var i, locMarker;
 
@@ -44,8 +70,8 @@ function initializeMapMarkers(locationsArray) {
     var locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude]).addTo(map).bindPopup('<b>' + locationsArray[i].name + '</b>');
     locMarker.on('mouseover', onHover);
     locMarker.on('click', onClick, locationsArray[i]);
+    locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
 
     locationsArray[i].marker = locMarker;
   }
-
 }
