@@ -141,10 +141,7 @@
 },
 {
   "name" : "UCSD",
-  "description" : "The University of California, San Diego is a public 
-  research university located in the La Jolla 
-  neighborhood of San Diego, California, 
-  in the United States.",
+  "description" : "The University of California, San Diego is a public research university located in the La Jolla  neighborhood of San Diego, California, in the United States.",
   "address" : "9500 Gilman Drive, La Jolla, CA, 92093",
   "price" : [0, 0],
   "category" : "College Campus",
@@ -174,11 +171,7 @@
 },
 {
   "name" : "San Diego City College",
-  "description" : "San Diego City College is a public, two-year
-   community college located in San Diego,
-   California. City College is part of the San 
-  Diego Community College District along with 
-  San Diego Mesa College",
+  "description" : "San Diego City College is a public, two-year community college located in San Diego,California. City College is part of the San Diego Community College District along with San Diego Mesa College",
   "address" : "1313 Park Blvd, San Diego, CA 92101",
   "price" : [0, 0],
   "category" : "College Campus",
@@ -188,11 +181,7 @@
 },
 {
   "name" : "National University",
-  "description" : "National University is a private, nonprofit
-  institution of higher education in California.
-  Founded in 1971, National University is 
-  headquartered in La Jolla, California, United 
-  States.",
+  "description" : "National University is a private, nonprofit institution of higher education in California. Founded in 1971, National University is headquartered in La Jolla, California, United States.",
   "address" : "9388 Lightwave Ave, San Diego, CA 92123",
   "price" : [0, 0],
   "category" : "College Campus",
@@ -212,10 +201,7 @@
 },
 {
   "name" : "Ashford University",
-  "description" : "Ashford University is an online for-profit 
-  university headquartered in San Diego, 
-  California. It is the largest educational holding 
-  of Bridgepoint Education.",
+  "description" : "Ashford University is an online for-profit university headquartered in San Diego, California. It is the largest educational holding of Bridgepoint Education.",
   "address" : "8620 Spectrum Center Blvd, San Diego, CA 92123",
   "price" : [0, 0],
   "category" : "College Campus",
@@ -225,12 +211,7 @@
 },
 {
   "name" : "Point Loma Nazarene University",
-  "description" : "Point Loma Nazarene University is a Christian 
-  liberal arts college. Its main campus is located 
-  on the Point Loma oceanfront in San Diego, 
-  California, United States. It was founded in 1902
-  as a Bible college by the Church of the 
-  Nazarene.",
+  "description" : "Point Loma Nazarene University is a Christian liberal arts college. Its main campus is located on the Point Loma oceanfront in San Diego, California, United States. It was founded in 1902 as a Bible college by the Church of the Nazarene.",
   "address" : "3900 Lomaland Dr, San Diego, CA 92106",
   "price" : [0, 0],
   "category" : "College Campus",
@@ -250,9 +231,7 @@
 },
 {
   "name" : "Fort Rosecrans Cemetery",
-  "description" : "Fort Rosecrans National Cemetery is a federal 
-  military cemetery in the city of San Diego,
-  California.",
+  "description" : "Fort Rosecrans National Cemetery is a federal military cemetery in the city of San Diego, California.",
   "address" : "1800 Cabrillo Memorial Dr, San Diego, CA 92106",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -262,10 +241,7 @@
 },
 {
   "name" : "Mount Soledad",
-  "description" : "Mount Soledad is a prominent landmark in the 
-  city of San Diego, California, United States. 
-  The mountaintop is the site of the Mount 
-  Soledad cross",
+  "description" : "Mount Soledad is a prominent landmark in the city of San Diego, California, United States. The mountaintop is the site of the Mount Soledad cross",
   "address" : "USGS La Jolla OE W",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -275,12 +251,7 @@
 },
 {
   "name" : "Coronado Bridge",
-  "description" : "The San Diego–Coronado Bridge, locally
-  referred to as the Coronado Bridge, is a 
-  prestressed concrete/steel girder bridge, 
-  crossing over San Diego Bay in the United 
-  States, linking San Diego with Coronado, 
-  California.",
+  "description" : "The San Diego–Coronado Bridge, locally referred to as the Coronado Bridge, is a prestressed concrete/steel girder bridge, crossing over San Diego Bay in the United States, linking San Diego with Coronado, California.",
   "address" : "Route 75 Coronado, San Diego, CA 92118",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -290,11 +261,8 @@
 },
 {
   "name" : "Point Loma Lighthouse",
-  "description" : "The original Point Loma Lighthouse is a historic 
-  lighthouse located on the Point Loma peninsula 
-  at the mouth of San Diego Bay",
-  "address" : "NSC San Diego, Point Loma Annex, 1800 Cabrillo
-  Memorial Dr, San Diego, CA 92106",
+  "description" : "The original Point Loma Lighthouse is a historic lighthouse located on the Point Loma peninsula at the mouth of San Diego Bay",
+  "address" : "NSC San Diego, Point Loma Annex, 1800 Cabrillo Memorial Dr, San Diego, CA 92106",
   "price" : [0, 0],
   "category" : "Landmark",
   "lat" : 32.672000,
@@ -303,10 +271,7 @@
 },
 {
   "name" : "Embracing Peace Statue",
-  "description" : "If the photograph of raising the American flag on 
-  Iwo Jima is the quintessential World War II icon
-  for triumph in a just war, then 'Unconditional 
-  Surrender' is the icon for the just rewards of victory.",
+  "description" : "If the photograph of raising the American flag on Iwo Jima is the quintessential World War II icon for triumph in a just war, then 'Unconditional Surrender' is the icon for the just rewards of victory.",
   "address" : "55 Tuna Ln, San Diego, CA 92132",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -326,10 +291,7 @@
 },
 {
   "name" : "Mormon Battalion Historic Site",
-  "description" : "This newly remodeled center evokes 
-  Old San Diego and includes hands-on 
-  exhibits and resources for learning more 
-  about those who served in the Battalion.",
+  "description" : "This newly remodeled center evokes Old San Diego and includes hands-on exhibits and resources for learning more about those who served in the Battalion.",
   "address" : "2510 Juan St, San Diego, CA 92110",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -359,9 +321,7 @@
 },
 {
   "name" : "San Diego California Temple",
-  "description" : "The San Diego California Temple is the 47th 
-  constructed and 45th operating temple of The 
-  Church of Jesus Christ of Latter-day Saints.",
+  "description" : "The San Diego California Temple is the 47th constructed and 45th operating temple of The Church of Jesus Christ of Latter-day Saints.",
   "address" : "7474 Charmant Dr, San Diego, CA 92122",
   "price" : [0, 0],
   "category" : "Landmark",
@@ -378,6 +338,5 @@
   "lat" : 32.887151,
   "longitude" : -117.246212,
   "marker" : null
-},
-
+}
 ]
