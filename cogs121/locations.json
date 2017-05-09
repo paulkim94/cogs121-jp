@@ -356,7 +356,7 @@
   "description" : "Old Town San Diego State Historic Park, located in the Old Town neighborhood of San Diego, California, is a state protected historical park in San Diego",
   "address" : "4002 Wallace St, San Diego, CA 92110",
   "price" : [0, 0],
-  "category" : "Park/Historic Building,
+  "category" : "Park/Historic Building",
   "lat" : 32.7549,
   "longitude" : -117.1979,
   "marker" : null
