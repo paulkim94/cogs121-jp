@@ -357,8 +357,8 @@
   "address" : "4002 Wallace St, San Diego, CA 92110",
   "price" : [0, 0],
   "category" : "Park/Historic Building,
-  "lat" : 32.7549
-  "longitude" : -117.1979
+  "lat" : 32.7549,
+  "longitude" : -117.1979,
   "marker" : null
 }
 {
