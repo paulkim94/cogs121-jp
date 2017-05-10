@@ -11,7 +11,11 @@ with the corresponding address. After the start location and destination are
 selected, it draws the route between the two markers.
 - Added markers for my locations (beaches, attractions)
 
-Judd Gatbonton
+Judd Gatbonton:
+- Added markers for my locations (museums and stadiums) into the json file
+- Did research on plugins for geocoders for the leaflet map so user can input their starting address
+- Helped in adding code to the geocode plugin and assisted in the routing feature of the app
+- Redesigned first page and manipulated formatting with Bootstrap on our webpage
 
 
 Ranvijay Singh
