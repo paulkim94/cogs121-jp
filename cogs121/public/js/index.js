@@ -52,6 +52,37 @@ function onClick(e) {
   $("#category").text("Category: " + this.category);
 }
 
+function createButton(label, container) {
+    var btn = L.DomUtil.create('button', '', container);
+    btn.setAttribute('type', 'button');
+    btn.innerHTML = label;
+    return btn;
+}
+
+
+function startEnd(map, control) {
+  return function(e) {
+      var container = L.DomUtil.create('div'),
+          startBtn = createButton('Start from this location', container),
+          destBtn = createButton('Go to this location', container);
+
+      L.DomEvent.on(startBtn, 'click', function() {
+          control.spliceWaypoints(0, 1, e.latlng);
+          map.closePopup();
+      });
+
+      L.DomEvent.on(destBtn, 'click', function() {
+        control.spliceWaypoints(control.getWaypoints().length - 1, 1, e.latlng);
+        map.closePopup();
+      });
+
+      L.popup()
+          .setContent(container)
+          .setLatLng(e.latlng)
+          .openOn(map);
+  }
+}
+
 function initializeMapMarkers(locationsArray) {
   // initializes map and sets center coordinates and zoom level
   var map = L.map('map').setView([32.716, -117.161], 11);
@@ -64,6 +95,12 @@ function initializeMapMarkers(locationsArray) {
       accessToken: 'your.mapbox.public.access.token'
   }).addTo(map);
 
+    // Control for start/end routing
+    var control = L.Routing.control({
+        waypoints: [],
+        geocoder: L.Control.Geocoder.nominatim(),
+        routeWhileDragging: true
+    }).addTo(map);
   // geosearch stuff
   var searchControl = L.esri.Geocoding.geosearch().addTo(map);
   var results = L.layerGroup().addTo(map);
@@ -86,7 +123,8 @@ function initializeMapMarkers(locationsArray) {
     locMarker.on('mouseover', onHover);
     locMarker.on('mouseout', closePopup);
     locMarker.on('click', onClick, locationsArray[i]);
-    locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
+    locMarker.on('click', startEnd(map, control));
+    //locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
 
     locationsArray[i].marker = locMarker;
   }
