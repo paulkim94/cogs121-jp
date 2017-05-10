@@ -19,6 +19,8 @@ Judd Gatbonton:
 
 
 Ranvijay Singh
+- Added markers for my locations (Parks and Trails, and Historical Buildings) into the json file.
+- Added Filter buttons on the map for selecting different filters.
 
 Anthony Grundle
 
@@ -30,7 +32,7 @@ Application Screenshot
 destination. After the user selects both a start location and destination, the
 map shows a route between the two locations on the map. A container in the
 top-right shows the start location and destination addresses and directions.
-- [Write about filters RJ & TJ]
+- A user can now filter searches on the map. User can filter by Attractions, Museums, Historical Buildings, Parks and Trails, and Landmarks
 - We plan to implement more interactions on the map like allowing users to click on
 a marker and save it onto a list. We might add a randomizer button on the map that
 randomly chooses a location. We may add more features/interactions on the map
