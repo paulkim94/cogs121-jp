@@ -19,6 +19,8 @@ Judd Gatbonton:
 
 
 Ranvijay Singh
+- Added markers for my locations (Parks and Trails, and Historical Buildings) into the json file.
+- Added Filter buttons on the map for selecting different filters.
 
 Anthony Grundle:
 - Added markers for my locations (college campuses and landmarks) into the json file
