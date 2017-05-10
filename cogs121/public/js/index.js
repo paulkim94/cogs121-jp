@@ -1,12 +1,65 @@
 // Global variables
 var route;
+var filters = ["Attractions", "Museums", "Parks", "College Campuses", "Landmarks", "Beaches", "Historical Buildings"];
+var displayedmarkers = [];
+var displayed;
+var map;
 
 $(document).ready(function() {
 
     $.getJSON( "./locations", function( data ) {
       initializeMapMarkers(data);
     });
+
+    // Check to see what filters are clicked, if so add to filter array
+    $(":checkbox").on('click', filterChange);
 });
+
+function filterChange(e) {
+  var checkbox = this;
+  if(checkbox.checked) {
+    filters.push(checkbox.name);
+    $.getJSON( "./locations", function( data ) {
+      applyFilters(data);
+    });
+  } else {
+    // Get index of filter being removed and remove it from array 
+    var index = filters.indexOf(checkbox.name);
+    var removedFilter = filters[index];
+    filters.splice(index, 1);
+    // reinitialize markers
+    $.getJSON( "./locations", function( data ) {
+      applyFilters(data);
+    });
+    
+  }
+}
+
+/*
+  map              = our Leaflet map
+  allmarkers       = array containing all our markers
+  displayedmarkers = layer containing the markers currently shown
+  appliedfilters   = array storing the currently selected filters
+  data             = data to check against
+  */
+
+function applyFilters(locationsArray) {
+  displayed.clearLayers();
+  for(var i = 0; i < locationsArray.length; i++) {
+     if(matchesFilters(locationsArray[i])) {
+       displayed.addLayer(displayedmarkers[i]);
+     } 
+  }
+}
+
+function matchesFilters(locationsArrayPlace) {
+  for(var i = 0; i < filters.length; i++) {
+    if(locationsArrayPlace.category == filters[i] && filters[i] != null) {
+      return true;
+    }
+  }
+  return false;
+}
 
 function onHover(e) {
   this.openPopup();
@@ -85,7 +138,7 @@ function startEnd(map, control) {
 
 function initializeMapMarkers(locationsArray) {
   // initializes map and sets center coordinates and zoom level
-  var map = L.map('map').setView([32.716, -117.161], 11);
+  map = L.map('map').setView([32.716, -117.161], 11);
 
   // mapbox tile layer, can also adjust max zoom level
   L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamdhdGJvbnRvbiIsImEiOiJjajF2ZTFoYXMwMDA5MzJtdzZpNjN3dTZnIn0._REegf1q-yPULYDHXmQNeQ', {
@@ -120,13 +173,16 @@ function initializeMapMarkers(locationsArray) {
   var i, locMarker;
 
   for(i = 0; i < locationsArray.length; i++) {
-    var locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude]).addTo(map).bindPopup('<b>' + locationsArray[i].name + '</b>');
+    var locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude]).bindPopup('<b>' + locationsArray[i].name + '</b>');
     locMarker.on('mouseover', onHover);
     locMarker.on('mouseout', closePopup);
     locMarker.on('click', onClick, locationsArray[i]);
     locMarker.on('click', startEnd(map, control));
+    displayedmarkers.push(locMarker);
     //locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
-
     locationsArray[i].marker = locMarker;
+    // Push markers to displayed markers array
   }
+  displayed = L.layerGroup(displayedmarkers);
+  displayed.addTo(map);
 }
