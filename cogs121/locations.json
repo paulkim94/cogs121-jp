@@ -338,8 +338,8 @@
   "lat" : 32.887151,
   "longitude" : -117.246212,
   "marker" : null
-}
-  
+},
+
 {
   "name" : "Balboa park",
   "description" : "Located in San Diego, Balboa park is where nature and culture meet. There are more than 17 mueseums filled with everything from dinosaurs to space travels.",
@@ -349,7 +349,7 @@
   "lat" : 32.7341,
   "longitude" : -117.1446,
   "marker" : null
-}
+},
 
 {
   "name" : "Old Town San Diego State Historic Park",
@@ -360,7 +360,7 @@
   "lat" : 32.7549,
   "longitude" : -117.1979,
   "marker" : null
-}
+},
 {
   "name" : "Torrey Pines State Natural Reserve",
   "description" : "Torrey Pines State Natural Reserve is 2,000 acres of coastal state park located in the community of La Jolla, in San Diego, California, off North Torrey Pines Road.",
@@ -370,7 +370,7 @@
   "lat" : 32.9216,
   "longitude" : -117.2535,
   "marker" : null
-}
+},
 {
   "name" : "Casa de Estudillo",
   "description" : "The Casa de Estudillo, also known as the Estudillo House, is a historic adobe house in San Diego, California, United States.",
@@ -380,7 +380,7 @@
   "lat" : 32.7543,
   "longitude" : -117.1968,
   "marker" : null
-}
+},
 {
   "name" : "Santa Fe Depot",
   "description" : "The Santa Fe Depot in San Diego, California, USA, is a union station built by the Atchison, Topeka and Santa Fe Railway to replace the small Victorian-style structure erected in 1887 for the California Southern Railroad Company.",
@@ -390,7 +390,7 @@
   "lat" : 32.7167,
   "longitude" : -117.1696,
   "marker" : null
-}
+},
 {
   "name" : "Balboa Theatre",
   "description" : "The Balboa Theatre is a historic vaudeville/movie theatre in downtown San Diego, built in 1924. Listed on the National Register of Historic Places, the Balboa was refurbished and reopened as a performing arts venue in 2008.",
@@ -400,7 +400,7 @@
   "lat" : 32.7144,
   "longitude" : -117.1613,
   "marker" : null
-}
+},
 {
   "name" : "La Jolla Woman's Club",
   "description" : "The La Jolla Woman's Club is a historic building in La Jolla, a neighborhood of San Diego, California.",
@@ -410,7 +410,7 @@
   "lat" : 32.8441,
   "longitude" : -117.2771,
   "marker" : null
-}
+},
 {
   "name" : "Mission Trails Regional Park",
   "description" : "Mission Trails Regional Park is a 5,800-acre open space preserve within the city of San Diego, California, established in 1974. It is the sixth-largest municipally owned park in the United States, and the largest in California",
@@ -420,7 +420,7 @@
   "lat" : 32.8180,
   "longitude" : -117.0560,
   "marker" : null
-}
+},
 {
   "name" : "Los Penasquitos Trail Head ",
   "description" : "Los Penasquitos Trail is very nice and relaxing. Come and enjoy a lovely hike right here in San Diego",
@@ -430,7 +430,7 @@
   "lat" : 32.931285,
   "longitude" : -117.166907,
   "marker" : null
-}
+},
 {
   "name" : "Tecolote Canyon Natural Park",
   "description" : "This park running along the coast & up to the mouth of Tecolote Canyon includes a visitors center.",
@@ -440,7 +440,7 @@
   "lat" : 32.775059,
   "longitude" : -117.197619,
   "marker" : null
-}
+},
 {
   "name" : "Los Peñasquitos Canyon Preserve",
   "description" : "Los Peñasquitos Canyon Preserve is an urban park in San Diego, California. Stretching approximately 7 miles, the park encompasses some 4,000 acres of both Peñasquitos and Lopez canyons, and is one of the largest urban parks in the United States",
@@ -450,7 +450,7 @@
   "lat" : 32.9374,
   "longitude" : -117.129775,
   "marker" : null
-}
+},
 {
   "name" : "San Diego-La Jolla Underwater Park",
   "description" : "The San Diego-La Jolla Underwater Park spans 6,000 acres of ocean bottom and tidelands. The park's four distinct habitats make it a popular destination for snorkelers and scuba divers.",
@@ -460,7 +460,7 @@
   "lat" : 32.853205,
   "longitude" : -117.261974,
   "marker" : null
-}
+},
 {
   "name" : "Fanuel Street Park",
   "description" : "Great place for families to visit",
@@ -470,7 +470,7 @@
   "lat" : 32.791398,
   "longitude" : -117.244227,
   "marker" : null
-}
+},
 {
   "name" : "Sunset Cliffs Natural Park",
   "description" : "Natural cliffs overlooking the Pacific Ocean offer views of the coast & the occasional cliff diver.",
@@ -480,7 +480,7 @@
   "lat" : 32.717993,
   "longitude" : -117.254845,
   "marker" : null
-}
+},
 {
   "name" : "Presidio Park",
   "description" : "Presidio Park is a city historic park in San Diego, California. It is the site where the San Diego Presidio and the San Diego Mission, the first European settlements in what is now the western United States, were founded in 1769",
@@ -490,7 +490,7 @@
   "lat" : 32.758146,
   "longitude" : -117.195705,
   "marker" : null
-}
+},
 {
   "name" : "Waterfront Park",
   "description" : "Public park featuring spray fountains, grassy areas & lots of play equipment for kids.",
@@ -500,7 +500,7 @@
   "lat" : 32.722037,
   "longitude" : -117.172243,
   "marker" : null
-}
+},
 {
   "name" : "Mission Bay Park",
   "description" : "Vast bayside spot popular for sand & surf sports, sunbathing, boats, picnics & dog-friendly beaches.",
@@ -510,7 +510,7 @@
   "lat" : 32.789358,
   "longitude" : -117.209541,
   "marker" : null
-}
+},
 {
   "name" : "Shoreline Park",
   "description" : "Mile-long scenic park offering a bayside promenade & fishing pier, plus picnic areas & public art.",
@@ -520,7 +520,7 @@
   "lat" : 32.717436,
   "longitude" : -117.222340,
   "marker" : null
-}
+},
 {
   "name" : "Whaley House",
   "description" : "The Whaley House is an 1857 Greek Revival style residence, a California Historical Landmark, and museum located in Old Town, San Diego, California. It is currently maintained by Save Our Heritage Organisation",
@@ -530,7 +530,7 @@
   "lat" : 32.752724,
   "longitude" : -117.194567,
   "marker" : null
-}
+},
 {
   "name" : "George W. Marston House",
   "description" : "The George W. Marston House, or George Marston House and Gardens, also referred to as the George and Anna Marston House or the Marston House, is a museum and historic landmark located in San Diego and maintained by Save Our Heritage Organisation.",
@@ -540,7 +540,7 @@
   "lat" : 32.741711,
   "longitude" : -117.157819,
   "marker" : null
-}
+},
 {
   "name" : "Chicano Park",
   "description" : "Chicano Park is a 32,000 square meter park located beneath the San Diego-Coronado Bridge in Barrio Logan, a predominantly Mexican American and Mexican-immigrant community in central San Diego, California.",
@@ -550,7 +550,7 @@
   "lat" : 32.699606,
   "longitude" : -117.142749,
   "marker" : null
-}
+},
 {
   "name" : "Hotel del Coronado",
   "description" : "Housed in a grand 1888 Victorian property on Coronado Island, this upscale beachside resort is a 10-minute drive from downtown San Diego. ",
@@ -560,7 +560,7 @@
   "lat" : 32.681239,
   "longitude" : -117.178416,
   "marker" : null
-}
+},
 {
   "name" : "Japanese Friendship Garden",
   "description" : "The Japanese Friendship Garden, also known as San Kei En is a Japanese Garden within Balboa Park, San Diego",
@@ -570,7 +570,7 @@
   "lat" : 32.730028,
   "longitude" : -117.149495,
   "marker" : null
-}
+},
 {
   "name" : "Sea Port Village",
   "description" : "Seaport Village is a waterfront shopping and dining complex adjacent to San Diego Bay in downtown San Diego, California. It is located at 849 West Harbor Drive, at the intersection of Harbor Drive and Kettner.",
@@ -580,7 +580,7 @@
   "lat" : 32.709194,
   "longitude" : -117.149495,
   "marker" : null
-}
+},
 {
   "name" : "Old Point Loma Lighthouse",
   "description" : "The original Point Loma Lighthouse is a historic lighthouse located on the Point Loma peninsula at the mouth of San Diego Bay in San Diego, California. It is situated in the Cabrillo National Monument.",
@@ -590,7 +590,207 @@
   "lat" : 32.672000,
   "longitude" : -117.241000,
   "marker" : null
-}
+},
 
+{
+  "name" : "USS Midway Museum",
+  "description" : "The USS Midway Museum is a maritime museum located in downtown San Diego, California at Navy Pier. The museum consists of the aircraft carrier Midway.",
+  "address" : "910 N Harbor Dr, San Diego, CA 92101",
+  "price" : [10, 20],
+  "category" : "Museum",
+  "lat" : 32.7137,
+  "longitude" : -117.1751,
+  "marker" : null
+},
+{
+  "name" : "San Diego Natural History Museum",
+  "description" : "The San Diego Natural History Museum is a museum located in Balboa Park in San Diego, California. It was founded in 1874 as the San Diego Society of Natural History.",
+  "address" : "1788 El Prado, San Diego, CA 92101",
+  "price" : [12, 19],
+  "category" : "Museum",
+  "lat" : 32.7321,
+  "longitude" : -117.1475,
+  "marker" : null
+},
+{
+  "name" : "San Diego Museum of Man",
+  "description" : "Museum in an ornate 1915 building featuring eclectic anthropology exhibits & a panoramic tower.",
+  "address" : "1350 El Prado, San Diego, CA 92101",
+  "price" : [6, 13],
+  "category" : "Museum",
+  "lat" : 32.7318,
+  "longitude" : -117.1523,
+  "marker" : null
+},
+{
+  "name" : "San Diego Air & Space Museum",
+  "description" : "San Diego Air & Space Museum is an aviation and space exploration museum in San Diego, California, US. It is located in Balboa Park and is housed in the former Ford Building, which is listed on the National Register of Historic Places.",
+  "address" : "2001 Pan American Plaza, San Diego, CA 92101",
+  "price" : [10, 20],
+  "category" : "Museum",
+  "lat" : 32.7263,
+  "longitude" : -117.1543,
+  "marker" : null
+},
+{
+  "name" : "San Diego Model Railroad Museum",
+  "description" : "The San Diego Model Railroad Museum is a model railroad exhibit in San Diego, California. At 27,000 sq. ft., it is the largest indoor such exhibit in North America, and one of the largest in the world.",
+  "address" : "1649 El Prado, San Diego, CA 92101",
+  "price" : [4, 11],
+  "category" : "Museum",
+  "lat" : 32.7311,
+  "longitude" : -117.1486,
+  "marker" : null
+},
+{
+  "name" : "Museum of Photographic Arts",
+  "description" : "The Museum of Photographic Arts is a museum in San Diego's Balboa Park. First founded in 1974, MOPA opened in 1983.",
+  "address" : "1649 El Prado, San Diego, CA 92103",
+  "price" : [0, 0],
+  "category" : "Museum",
+  "lat" : 32.7311,
+  "longitude" : -117.1488,
+  "marker" : null
+},
+{
+  "name" : "Museum of Contemporary Art San Diego",
+  "description" : "The Museum of Contemporary Art San Diego, in San Diego, California, US, is an art museum focused on the collection, preservation, exhibition, and interpretation of works of art from 1950 to the present.",
+  "address" : "700 Prospect St, La Jolla, CA 92037",
+  "price" : [5, 10],
+  "category" : "Museum",
+  "lat" : 32.84444,
+  "longitude" : -117.27806,
+  "marker" : null
+},
+{
+  "name" : "Mingei International Museum",
+  "description" : "The Mingei International Museum is a non-profit public institution that collects, conserves and exhibits folk art, craft and design. The museum was first founded in 1974 and its building opened in 1978.",
+  "address" : "1439 El Prado, San Diego, CA 92101",
+  "price" : [5, 10],
+  "category" : "Museum",
+  "lat" : 32.7311,
+  "longitude" : -117.1510,
+  "marker" : null
+},
+{
+  "name" : "Maritime Museum of San Diego",
+  "description" : "The Maritime Museum of San Diego, established in 1948, preserves one of the largest collections of historic sea vessels in the United States.",
+  "address" : "1492 N Harbor Dr, San Diego, CA 92101",
+  "price" : [10, 15],
+  "category" : "Museum",
+  "lat" : 32.7209,
+  "longitude" : -117.1740,
+  "marker" : null
+},
+{
+  "name" : "San Diego Museum of Art",
+  "description" : "The San Diego Museum of Art is a fine arts museum located at 1450 El Prado in Balboa Park in San Diego, California that houses a broad collection with particular strength in Spanish art.",
+  "address" : "1450 El Prado, San Diego, CA 92102",
+  "price" : [8, 15],
+  "category" : "Museum",
+  "lat" : 32.7322,
+  "longitude" : -117.1504,
+  "marker" : null
+},
+{
+  "name" : "San Diego Automotive Museum",
+  "description" : "The San Diego Automotive Museum in Balboa Park in San Diego, California is a museum that features a collection of cars and motorcycles that highlight automotive culture throughout history.",
+  "address" : "2080 Pan American Plaza, San Diego, CA 92101",
+  "price" : [4, 9],
+  "category" : "Museum",
+  "lat" : 32.7275,
+  "longitude" : -117.1539,
+  "marker" : null
+},
+{
+  "name" : "The New Children's Museum",
+  "description" : "From creative classes to climbable sculptures, contemporary art for kids, in a bright, modern space.",
+  "address" : "200 W Island Ave, San Diego, CA 92101",
+  "price" : [10, 13],
+  "category" : "Museum",
+  "lat" : 32.7106,
+  "longitude" : -117.1652,
+  "marker" : null
+},
+{
+  "name" : "Qualcomm Museum",
+  "description" : "The Qualcomm Museum. Through the years, we’ve asked “what if?,” a question that’s inspired technologies that have gone from cutting-edge to industry standard. The museum brings this rich history to life, showing how our technology is changing the present and offering a peek into our vision for the future.",
+  "address" : "5775 Morehouse Drive, San Diego, CA 92121",
+  "price" : [0, 0],
+  "category" : "Museum",
+  "lat" : 32.897290,
+  "longitude" : -117.195714,
+  "marker" : null
+},
+{
+  "name" : "Birch Aquarium at Scripps",
+  "description" : "Birch Aquarium at Scripps is the public outreach center for Scripps Institution of Oceanography at the University of California, San Diego.",
+  "address" : "2300 Expedition Way, La Jolla, CA 92037",
+  "price" : [14, 19],
+  "category" : "Museum",
+  "lat" : 32.8678,
+  "longitude" : -117.2496,
+  "marker" : null
+},
+{
+  "name" : "Fleet Science Center",
+  "description" : "The Fleet Science Center is a science museum and planetarium in Balboa Park, located in San Diego, California. It is at the east end of the El Prado Drive walkway, next to the Bea Evenson Fountain and plaza in central Balboa Park.",
+  "address" : "1875 El Prado, San Diego, CA 92101",
+  "price" : [17, 20],
+  "category" : "Museum",
+  "lat" : 32.7308,
+  "longitude" : -117.1470,
+  "marker" : null
+},
+{
+  "name" : "Wells Fargo History Museum",
+  "description" : "Visit the Wells Fargo Agent’s office in Old Town San Diego State Park. The Museum is in the Colorado House, a recreated and historically furnished building from San Diego’s past.",
+  "address" : "2733 San Diego Ave, San Diego, CA 92110",
+  "price" : [0, 0],
+  "category" : "Museum",
+  "lat" : 32.7541,
+  "longitude" : -117.1973,
+  "marker" : null
+},
+{
+  "name" : "Qualcomm Stadium",
+  "description" : "Qualcomm Stadium is a multi-purpose stadium in San Diego, California, United States. The stadium opened in 1967 as San Diego Stadium and was later known for many years as Jack Murphy Stadium.",
+  "address" : "9449 Friars Rd, San Diego, CA 92108",
+  "price" : [0, 0],
+  "category" : "Stadium",
+  "lat" : 32.7831,
+  "longitude" : -117.1196,
+  "marker" : null
+},
+{
+  "name" : "Petco Park",
+  "description" : "Petco Park is a baseball park located in the downtown area of San Diego, California, United States, that is home to the San Diego Padres of Major League Baseball.",
+  "address" : "100 Park Blvd, San Diego, CA 92101",
+  "price" : [0, 0],
+  "category" : "Stadium",
+  "lat" : 32.7072,
+  "longitude" : -117.1571,
+  "marker" : null
+},
+{
+  "name" : "Del Mar Racetrack",
+  "description" : "Del Mar Racetrack is an American Thoroughbred horse racing track at the Del Mar Fairgrounds in the seaside city of Del Mar, California, 20 mi north of San Diego.",
+  "address" : "2260 Jimmy Durante Boulevard, Del Mar, CA 92014",
+  "price" : [0, 0],
+  "category" : "Stadium",
+  "lat" : 32.9757,
+  "longitude" : -117.2614,
+  "marker" : null
+},
+{
+  "name" : "Valley View Casino Center",
+  "description" : "Valley View Casino Center is an indoor arena located at Sports Arena Blvd in Point Loma, San Diego, California.",
+  "address" : "3500 Sports Arena Blvd, San Diego, CA 92110",
+  "price" : [0, 0],
+  "category" : "Stadium",
+  "lat" : 32.7553,
+  "longitude" : -117.2122,
+  "marker" : null
+}
 
 ]
