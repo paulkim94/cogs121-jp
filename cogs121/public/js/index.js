@@ -64,6 +64,17 @@ function initializeMapMarkers(locationsArray) {
       accessToken: 'your.mapbox.public.access.token'
   }).addTo(map);
 
+  // geosearch stuff
+  var searchControl = L.esri.Geocoding.geosearch().addTo(map);
+  var results = L.layerGroup().addTo(map);
+
+  searchControl.on('results', function(data){
+    results.clearLayers();
+    //for (var i = data.results.length - 1; i >= 0; i--) {
+      //results.addLayer(L.marker(data.results[i].latlng));
+    //}
+    results.addLayer(L.marker(data.results[data.results.length - 1].latlng))
+  });
 
   // Added a fixed start location marker for now
   var startLocation = L.marker([32.872891,-117.215663]).addTo(map).bindPopup('<b>Start Location</b>').openPopup();
