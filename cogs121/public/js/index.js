@@ -12,6 +12,10 @@ function onHover(e) {
   this.openPopup();
 }
 
+function closePopup(e) {
+  this.closePopup();
+}
+
 function drawRoute(start, end, map) {
   // Review why this works exactly
   return function(e) {
@@ -69,6 +73,7 @@ function initializeMapMarkers(locationsArray) {
   for(i = 0; i < locationsArray.length; i++) {
     var locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude]).addTo(map).bindPopup('<b>' + locationsArray[i].name + '</b>');
     locMarker.on('mouseover', onHover);
+    locMarker.on('mouseout', closePopup);
     locMarker.on('click', onClick, locationsArray[i]);
     locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
 
