@@ -22,6 +22,7 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
       integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
       crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Nunito+Sans" rel="stylesheet">
 
 </head>
 
@@ -39,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#firstpage">ExploreSD</a>
+              <a class="navbar-brand" href="#firstpage">Explore SD</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,15 +68,22 @@
 
   <!-- First Part of Page -->
   <div id="firstpage">
-    <div class="row">
-      <div class="col-sm-12">
-        <img class="img-responsive" src="images/SDSkyline.jpg">
+    <div class="row" id="box-search">
+      <div class="thumbnail text-center">
+        <div class="background-image">
+          <img class="img-responsive" src="images/SDSkyline.jpg">
+        </div>
+        <div class="caption">
+          <h1>Welcome to Explore SD</h1>
+          <h3>Let's go on an adventure</h3>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap Grid System -->
-  <div class="row" id="mapfeature">
+  <div id="mapfeature">
+  <div class="row">
     <div class="col-md-3">
       <h2 style="text-align: center">Location</h2>
       <br>
@@ -113,6 +121,10 @@
       <div id="map"></div>
     </div>
   </div>
+</div>
+
+
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
@@ -162,10 +174,10 @@
 
   <!-- deals with geocoding -->
   <!-- Load Esri Leaflet from CDN -->
-  <!-- <script src="https://unpkg.com/esri-leaflet@2.0.8"></script> -->
+  <script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
   <!-- Esri Leaflet Geocoder -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
-  <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
+  <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
 
   <script src="js/index.js"></script>
 </body>

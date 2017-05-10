@@ -23,7 +23,7 @@ function filterChange(e) {
       applyFilters(data);
     });
   } else {
-    // Get index of filter being removed and remove it from array 
+    // Get index of filter being removed and remove it from array
     var index = filters.indexOf(checkbox.name);
     var removedFilter = filters[index];
     filters.splice(index, 1);
@@ -31,7 +31,7 @@ function filterChange(e) {
     $.getJSON( "./locations", function( data ) {
       applyFilters(data);
     });
-    
+
   }
 }
 
@@ -48,7 +48,7 @@ function applyFilters(locationsArray) {
   for(var i = 0; i < locationsArray.length; i++) {
      if(matchesFilters(locationsArray[i])) {
        displayed.addLayer(displayedmarkers[i]);
-     } 
+     }
   }
 }
 
