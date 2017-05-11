@@ -21,8 +21,8 @@
 },
 {
   "name" : "San Diego Zoo",
-  "description" : "",
-  "address" : "",
+  "description" : "The San Diego Zoo is a zoo in Balboa Park, San Diego, California, housing over 3,700 animals of more than 650 species and subspecies.",
+  "address" : "2920 Zoo Dr, San Diego, CA 92101",
   "price" : [40, 50],
   "category" : "Attractions",
   "lat" : 32.734589,
@@ -31,8 +31,8 @@
 },
 {
   "name" : "San Diego Zoo Safari Park",
-  "description" : "",
-  "address" : "",
+  "description" : "The San Diego Zoo Safari Park, known as the San Diego Wild Animal Park until 2010, is an 1,800 acre zoo in the San Pasqual Valley area of San Diego, California, near Escondido.",
+  "address" : "15500 San Pasqual Valley Rd, Escondido, CA 92027",
   "price" : [40, 50],
   "category" : "Attractions",
   "lat" : 33.097470,
@@ -41,8 +41,8 @@
 },
 {
   "name" : "Aquatica San Diego",
-  "description" : "",
-  "address" : "",
+  "description" : "Marine life shows, thrill rides, aquariums & up-close encounters with dolphins, penguins & more.",
+  "address" : "2052 Entertainment Cir, Chula Vista, CA 91911",
   "price" : [40, 50],
   "category" : "Attractions",
   "lat" : 32.587630,
@@ -51,8 +51,8 @@
 },
 {
   "name" : "Birch Aquarium",
-  "description" : "",
-  "address" : "",
+  "description" : "Birch Aquarium at Scripps is the public outreach center for Scripps Institution of Oceanography at the University of California, San Diego.",
+  "address" : "2300 Expedition Way, La Jolla, CA 92037",
   "price" : [10, 20],
   "category" : "Attractions",
   "lat" : 32.8678,
@@ -61,8 +61,8 @@
 },
 {
   "name" : "La Jolla Shores",
-  "description" : "",
-  "address" : "",
+  "description" : "La Jolla Shores is a beach and popular vacation/residential community of the same name in La Jolla, San Diego, California.",
+  "address" : "8200 Camino Del Oro, La Jolla, CA 92037",
   "price" : [0, 0],
   "category" : "Beaches",
   "lat" : 32.856787,
@@ -71,8 +71,8 @@
 },
 {
   "name" : "Black's Beach",
-  "description" : "",
-  "address" : "",
+  "description" : "Black's Beach is a secluded section of beach beneath the bluffs of Torrey Pines on the Pacific Ocean in La Jolla, San Diego, California, United States. It is most known as a nude beach, a practice that is no longer permitted in the southern portion managed by the city of San Diego.",
+  "address" : "2800 Torrey Pines Scenic Dr, La Jolla, CA 92037",
   "price" : [0, 0],
   "category" : "Beaches",
   "lat" : 32.889884,
@@ -81,8 +81,8 @@
 },
 {
   "name" : "Torrey Pines State Beach",
-  "description" : "",
-  "address" : "",
+  "description" : "Torrey Pines State Beach is a coastal beach located in the San Diego, California community of Torrey Pines, and is located south of Del Mar and north of La Jolla.",
+  "address" : "12600 N Torrey Pines Rd, La Jolla, CA 92037",
   "price" : [0, 0],
   "category" : "Beaches",
   "lat" : 32.933677,
@@ -91,52 +91,12 @@
 },
 {
   "name" : "La Jolla Cove",
-  "description" : "",
-  "address" : "",
+  "description" : "La Jolla Cove is a small, picturesque cove and beach that is surrounded by cliffs in La Jolla, San Diego, California.",
+  "address" : "1100 Coast Blvd, La Jolla, CA 92037",
   "price" : [0, 0],
   "category" : "Beaches",
   "lat" : 32.849680,
   "longitude" : -117.274679,
-  "marker" : null
-},
-{
-  "name" : "Solana Beach",
-  "description" : "",
-  "address" : "",
-  "price" : [0, 0],
-  "category" : "Beaches",
-  "lat" : 32.986230,
-  "longitude" : -117.271689,
-  "marker" : null
-},
-{
-  "name" : "Coronado Beach",
-  "description" : "",
-  "address" : "",
-  "price" : [0, 0],
-  "category" : "Beaches",
-  "lat" : 32.684183,
-  "longitude" : -117.184432,
-  "marker" : null
-},
-{
-  "name" : "Pacific Beach",
-  "description" : "",
-  "address" : "",
-  "price" : [0, 0],
-  "category" : "Beaches",
-  "lat" : 32.796561,
-  "longitude" : -117.255475,
-  "marker" : null
-},
-{
-  "name" : "Mission Beach",
-  "description" : "",
-  "address" : "",
-  "price" : [0, 0],
-  "category" : "Beaches",
-  "lat" : 32.792095,
-  "longitude" : -117.232337,
   "marker" : null
 },
 {
