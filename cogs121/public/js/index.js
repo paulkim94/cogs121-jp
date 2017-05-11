@@ -101,7 +101,12 @@ function onClick(e) {
   $("#name").text("Name: " + this.name);
   $("#description").text("Description: " + this.description);
   $("#address").text("Address: " + this.address);
-  $("#price").text("Price: " + "$" + this.price[0] + " - " + "$" + this.price[1]);
+
+  if(this.price[0] === this.price[1])
+    $("#price").text("Price: " + "Free");
+  else
+    $("#price").text("Price: " + "$" + this.price[0] + " - " + "$" + this.price[1]);
+
   $("#category").text("Category: " + this.category);
 }
 
