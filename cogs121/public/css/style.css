@@ -1,6 +1,3 @@
-html, body {
-  height: 100%;
-}
 
 #map {
     height: 600px;
@@ -32,13 +29,14 @@ html, body {
   width: 100%;
 }
 
+
 .navbar-brand{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 17px;
+  font-family: 'Bad Script', cursive;
+  font-size: 23px;
 }
 .nav{
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 }
 h1{
   font-family: 'Bad Script', cursive;
@@ -55,6 +53,10 @@ h3{
 #firstpage, img {
   width: 100%;
   height: 100%;
+}
+
+#mapfeature {
+  padding-top: 50px;
 }
 .filter{
   text-align:left;
