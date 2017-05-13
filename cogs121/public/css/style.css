@@ -61,3 +61,10 @@ h3{
 .filter{
   text-align:left;
 }
+
+.footer {
+  background: #323232;
+  min-height: 150px;
+  color: #fff;
+  text-align: center;
+}
