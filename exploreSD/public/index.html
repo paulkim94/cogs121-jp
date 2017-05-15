@@ -103,50 +103,48 @@
       <h2>Map</h2>
       <!-- div for leaflet map -->
       <!-- div for map's filter-->
-      Filter by Category: <br>
+      <p id = "left_title"> Filter By: Category </p>
+      <p id = "right_title"> Filter By: Price </p>
       <div class = "container"> 
-        <div class="filter row panel panel-default" id="filterBox">
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Attractions" checked>Attractions</label><br>
+        <div class="filter row panel panel-default" id="left_filter">
+          <div class = "col-sm-5">
+            <label><input type="checkbox" name="Attractions" checked>Attractions</label>
           </div>
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Museums" style="" checked>Museums</label><br>
+          <div class = "col-sm-5">
+            <label><input type="checkbox" name="Museums" checked>Museums</label>
           </div>
-          <div class = "col-sm-3">
-           <label><input type="checkbox" name="Parks" checked>Parks</label><br>
+          <div class = "col-sm-5">
+           <label><input type="checkbox" name="Parks" checked>Parks</label>
           </div>
-          <div class = "col-sm-3">
-           <label><input type="checkbox" name="College Campuses" checked>College Campuses</label><br>
+          <div class = "col-sm-5">
+           <label><input type="checkbox" name="College Campuses" checked>College Campuses</label>
           </div>
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Landmarks" checked>Landmarks</label><br>
+          <div class = "col-sm-5">
+            <label><input type="checkbox" name="Landmarks" checked>Landmarks</label>
           </div>
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Beaches" checked>Beaches</label><br>
+          <div class = "col-sm-5">
+            <label><input type="checkbox" name="Beaches" checked>Beaches</label>
           </div>
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Historical Buildings" checked>Historical Buildings</label><br>
+          <div class = "col-sm-5">
+            <label><input type="checkbox" name="Historical Buildings" checked>Historical Buildings</label>
           </div>
         </div>
-      </div>
       <!-- div for price filter -->
-      Filter by Price: <br>
-      <div class = "container"> 
-        <div class="filter row panel panel-default" id="filterBox">
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="<$10" style="float:left" checked> FREE </label><br>
+        <div class="filter row panel panel-default" id="right_filter">
+            <div class = "col-sm-4">
+              <label><input type="checkbox" name="<$10" style="float:left" checked> FREE </label>
             </div>
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="<$10" style="float:left" checked> < $10 </label><br>
+            <div class = "col-sm-4">
+              <label><input type="checkbox" name="<$10" style="float:left" checked> < $10 </label>
             </div>
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="$10" style="" checked> [ $10 - $20 ] </label><br>
+            <div class = "col-sm-4">
+              <label><input type="checkbox" name="$10" style="" checked> [ $10 - $20 ] </label>
             </div>
-            <div class = "col-sm-2">
-             <label><input type="checkbox" name="$20" checked> [$21-50] </label><br>
+            <div class = "col-sm-4">
+             <label><input type="checkbox" name="$20" checked> [$21-50] </label>
             </div>
-            <div class = "col-sm-2">
-             <label><input type="checkbox" name="$40" checked> > $50 </label><br>
+            <div class = "col-sm-4">
+             <label><input type="checkbox" name="$40" checked> > $50 </label>
             </div>
         </div>
       </div>

@@ -1,28 +1,48 @@
 .filter {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#left_title {
+  float: left;
+  margin-left: 20%;
+}
+
+#right_title {
+  float: right;
+  margin-right: 23%;
+}
+
+#left_filter {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  float: left;
+  width: 49%;
+}
+
+#right_filter {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  float: right;
+  margin-right: 8%;
+  width: 43%;
 }
 
 .container {
-  max-width: 90%;
+  max-width: 900px;
+  margin-left: 3%;
 }
-
 
 .panel {
   background-color: #F4F4F4;
 }
 
-.filter label {
+.filter input {
+  margin-right: 3px !important;
   float: left;
 }
 
-.filter input {
-  margin-right: 8px !important;
-}
-
-#filterBox {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.filter label {
+  float: left;
 }
 
 
