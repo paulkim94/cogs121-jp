@@ -1,6 +1,6 @@
 // Global variables
 var route;
-var filters = ["Attractions", "Museums", "Parks", "College Campuses", "Landmarks", "Beaches", "Historical Buildings"];
+var filters = ["Attractions", "Museums", "Parks", "College Campuses", "Landmarks", "Beaches", "Historical Buildings", "FREE", "9", "10", "21", "51"];
 var displayedmarkers = [];
 var displayed;
 var map;
@@ -54,8 +54,20 @@ function applyFilters(locationsArray) {
 
 function matchesFilters(locationsArrayPlace) {
   for(var i = 0; i < filters.length; i++) {
-    if(locationsArrayPlace.category == filters[i] && filters[i] != null) {
-      return true;
+    if(locationsArrayPlace.category == filters[i]) {
+      for(var j = 0; j < filters.length; j++) {
+        if(filters[j] == "FREE" && locationsArrayPlace.price[0] == 0) {
+          return true;
+        } else if(filters[j] == "9" && locationsArrayPlace.price[0] < 10 && locationsArrayPlace.price[0] > 0) {
+          return true;
+        } else if(filters[j] == "10" && locationsArrayPlace.price[0] <= 20 && locationsArrayPlace.price[0] >= 10) {
+          return true;
+        } else if(filters[j] == "21" && locationsArrayPlace.price[0] > 20 && locationsArrayPlace.price[0] <= 50) {
+          return true;
+        } else if(filters[j] == "51" && locationsArrayPlace.price[0] > 50) {
+          return true;
+        }
+      }
     }
   }
   return false;
