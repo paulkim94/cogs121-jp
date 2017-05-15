@@ -112,3 +112,9 @@ h3{
   color: #fff;
   text-align: center;
 }
+
+/* Locations Sidebar */
+#locations-list {
+  height: 800px;
+  overflow: scroll;
+}

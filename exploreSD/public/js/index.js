@@ -148,11 +148,16 @@ function startEnd(map, control) {
 
 function initializeList(locationsArray) {
   for(i = 0; i < locationsArray.length; i++) {
-    //locationsArray[i].lat
-    $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-6">' + locationsArray[i].name +
-    '</div><div class="col-md-6">' + locationsArray[i].price + '</div></div><div>' + locationsArray[i].address +
-    locationsArray[i].description + '</div></div>');
-    // $('#location' + i).attr('style', 'color : red');
+    var place = locationsArray[i];
+
+    if(place.price[0] === place.price[1])
+      $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+      'Price: Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +  '</div></div></div><hr style="height: 5px">');
+    else
+      $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+      '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address + '</div></div></div><hr style="height: 5px">');
+
+    $('#location' + i).attr('style', 'width: 400px; font-size: 16px; margin: 1px auto; ');
   }
 }
 
