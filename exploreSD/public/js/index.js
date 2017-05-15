@@ -8,6 +8,7 @@ var map;
 $(document).ready(function() {
 
     $.getJSON( "./locations", function( data ) {
+      initializeList(data);
       initializeMapMarkers(data);
     });
 
@@ -154,6 +155,16 @@ function startEnd(map, control) {
           .setContent(container)
           .setLatLng(e.latlng)
           .openOn(map);
+  }
+}
+
+function initializeList(locationsArray) {
+  for(i = 0; i < locationsArray.length; i++) {
+    //locationsArray[i].lat
+    $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-6">' + locationsArray[i].name +
+    '</div><div class="col-md-6">' + locationsArray[i].price + '</div></div><div>' + locationsArray[i].address +
+    locationsArray[i].description + '</div></div>');
+    // $('#location' + i).attr('style', 'color : red');
   }
 }
 
