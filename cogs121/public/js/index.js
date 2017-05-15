@@ -108,6 +108,10 @@ function onClick(e) {
     $("#price").text("Price: " + "$" + this.price[0] + " - " + "$" + this.price[1]);
 
   $("#category").text("Category: " + this.category);
+  if(this.websiteURL !== null) {
+    $("#websiteURL").html("Website URL: <a href= '" + this.websiteURL + "'>" + this.websiteURL + "</a>");
+  }
+  $("#image1").html("<img src = " + this.imageURL1 + ">");
 }
 
 function createButton(label, container) {
