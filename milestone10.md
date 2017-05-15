@@ -9,7 +9,7 @@ to tourists and newcomers visiting San Diego. We help our users plan out
 their itinerary during their stay by allowing them to view the locations on
 a map and save them in a list.
 
-- How is it done today, and what are the limits of current practice?
+- How is it done today, and what are the limits of current practice?
 
 Currently, lots of travelers use either Google Maps or Yelp to find popular
 travel locations around their area. The limitations of these practices are that
@@ -24,7 +24,7 @@ places easily. We provide simple filters based on categories and prices, which
 helps them narrow down their options. It will be successful because it is
 focused on just San Diego.
 
-- Who cares? If you’re successful, what difference will it make?
+- Who cares? If you’re successful, what difference will it make?
 
 Tourists and newcomers to San Diego may find the application useful and easy to
 use because it is simple and contains the most relevant information that they
