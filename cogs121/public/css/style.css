@@ -3,12 +3,16 @@
   margin-bottom: 20px;
 }
 
+.container {
+  max-width: 90%;
+}
+
+
 .panel {
   background-color: #F4F4F4;
 }
 
 .filter label {
-  padding-left: 65px;
   float: left;
 }
 
