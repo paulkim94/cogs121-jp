@@ -1,3 +1,26 @@
+.filter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.panel {
+  background-color: #F4F4F4;
+}
+
+.filter label {
+  padding-left: 65px;
+  float: left;
+}
+
+.filter input {
+  margin-right: 8px !important;
+}
+
+#filterBox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 #map {
     height: 600px;
@@ -57,9 +80,6 @@ h3{
 
 #mapfeature {
   padding-top: 50px;
-}
-.filter{
-  text-align:left;
 }
 
 .footer {
