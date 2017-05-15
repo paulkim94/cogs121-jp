@@ -7,7 +7,10 @@
   "category" : "Attractions",
   "lat" : 32.764107,
   "longitude" : -117.226265,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.trbimg.com/img-57bdbafb/turbine/sdut-seaworld-san-diego-had-a-12-per-20160824/650/650x366",
+  "imageURL2": "https://travelmamas.com/media/seaworld_dolphins.jpg",
+  "websiteURL": "https://seaworldparks.com/en/seaworld-sandiego/"
 },
 {
   "name" : "Legoland",
@@ -17,27 +20,36 @@
   "category" : "Attractions",
   "lat" : 33.126033,
   "longitude" : -117.312385,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.sandiego.com/sites/sandiego.com/files/styles/gallery_listing_full/public/content/gallery/images/legoland_water_park_0.jpg?itok=cyABzDio",
+  "imageURL2": "http://photos.californiabeaches.com/wp-content/uploads/2016/08/image29.jpg",
+  "websiteURL": "https://www.legoland.com/california/"
 },
 {
   "name" : "San Diego Zoo",
-  "description" : "The San Diego Zoo is a zoo in Balboa Park, San Diego, California, housing over 3,700 animals of more than 650 species and subspecies.",
+  "description" : "The San Diego Zoo is a zoo in Balboa Park, San Diego, California, housing over 3,700 animals of more than 650 species and subspecies",
   "address" : "2920 Zoo Dr, San Diego, CA 92101",
-  "price" : [40, 50],
+  "price" : [40, 60],
   "category" : "Attractions",
   "lat" : 32.734589,
   "longitude" : -117.149120,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://visitoceanside.org/wp-content/uploads/2013/01/SDZOoSafariPark.jpg",
+  "imageURL2": "http://kfmb.images.worldnow.com/images/10183197_G.jpg",
+  "websiteURL": "http://zoo.sandiegozoo.org/"
 },
 {
   "name" : "San Diego Zoo Safari Park",
-  "description" : "The San Diego Zoo Safari Park, known as the San Diego Wild Animal Park until 2010, is an 1,800 acre zoo in the San Pasqual Valley area of San Diego, California, near Escondido.",
+  "description" : "The San Diego Zoo Safari Park, known as the San Diego Wild Animal Park until 2010, is an 1,800 acre zoo in the San Pasqual Valley area of San Diego, California, near Escondido. It is one of the largest tourist attractions in San Diego County",
   "address" : "15500 San Pasqual Valley Rd, Escondido, CA 92027",
-  "price" : [40, 50],
+  "price" : [40, 60],
   "category" : "Attractions",
   "lat" : 33.097470,
   "longitude" : -117.000201,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Rhino_san_diego_wild_animal_park.jpg",
+  "imageURL2": "http://zoonooz.sandiegozoo.org/wp-content/uploads/2016/07/23D9718med.jpg",
+  "websiteURL": "http://www.sdzsafaripark.org/"
 },
 {
   "name" : "Aquatica San Diego",
@@ -47,7 +59,10 @@
   "category" : "Attractions",
   "lat" : 32.587630,
   "longitude" : -117.010759,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://seaworldfan.files.wordpress.com/2012/11/aquatica-san-diego.jpg",
+  "imageURL2": "https://www.sandiego.org/-/media/8a4be50ddc944ef3953f75ad2614e634.jpg?bc=white&h=500&w=700&c=1",
+  "websiteURL": "https://aquaticabyseaworld.com/sandiego/?m=1"
 },
 {
   "name" : "Birch Aquarium",
@@ -57,7 +72,10 @@
   "category" : "Attractions",
   "lat" : 32.8678,
   "longitude" : -117.2496,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kelp_tank_%28Birch_Aquarium_at_Scripps%2C_2007%29.JPG/300px-Kelp_tank_%28Birch_Aquarium_at_Scripps%2C_2007%29.JPG",
+  "imageURL2": "http://cdn.mntm.me/1f/8b/92/Birch_Aquarium_at_Scripps-La_Jolla-CA-1f8b92bd97d34779b363ef05906175d8_c.jpg",
+  "websiteURL": "https://aquarium.ucsd.edu/"
 },
 {
   "name" : "La Jolla Shores",
@@ -67,7 +85,10 @@
   "category" : "Beaches",
   "lat" : 32.856787,
   "longitude" : -117.256362,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://blog.forbestravelguide.com/wp-content/uploads/2012/02/2.La-Jolla-Shores-Beach5.jpg",
+  "imageURL2": "http://friendsoflajollashores.com/wp/wp-content/uploads/2012/12/slide3.png",
+  "websiteURL": "http://www.lajollabythesea.com/la-jolla-shores-beach"
 },
 {
   "name" : "Black's Beach",
@@ -77,7 +98,10 @@
   "category" : "Beaches",
   "lat" : 32.889884,
   "longitude" : -117.251194,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.city-data.com/articles/images/img4665070.jpg",
+  "imageURL2": "https://media.xogrp.com/images/a50b42e1-0b15-46aa-82e0-a7e6fcd2b03a",
+  "websiteURL": "http://blacksbeach.org/"
 },
 {
   "name" : "Torrey Pines State Beach",
@@ -87,7 +111,10 @@
   "category" : "Beaches",
   "lat" : 32.933677,
   "longitude" : -117.260678,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://8955-presscdn-0-52.pagely.netdna-cdn.com/wp-content/uploads/2015/03/torrey_pines_beach.jpg",
+  "imageURL2": "http://8955-presscdn-0-52.pagely.netdna-cdn.com/wp-content/uploads/2015/03/torrey-pines-300x197.jpg",
+  "websiteURL": "https://torreypine.org/"
 },
 {
   "name" : "La Jolla Cove",
@@ -97,7 +124,10 @@
   "category" : "Beaches",
   "lat" : 32.849680,
   "longitude" : -117.274679,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.lajollacove.com/application/files/5814/8883/8698/La-Jolla-Cove-Direct-Access.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/9/92/LaJolla_childrenspool.JPG",
+  "websiteURL": "www.lajollabythesea.com/la-jolla-cove"
 },
 {
   "name" : "UCSD",
@@ -107,7 +137,10 @@
   "category" : "College Campuses",
   "lat" : 32.877492,
   "longitude" : -117.235277,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://ucsdmun.org/assets/ucsd-library.jpg",
+  "imageURL2": "http://www.trbimg.com/img-57b93604/turbine/sdut-UCSD-private-gifts-2016jun08",
+  "websiteURL": "www.ucsd.edu"
 },
 {
   "name" : "SDSU",
@@ -117,7 +150,10 @@
   "category" : "College Campuses",
   "lat" : 32.774731,
   "longitude" : -117.069387,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://universe.sdsu.edu/sdsu_newscenter/images/stories/hh-campus589.jpg",
+  "imageURL2": "http://aztecconsulting.sdsu.edu/wp-content/uploads/2015/05/SDSU-Main-Picture-web.jpg",
+  "websiteURL": "https://www.sdsu.edu/"
 },
 {
   "name" : "USD",
@@ -127,7 +163,10 @@
   "category" : "College Campuses",
   "lat" : 32.770782,
   "longitude" : -117.192115,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.sandiego.edu/images/about/2015/immaculata-fountain.jpg",
+  "imageURL2": "http://www.footprintsrecruiting.com/sites/default/files/u10163/university-of-san-diego-logo-tefl-tesol-course-provider.jpg",
+  "websiteURL": "www.sandiego.edu/"
 },
 {
   "name" : "San Diego City College",
@@ -137,7 +176,10 @@
   "category" : "College Campuses",
   "lat" : 32.722042,
   "longitude" : -117.153451,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://sdvoice.info/wp-content/uploads/2016/09/130927_N86_1.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/en/5/57/San_Diego_Community_College_District_seal.png",
+  "websiteURL": "https://www.sdcity.edu/"
 },
 {
   "name" : "National University",
@@ -147,7 +189,10 @@
   "category" : "College Campuses",
   "lat" : 32.829303,
   "longitude" : -117.127357,
-  "marker" : null
+  "marker" : null,
+  "imageURL1" : "http://www.greatvaluecolleges.net/wp-content/uploads/2016/01/National-University-Online-Degree-in-San-Diego.jpg",
+  "imageURL2" : "https://upload.wikimedia.org/wikipedia/en/b/bb/Logo_for_National_University_in_La_Jolla%2C_California.jpg",
+  "websiteURL" : "https://www.nu.edu/"
 },
 {
   "name" : "San Diego Mesa College",
@@ -157,7 +202,10 @@
   "category" : "College Campuses",
   "lat" : 32.803875,
   "longitude" : -117.163515,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://cdn.stateuniversity.com/assets/logos/images/5280/large_College_Building.jpg",
+  "imageURL2": "http://www.sdccd.edu/docs/logos/Campus%20logos/MesaCollege_color.jpg",
+  "websiteURL": "www.sdmesa.edu/"
 },
 {
   "name" : "Ashford University",
@@ -167,7 +215,10 @@
   "category" : "College Campuses",
   "lat" : 32.827258,
   "longitude" : -117.142030,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.insidehighered.com/sites/default/server_files/media/Ashford.jpg",
+  "imageURL2": "https://cdn-payscale.com/content/school_logos/Ashford%20University_200px.png",
+  "websiteURL": "https://www.ashford.edu/"
 },
 {
   "name" : "Point Loma Nazarene University",
@@ -177,7 +228,9 @@
   "category" : "College Campuses",
   "lat" : 32.718312,
   "longitude" : -117.250250,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://s-media-cache-ak0.pinimg.com/originals/52/49/82/5249823604471e5e302eb666950a82d8.jpg",
+  "imageURL2": "https://apps.ksbe.edu/kscholars/wp-content/uploads/sites/17/2015/10/point-loma.jpg",
 },
 {
   "name" : "Cabrillo National Monument",
@@ -187,7 +240,10 @@
   "category" : "Landmarks",
   "lat" : 32.673500,
   "longitude" : -117.242500,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.escapingabroad.com/blog/wp-content/uploads/2013/05/cabrillo-national-monument-2_lrg.jpg",
+  "imageURL2": "http://blog.sandiego.org/wp-content/uploads/2014/09/San-Diego-Skyline-from-Pt-Loma-Cabrillo-National-Monument-Courtesy-James-Blank-Copy-640x431.jpg",
+  "websiteURL": "https://www.nps.gov/cabr/"
 },
 {
   "name" : "Fort Rosecrans Cemetery",
@@ -197,7 +253,10 @@
   "category" : "Landmarks",
   "lat" : 32.688800,
   "longitude" : -117.244300,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://photographyfree4all.files.wordpress.com/2011/04/mg_8015.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Fort_Rosecrans_National_Cemetery_3.jpg/300px-Fort_Rosecrans_National_Cemetery_3.jpg",
+  "websiteURL": "https://www.cem.va.gov/cems/nchp/ftrosecrans.asp"
 },
 {
   "name" : "Mount Soledad",
@@ -207,7 +266,10 @@
   "category" : "Landmarks",
   "lat" : 32.839800,
   "longitude" : -117.252300,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://s3-us-west-2.amazonaws.com/find-a-grave-prod/photos/2014/254/CEM1988018_1410546007.jpg",
+  "imageURL2": "http://msma.morgan-systems.com/wordpress/wp-content/uploads/2011/08/MSMA_Aerial.jpg",
+  "websiteURL": "https://www.soledadmemorial.com/"
 },
 {
   "name" : "Coronado Bridge",
@@ -217,7 +279,10 @@
   "category" : "Landmarks",
   "lat" : 32.689400,
   "longitude" : -117.153400,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://sandiegoranchcoast.evusa.com/uploads/agent-4466/Coronado-Island.jpg",
+  "imageURL2": "http://sandiegoranchcoast.evusa.com/uploads/agent-4466/Coronado-Island.jpg",
+  "websiteURL": null
 },
 {
   "name" : "Point Loma Lighthouse",
@@ -227,7 +292,10 @@
   "category" : "Landmarks",
   "lat" : 32.672000,
   "longitude" : -117.241000,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://oceanbeachsandiego.com/sites/default/files/d7/creative/view-image/point-loma-lighthouse_0.jpg",
+  "imageURL2": "http://www.cw6sandiego.com/wp-content/uploads/2017/03/f262107d6e4b74d3bc9f35c31f5b361e.jpg",
+  "websiteURL": "https://www.nps.gov/cabr/learn/historyculture/the-lighthouses-of-point-loma.htm"
 },
 {
   "name" : "Embracing Peace Statue",
@@ -237,7 +305,10 @@
   "category" : "Landmarks",
   "lat" : 32.712900,
   "longitude" : -117.175200,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://cdn.patchcdn.com/users/790386/2016/02/T800x600/20160256ba45336e435.jpg",
+  "imageURL2": "https://s3-media1.fl.yelpcdn.com/bphoto/DdSBs9mTgXDQ_jnhWr5hjA/348s.jpg",
+  "websiteURL": "ttps://en.wikipedia.org/wiki/Unconditional_Surrender_(sculpture)"
 },
 {
   "name" : "Torrey Pines Gliderport",
@@ -247,7 +318,10 @@
   "category" : "Landmarks",
   "lat" : 32.889900,
   "longitude" : -117.251200,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://sandiegan.com/images/tp.gliderport.1.jpg",
+  "imageURL2": "http://sandiegan.com/images/gliderport.6.jpg",
+  "websiteURL": "https://www.flytorrey.com/"
 },
 {
   "name" : "Mormon Battalion Historic Site",
@@ -257,7 +331,10 @@
   "category" : "Landmarks",
   "lat" : 32.754200,
   "longitude" : -117.194200,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.lds.org/bc/content/ldsorg/church/news/06/10/580-Mormon-Battalion-site-san-diego.jpg",
+  "imageURL2": "http://mormonhistoricsites.org/wp-content/uploads/2015/02/MB-Center-San-Diego-01.jpg",
+  "websiteURL": "https://www.lds.org/locations/san-diego-mormon-battalion-historic-site"
 },
 {
   "name" : "Mission Basilica San Diego de Alcala",
@@ -267,7 +344,10 @@
   "category" : "Landmarks",
   "lat" : 32.784600,
   "longitude" : -117.106000,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://s-media-cache-ak0.pinimg.com/originals/92/74/17/927417092a7f247b71996c1caf19e088.jpg",
+  "imageURL2": "http://www.kellitravels.com/wp-content/uploads/2011/05/4-22-Maritime-Museum-001.jpg",
+  "websiteURL": "www.missionsandiego.org/"
 },
 {
   "name" : "National Salute to Bob Hope and the Military",
@@ -277,7 +357,10 @@
   "category" : "Landmarks",
   "lat" : 32.712700,
   "longitude" : -117.175500,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://media-cdn.tripadvisor.com/media/photo-s/0d/74/bc/67/a-national-salute-to.jpg",
+  "imageURL2": "http://l450v.alamy.com/450v/ggj7hd/a-national-salute-to-bob-hope-and-the-military-san-diego-ggj7hd.jpg",
+  "websiteURL" : "www.roadsideamerica.com/story/21525"
 },
 {
   "name" : "San Diego California Temple",
@@ -287,7 +370,10 @@
   "category" : "Landmarks",
   "lat" : 32.866400,
   "longitude" : -117.228800,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.lds.org/bc/content/church/temples/san-diego-california/images/san-diego-california-808x480-CWD_100809_DRobinson.jpg",
+  "imageURL2": "http://www.dlmark.net/images/tsandiego9.jpg",
+  "websiteURL": "www.ldschurchtemples.com/sandiego/"
 },
 {
   "name" : "Salk Institute for Biological Studies",
@@ -297,7 +383,10 @@
   "category" : "Landmarks",
   "lat" : 32.887151,
   "longitude" : -117.246212,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.salk.edu/wp-content/uploads/2017/01/salk-media-package-8.jpg",
+  "imageURL2": "http://www.getty.edu/conservation/publications_resources/public_programs/images/conserving_salk.jpg",
+  "websiteURL": "www.salk.edu/"
 },
 
 {
@@ -308,7 +397,10 @@
   "category" : "Parks",
   "lat" : 32.7341,
   "longitude" : -117.1446,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://cdn.trolleytours.com/wp-content/uploads/2016/06/san-diego-balboa-park-480x270.jpg",
+  "imageURL2": "https://sandiegan.com/wp-content/uploads/2014/01/balboa_park_46.jpg",
+  "websiteURL": "https://www.balboapark.org/"
 },
 
 {
@@ -319,17 +411,10 @@
   "category" : "Parks",
   "lat" : 32.7549,
   "longitude" : -117.1979,
-  "marker" : null
-},
-{
-  "name" : "Torrey Pines State Natural Reserve",
-  "description" : "Torrey Pines State Natural Reserve is 2,000 acres of coastal state park located in the community of La Jolla, in San Diego, California, off North Torrey Pines Road.",
-  "address" : "12600 N Torrey Pines Rd, La Jolla, CA 92037",
-  "price" : [0, 0],
-  "category" : "Parks",
-  "lat" : 32.9216,
-  "longitude" : -117.2535,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.parks.ca.gov/pages/789/images/mccoy%20house%20otsd%20448%20238.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/6/62/Old_Town_San_Diego_State_Historic_Park_04.jpg",
+  "websiteURL": "www.parks.ca.gov/?page_id=663"
 },
 {
   "name" : "Casa de Estudillo",
@@ -339,7 +424,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.7543,
   "longitude" : -117.1968,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Casa_de_Estudillo_courtyard_04.jpg",
+  "imageURL2": "http://gothere.com/sandiego/Ghosts/Estudillo/photo08.jpg",
+  "websiteURL": "https://www.nps.gov/nr/travel/american_latino_heritage/Estudillo_House.html"
 },
 {
   "name" : "Santa Fe Depot",
@@ -349,7 +437,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.7167,
   "longitude" : -117.1696,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://c1.staticflickr.com/8/7434/9000091797_3ea652be37_b.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/San_Diego_Train_Station.jpg/300px-San_Diego_Train_Station.jpg",
+  "websiteURL": null
 },
 {
   "name" : "Balboa Theatre",
@@ -359,7 +450,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.7144,
   "longitude" : -117.1613,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.sandiegoh.com/wp-content/uploads/2008/01/balboa-20theater-small.jpg",
+  "imageURL2": "http://www.heritagearchitecture.com/images/balbt_4.jpg",
+  "websiteURL": "http://sandiegotheatres.org/category/home-page/?cat=57"
 },
 {
   "name" : "La Jolla Woman's Club",
@@ -369,7 +463,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.8441,
   "longitude" : -117.2771,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.cateringspecialist.com/wp-content/gallery/lj-womens-club/la_jolla_womans_15.jpg",
+  "imageURL2": "http://lajollawomansclub.org/wp-content/gallery/wedding-ceremonies/ceremony-at-la-jolla-womans-club-south-garden.jpg",
+  "websiteURL": "http://lajollawomansclub.org/"
 },
 {
   "name" : "Mission Trails Regional Park",
@@ -379,7 +476,10 @@
   "category" : "Parks",
   "lat" : 32.8180,
   "longitude" : -117.0560,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.na-sd.com/images/cache/cache_2/cache_2/cache_6/Mission-Trails-Regional-Park-46a5f622.jpeg?ver=1471995918&aspectratio=1.3833992094862",
+  "imageURL2": "http://sandiego.carpediem.cd/data/afisha/o/ea/04/ea04fa0b3d.jpg",
+  "websiteURL": "www.mtrp.org/"
 },
 {
   "name" : "Los Penasquitos Trail Head ",
@@ -389,7 +489,10 @@
   "category" : "Parks",
   "lat" : 32.931285,
   "longitude" : -117.166907,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://media.sdreader.com/img/photos/2012/07/31/roam_lead_t658.jpg?ff95ca2b4c25d2d6ff3bfb257febf11d604414e5",
+  "imageURL2": "http://www.ihikesandiego.com/wp-content/uploads/2013/06/entrance.jpg",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/osp/lospenasquitos"
 },
 {
   "name" : "Tecolote Canyon Natural Park",
@@ -399,7 +502,10 @@
   "category" : "Parks",
   "lat" : 32.775059,
   "longitude" : -117.197619,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.sunkissedhiker.com/wp-content/uploads/2015/09/photo_5_14__1441641438_75976.jpg",
+  "imageURL2": "https://redtricom.files.wordpress.com/2013/06/tecolote-canyon.jpg?w=600&h=400",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/osp/tecolote"
 },
 {
   "name" : "Los Peñasquitos Canyon Preserve",
@@ -409,7 +515,11 @@
   "category" : "Parks",
   "lat" : 32.9374,
   "longitude" : -117.129775,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.sandiego.gov/sites/default/files/legacy/park-and-recreation/graphics/waterfall.jpg",
+  "imageURL2": "http://8955-presscdn-0-52.pagely.netdna-cdn.com/wp-content/uploads/2015/03/penasquitos_falls-1024x680.jpg",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/osp/lospenasquitos
+"
 },
 {
   "name" : "San Diego-La Jolla Underwater Park",
@@ -419,7 +529,10 @@
   "category" : "Parks",
   "lat" : 32.853205,
   "longitude" : -117.261974,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://tidelines.org/sites/default/files/field/image/e3.png",
+  "imageURL2": "https://s-media-cache-ak0.pinimg.com/originals/47/e0/ef/47e0efc66f5563cf5203c9fd93bbd5f1.jpg",
+  "websiteURL": "https://lajollamom.com/la-jolla-underwater-park/"
 },
 {
   "name" : "Fanuel Street Park",
@@ -429,7 +542,10 @@
   "category" : "Parks",
   "lat" : 32.791398,
   "longitude" : -117.244227,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.lajollabluebook.com/blog/wp-content/uploads/2014/01/Fanuel.jpg",
+  "imageURL2": "https://c1.staticflickr.com/8/7444/9105781844_a85ee0f346_b.jpg",
+  "websiteURL": null
 },
 {
   "name" : "Sunset Cliffs Natural Park",
@@ -439,7 +555,10 @@
   "category" : "Parks",
   "lat" : 32.717993,
   "longitude" : -117.254845,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://static.rootsrated.com/image/upload/s--R4vzp0v5--/t_rr_large_natural/pp9egmxbubq4y6npws1u.jpg",
+  "imageURL2": "https://oceanbeachsandiego.com/sites/default/files/d7/user212/sunset-cliffs.jpg",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/regional/shoreline/sunset"
 },
 {
   "name" : "Presidio Park",
@@ -449,7 +568,10 @@
   "category" : "Parks",
   "lat" : 32.758146,
   "longitude" : -117.195705,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.blackchickontour.com/wp-content/uploads/2012/08/Presidio-Park-Palm-Canyon.jpg",
+  "imageURL2": "https://ww2.kqed.org/arts/wp-content/uploads/sites/2/2015/05/Presidio-Learning-Center.jpg",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/regional/presidio"
 },
 {
   "name" : "Waterfront Park",
@@ -459,7 +581,10 @@
   "category" : "Parks",
   "lat" : 32.722037,
   "longitude" : -117.172243,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.sdparks.org/content/dam/sdparks/en/images/park-images/Waterfront_4.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+  "imageURL2": "http://www.sdparks.org/content/dam/sdparks/en/images/park-images/Waterfront_3.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+  "websiteURL": "http://www.sdparks.org/content/sdparks/en/park-pages/Waterfront.html"
 },
 {
   "name" : "Mission Bay Park",
@@ -469,7 +594,10 @@
   "category" : "Parks",
   "lat" : 32.789358,
   "longitude" : -117.209541,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.sandiego.org/-/media/images/sdta-site/hero-gallery-rotators-645-x-340/regions/missionbay_beaches/mission-bay-belmont-park.jpg?bc=black&h=340&w=453&c=1",
+  "imageURL2": "http://www.wildnatureimages.com/images%202/041010-037..jpg",
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/regional/missionbay"
 },
 {
   "name" : "Shoreline Park",
@@ -479,7 +607,10 @@
   "category" : "Parks",
   "lat" : 32.717436,
   "longitude" : -117.222340,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.portofsandiego.org/images/stories/Recreation/park-shelter-island/shelter-island-5430.jpg",
+  "imageURL2": "https://cdn.wedding-spot.com/images/venues/4090/Shelter-Island-Shoreline-Park-Wedding-San-Diego-CA-3_main.1433196320.jpg",
+  "websiteURL": "https://www.portofsandiego.org/shelter-island-shoreline-park.html"
 },
 {
   "name" : "Whaley House",
@@ -489,7 +620,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.752724,
   "longitude" : -117.194567,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://whaleyhouse.org/images/fullexterior.jpg",
+  "imageURL2": "http://backpackersverse.s3.amazonaws.com/wp-content/uploads/2016/01/16123702/Boy-sitting-on-porch-of-Whaley-House.jpg",
+  "websiteURL": "http://whaleyhouse.org/"
 },
 {
   "name" : "George W. Marston House",
@@ -499,7 +633,10 @@
   "category" : "Historical buildings",
   "lat" : 32.741711,
   "longitude" : -117.157819,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/8/86/George_W._Marston_house%2C_Balboa_Park.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/George_W._Marston_House_%28San_Diego%2C_CA%29.jpg/220px-George_W._Marston_House_%28San_Diego%2C_CA%29.jpg",
+  "websiteURL": "http://www.sohosandiego.org/main/marston2.htm"
 },
 {
   "name" : "Chicano Park",
@@ -509,7 +646,10 @@
   "category" : "Parks",
   "lat" : 32.699606,
   "longitude" : -117.142749,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.google.com/search?q=chicano+park&source=lnms&tbm=isch&sa=X&ved=0ahUKEwih__fdyfDTAhUN1GMKHUaoDs8Q_AUICygC&biw=596&bih=671#imgrc=Ixgl08AQwPEHKM:",
+  "imageURL2": "https://www.kcet.org/sites/kl/files/thumbnails/image/chicano_park_murals_1.jpg",
+  "websiteURL": "http://www.chicanoparksandiego.com/"
 },
 {
   "name" : "Hotel del Coronado",
@@ -519,7 +659,10 @@
   "category" : "Historical Buildings",
   "lat" : 32.681239,
   "longitude" : -117.178416,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Coronado_del_Hotel_from_the_beach.jpg/350px-Coronado_del_Hotel_from_the_beach.jpg",
+  "imageURL2": "https://exp.cdn-hotels.com/hotels/1000000/10000/7500/7496/7496_98_z.jpg",
+  "websiteURL": "https://hoteldel.com/"
 },
 {
   "name" : "Japanese Friendship Garden",
@@ -529,7 +672,10 @@
   "category" : "Parks",
   "lat" : 32.730028,
   "longitude" : -117.149495,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://static1.squarespace.com/static/56f43a27906340eeb78d12ed/t/57fa8256bebafba899003200/1477006351850/Dominic+Nepomuceno+-+Garden+Shot+-+October+6+2016+%28Permission+from+Photographer%29+%2845%29.jpg?format=1500w",
+  "imageURL2": "https://media-cdn.tripadvisor.com/media/photo-s/06/71/ce/d5/japanese-friendship-garden.jpg",
+  "websiteURL": "http://www.niwa.org/"
 },
 {
   "name" : "Sea Port Village",
@@ -539,19 +685,11 @@
   "category" : "Attractions",
   "lat" : 32.709194,
   "longitude" : -117.149495,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.sandiego.com/sites/sandiego.com/files/styles/gallery_listing_full/public/content/gallery/images/seaport_village_8.jpg?itok=YQHy1TNo",
+  "imageURL2": "https://farm6.staticflickr.com/5551/14221692382_51722f0e8f.jpg",
+  "websiteURL": "http://www.seaportvillage.com/"
 },
-{
-  "name" : "Old Point Loma Lighthouse",
-  "description" : "The original Point Loma Lighthouse is a historic lighthouse located on the Point Loma peninsula at the mouth of San Diego Bay in San Diego, California. It is situated in the Cabrillo National Monument.",
-  "address" : "NSC San Diego, Point Loma Annex, 1800 Cabrillo Memorial Dr, San Diego, CA 92106",
-  "price" : [0, 0],
-  "category" : "Historical Buildings",
-  "lat" : 32.672000,
-  "longitude" : -117.241000,
-  "marker" : null
-},
-
 {
   "name" : "USS Midway Museum",
   "description" : "The USS Midway Museum is a maritime museum located in downtown San Diego, California at Navy Pier. The museum consists of the aircraft carrier Midway.",
@@ -560,7 +698,10 @@
   "category" : "Museums",
   "lat" : 32.7137,
   "longitude" : -117.1751,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://kpbs.media.clients.ellingtoncms.com/img/news/tease/2013/01/31/ussmidway.jpg",
+  "imageURL2": "http://anothersideofsandiegotours.com/wp-content/uploads/2015/02/USS-Midway-Embarcadero.jpg",
+  "websiteURL": "http://www.midway.org/"
 },
 {
   "name" : "San Diego Natural History Museum",
@@ -570,7 +711,10 @@
   "category" : "Museums",
   "lat" : 32.7321,
   "longitude" : -117.1475,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://californiathroughmylens.com/wp-content/uploads/2015/12/Natural-History-Museum-San-Diego-13-640x427.jpg",
+  "imageURL2": "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/6472/SITours/san-diego-natural-history-museum-admission-in-san-diego-157027.jpg",
+  "websiteURL": "http://www.sdnhm.org/"
 },
 {
   "name" : "San Diego Museum of Man",
@@ -580,7 +724,10 @@
   "category" : "Museums",
   "lat" : 32.7318,
   "longitude" : -117.1523,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.sandiegan.com/images/lead.museumofman.jpg",
+  "imageURL2": "http://www.sandiegan.com/images/lead.museumofman.jpg",
+  "websiteURL": "http://www.museumofman.org/"
 },
 {
   "name" : "San Diego Air & Space Museum",
@@ -590,7 +737,10 @@
   "category" : "Museums",
   "lat" : 32.7263,
   "longitude" : -117.1543,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178304/San-Diego-Air-And-Space-Museum-22152.jpg",
+  "imageURL2": "https://www.smartdestinations.com/blog/wp-content/uploads/2011/07/Exhibits-at-San-Diego-Air-and-Space-Museum.jpg",
+  "websiteURL": "http://sandiegoairandspace.org/"
 },
 {
   "name" : "San Diego Model Railroad Museum",
@@ -600,7 +750,10 @@
   "category" : "Museums",
   "lat" : 32.7311,
   "longitude" : -117.1486,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.balboapark.org/sites/default/files/2017-01/Model%20Railroad%20header.jpg",
+  "imageURL2": "https://media-cdn.tripadvisor.com/media/photo-s/08/75/83/0f/san-diego-model-railroad.jpg",
+  "websiteURL": "http://sdmrm.org/"
 },
 {
   "name" : "Museum of Photographic Arts",
@@ -610,7 +763,10 @@
   "category" : "Museums",
   "lat" : 32.7311,
   "longitude" : -117.1488,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://s3.amazonaws.com/myareanetwork-photos/editorphotos/f/168234_1439750496.jpg",
+  "imageURL2": "https://www.sandiego.com/sites/sandiego.com/files/styles/listing_page_thumb/public/content/listing/thumbnail/museum_of_photographic_arts.jpg?itok=fMxgFDj6",
+  "websiteURL": "http://www.mopa.org/"
 },
 {
   "name" : "Museum of Contemporary Art San Diego",
@@ -620,7 +776,10 @@
   "category" : "Museums",
   "lat" : 32.84444,
   "longitude" : -117.27806,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.arcspace.com/CropUp/-/media/227625/mcasd_2.jpg",
+  "imageURL2": "http://www.mcasd.org/sites/default/files/images/Gilliam%202009.jpg",
+  "websiteURL": "http://www.mcasd.org/"
 },
 {
   "name" : "Mingei International Museum",
@@ -630,7 +789,10 @@
   "category" : "Museums",
   "lat" : 32.7311,
   "longitude" : -117.1510,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://kpbs.media.clients.ellingtoncms.com/img/places/mingei_outside_t640.jpg?a6ea3ebd4438a44b86d2e9c39ecf7613005fe067",
+  "imageURL2": "https://kpbs.media.clients.ellingtoncms.com/img/photos/2011/01/22/mingei_esc_interior_3128_560w_qax5_t614.jpg?a3ca5463f16dc11451266bb717d38a6025dcea0e",
+  "websiteURL": "http://www.mingei.org/"
 },
 {
   "name" : "Maritime Museum of San Diego",
@@ -640,7 +802,10 @@
   "category" : "Museums",
   "lat" : 32.7209,
   "longitude" : -117.1740,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://sites.google.com/a/sdceonline.com/rsd/_/rsrc/1442250540459/our-weekly-trips/sal-salvador-at-the-maritime-museum/MaritimeMuseum.jpg",
+  "imageURL2": "http://www.sdhealthyliving.com/wp-content/uploads/2014/03/maritime-museum-family-day-san-diego.jpg",
+  "websiteURL": "https://sdmaritime.org/"
 },
 {
   "name" : "San Diego Museum of Art",
@@ -650,7 +815,10 @@
   "category" : "Museums",
   "lat" : 32.7322,
   "longitude" : -117.1504,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://upload.wikimedia.org/wikipedia/commons/9/92/San_Diego_Museum_of_Art_01.jpg",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Front_facade_-_San_Diego_Museum_of_Art_-_DSC06791.JPG",
+  "websiteURL": "http://www.sdmart.org/"
 },
 {
   "name" : "San Diego Automotive Museum",
@@ -660,7 +828,10 @@
   "category" : "Museums",
   "lat" : 32.7275,
   "longitude" : -117.1539,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://voiceofsandiego.org/wp-content/uploads/2014/02/museum-merger-013.jpg",
+  "imageURL2": "http://www.101thingstodosw.com/san-diego/wp-content/uploads/auto_museum_front-1.jpg",
+  "websiteURL": "https://sdautomuseum.org/"
 },
 {
   "name" : "The New Children's Museum",
@@ -670,7 +841,10 @@
   "category" : "Museums",
   "lat" : 32.7106,
   "longitude" : -117.1652,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://tourguidetim.com/wp-content/uploads/san-diego-pictures/downtown/childrens-museum.JPG",
+  "imageURL2": "https://comiccongeek.files.wordpress.com/2012/07/the-new-childrens-museum-san-diego-003.jpg",
+  "websiteURL": "https://thinkplaycreate.org/"
 },
 {
   "name" : "Qualcomm Museum",
@@ -680,17 +854,10 @@
   "category" : "Museums",
   "lat" : 32.897290,
   "longitude" : -117.195714,
-  "marker" : null
-},
-{
-  "name" : "Birch Aquarium at Scripps",
-  "description" : "Birch Aquarium at Scripps is the public outreach center for Scripps Institution of Oceanography at the University of California, San Diego.",
-  "address" : "2300 Expedition Way, La Jolla, CA 92037",
-  "price" : [14, 19],
-  "category" : "Museums",
-  "lat" : 32.8678,
-  "longitude" : -117.2496,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://www.bakerbrand.com/wp-content/uploads/QualMusHome4-1200x800.jpg",
+  "imageURL2": "https://www.dpidirect.com/wp-content/uploads/2010/12/qualcom-museum2.jpg",
+  "websiteURL": "https://www.qualcomm.com/company/facilities/museum"
 },
 {
   "name" : "Fleet Science Center",
@@ -700,7 +867,10 @@
   "category" : "Museums",
   "lat" : 32.7308,
   "longitude" : -117.1470,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www.travelingmom.com/wp-content/uploads/2015/10/ReubenHFleet-lead.jpg",
+  "imageURL2": "https://rayotek.com/wpnews/wp-content/uploads/2015/04/RHST-Journey-Into-Space1.jpg",
+  "websiteURL": "http://www.rhfleet.org/"
 },
 {
   "name" : "Wells Fargo History Museum",
@@ -710,7 +880,10 @@
   "category" : "Museums",
   "lat" : 32.7541,
   "longitude" : -117.1973,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "https://www01.wellsfargomedia.com/assets/images/photography/product/413x185/wf-history-museum-feature_413x185.png",
+  "imageURL2": "https://upload.wikimedia.org/wikipedia/commons/f/f9/San_Diego_-_Seeley_Stable_Museum_-_Wells_Fargo_Wagon_03.jpg",
+  "websiteURL": "https://www.wellsfargohistory.com/museums/san-diego/"
 },
 {
   "name" : "Qualcomm Stadium",
@@ -720,7 +893,10 @@
   "category" : "Attractions",
   "lat" : 32.7831,
   "longitude" : -117.1196,
-  "marker" : null
+  "marker" : null,
+  "imageURL1": "http://football.ballparks.com/NFL/SanDiegoChargers/aerial.jpg",
+  "imageURL2": "http://sportswhereiam.com/wp-content/uploads/2015/06/Qualcomm-Stadium.jpg",
+  "websiteURL": "https://www.sandiego.gov/qualcomm"
 },
 {
   "name" : "Petco Park",
@@ -730,7 +906,10 @@
   "category" : "Attractions",
   "lat" : 32.7072,
   "longitude" : -117.1571,
-  "marker" : null
+  "marker" : null,
+  "imageURL1":"http://www.mlb.com/sd/images/ballpark/y2009/petco_park_480x200.jpg",
+  "imageURL2":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/PetcoBallParkByPhilKonstantin.jpg/220px-PetcoBallParkByPhilKonstantin.jpg",
+  "websiteURL":"http://sandiego.padres.mlb.com/sd/ballpark/"
 },
 {
   "name" : "Del Mar Racetrack",
@@ -740,7 +919,10 @@
   "category" : "Attractions",
   "lat" : 32.9757,
   "longitude" : -117.2614,
-  "marker" : null
+  "marker" : null,
+  "imageURL1":"https://www.dmtc.com/images/tickets/trackside-dining.jpg",
+  "imageURL2":"http://blog.sandiego.org/wp-content/uploads/2013/06/Del-Mar-Race-Horses-at-Starting-Gate-Courtesy-SanDiego.org_.jpg",
+  "websiteURL":"https://www.dmtc.com/"
 },
 {
   "name" : "Valley View Casino Center",
@@ -750,7 +932,10 @@
   "category" : "Attractions",
   "lat" : 32.7553,
   "longitude" : -117.2122,
-  "marker" : null
+  "marker" : null,
+  "imageURL1":"https://i.axs.com/2015/09/valley-view-casino-center_san-diego_09-14-15_14_55f70deaa20c5.jpg",
+  "imageURL2":"https://www.tickpick.com/DesktopModules/SearchResults/img/performers/valley-view-casino-center.jpg",
+  "websiteURL":"http://www.valleyviewcasino.com/"
 }
 
 ]
