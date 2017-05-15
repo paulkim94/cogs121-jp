@@ -230,7 +230,7 @@
   "longitude" : -117.250250,
   "marker" : null,
   "imageURL1": "https://s-media-cache-ak0.pinimg.com/originals/52/49/82/5249823604471e5e302eb666950a82d8.jpg",
-  "imageURL2": "https://apps.ksbe.edu/kscholars/wp-content/uploads/sites/17/2015/10/point-loma.jpg",
+  "imageURL2": "https://apps.ksbe.edu/kscholars/wp-content/uploads/sites/17/2015/10/point-loma.jpg"
 },
 {
   "name" : "Cabrillo National Monument",
@@ -518,8 +518,7 @@
   "marker" : null,
   "imageURL1": "https://www.sandiego.gov/sites/default/files/legacy/park-and-recreation/graphics/waterfall.jpg",
   "imageURL2": "http://8955-presscdn-0-52.pagely.netdna-cdn.com/wp-content/uploads/2015/03/penasquitos_falls-1024x680.jpg",
-  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/osp/lospenasquitos
-"
+  "websiteURL": "https://www.sandiego.gov/park-and-recreation/parks/osp/lospenasquitos"
 },
 {
   "name" : "San Diego-La Jolla Underwater Park",
