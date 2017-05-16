@@ -164,12 +164,17 @@ function initializeList(locationsArray) {
 
     if(place.price[0] === place.price[1])
       $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      'Price: Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +  '</div></div></div><hr style="height: 5px">');
+      'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +  '</div></div></div><hr style="height: 5px">');
     else
       $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
       '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address + '</div></div></div><hr style="height: 5px">');
 
-    $('#location' + i).attr('style', 'width: 400px; font-size: 16px; margin: 1px auto; ');
+    $('#location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
+
+    $('#location' + i).click(function() {
+      // Code when a place is clicked
+    });
+
   }
 }
 
