@@ -154,3 +154,11 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+/* takes out unnecessary outline */
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none!important;
+}
+:focus {
+  outline: none!important;
+}
