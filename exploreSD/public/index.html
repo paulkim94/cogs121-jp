@@ -115,8 +115,16 @@
       <h2>Map</h2>
       <!-- div for leaflet map -->
       <!-- div for map's filter-->
-      <p id = "left_title"> Filter By: Category </p>
-      <p id = "right_title"> Filter By: Price </p>
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-6 filter_title">
+            Filter By: Category
+          </div>
+          <div class = "col-lg-6 filter_title" id="filter_title_right">
+            Filter By: Price
+          </div>
+        </div>
+      </div>
       <div class = "container">
         <div class="filter row panel panel-default" id="left_filter">
           <div class = "col-sm-5">
