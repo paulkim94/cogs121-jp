@@ -2,14 +2,14 @@
   margin-bottom: 10px;
 }
 
-#left_title {
-  float: left;
-  margin-left: 20%;
+.filter_title {
+  padding-left: 0;
+  padding-right: 0;
+  width: 420px;
 }
 
-#right_title {
-  float: right;
-  margin-right: 23%;
+#filter_title_right {
+  padding-left: 120px;
 }
 
 #left_filter {
@@ -23,13 +23,12 @@
   padding-top: 7px;
   padding-bottom: 7px;
   float: right;
-  margin-right: 8%;
-  width: 43%;
+  width: 420px;
 }
 
 .container {
+  margin-top: 10px;
   max-width: 900px;
-  margin-left: 3%;
 }
 
 .panel {
