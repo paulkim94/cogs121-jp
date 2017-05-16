@@ -165,12 +165,12 @@ function initializeList(locationsArray) {
     var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
     'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
     '</div></div><div style="text-align: center"><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>'
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>';
 
     var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
     '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
     '</div></div><div style="text-align: center"><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>'
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>';
 
     if(place.price[0] === place.price[1])
       $('#locations-list').append(freePlaceHTML);
@@ -197,7 +197,7 @@ function initializeSavedList(savedPlace, i) {
 
     var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
-    savedPlace.address + '</div><div style="text-align: center"><button type="button" id="saved-button' +
+    savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
     + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="height: 5px"></div>';
 
     if(savedPlace.price[0] === savedPlace.price[1])
