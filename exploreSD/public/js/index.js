@@ -162,12 +162,20 @@ function initializeList(locationsArray) {
   for(i = 0; i < locationsArray.length; i++) {
     var place = locationsArray[i];
 
+    var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+    'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
+    '</div></div><div style="text-align: center"><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>'
+
+    var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+    '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
+    '</div></div><div style="text-align: center"><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>'
+
     if(place.price[0] === place.price[1])
-      $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +  '</div></div></div><hr style="height: 5px">');
+      $('#locations-list').append(freePlaceHTML);
     else
-      $('#locations-list').append('<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address + '</div></div></div><hr style="height: 5px">');
+      $('#locations-list').append(placeHTML);
 
     $('#location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
 
@@ -175,7 +183,35 @@ function initializeList(locationsArray) {
       // Code when a place is clicked
     });
 
+    $('#location-button' + i).click(initializeSavedList(place, i));
+
   }
+}
+
+function initializeSavedList(savedPlace, i) {
+  return function(e) {
+    var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
+    'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
+    '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
+    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="height: 5px"></div>';
+
+    var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
+    '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
+    savedPlace.address + '</div><div style="text-align: center"><button type="button" id="saved-button' +
+    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="height: 5px"></div>';
+
+    if(savedPlace.price[0] === savedPlace.price[1])
+      $('#saved-list').append(savedPlaceFreeHTML);
+    else
+      $('#saved-list').append(savedPlaceHTML);
+
+    $('#saved-location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
+
+    $('#saved-button' + i).click(function(e) {
+      $('#saved-location' + i).remove();
+    })
+  }
+
 }
 
 function initializeMapMarkers(locationsArray) {
