@@ -75,9 +75,20 @@
   <!-- Bootstrap Grid System -->
   <div id="mapfeature">
   <div class="row">
-    <div id="locations-list" class="col-md-3">
+    <div class="col-md-3">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'locations-list')">SD Places</button>
+        <button class="tablinks" onclick="openTab(event, 'saved-list')">Saved Places</button>
+      </div>
       <h2 style="text-align: center">Locations</h2>
       <br>
+      <!-- Locations List -->
+      <div id="locations-list" class="tabcontent">
+      </div>
+
+      <!-- Saved Locations List -->
+      <div id="saved-list" class="tabcontent">
+      </div>
       <!-- <br>
       <div id="instruction" style="text-align: center">
         Click on a marker on the map to see information about that location below.
