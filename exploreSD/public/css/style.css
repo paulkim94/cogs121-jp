@@ -105,11 +105,25 @@ h3{
   padding-top: 50px;
 }
 
-.footer {
-  background: #323232;
-  min-height: 150px;
-  color: #fff;
+#facts {
+  padding-top: 50px;
+}
+
+
+/* footer */
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: #323232;
+}
+
+footer .center {
+  float: center;
+  line-height: 90px;
+  color: white;
 }
 
 /* Locations Sidebar */
@@ -153,6 +167,21 @@ div.tab button.active {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+
+/*Fun facts section */
+.history-column img {
+  width: 300px;
+  height: 150px;
+}
+.attraction-column img {
+  width: 300px;
+  height: 150px;
+}
+.beaches-column img {
+  width: 300px;
+  height: 150px;
 }
 
 /* takes out unnecessary outline */
