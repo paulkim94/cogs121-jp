@@ -39,3 +39,10 @@ Judd Gatbonton:
 
 ![Map Screenshot](/milestone11_images/milestone11_screenshot5.jpg?raw=true)
 ![Map Screenshot](/milestone11_images/milestone11_screenshot6.jpg?raw=true)
+
+Ranvijay Singh:
+- Added two image URLs for each of the markers in location.json
+- Created a search bar for searching the markers more easily. (functionality incomplete)
+- Added a website URL for all the markers in location.json
+- screen shot below for the search bar
+![Map Screenshot](/milestone11_images/milestone11_searchbar.png?raw=true)
