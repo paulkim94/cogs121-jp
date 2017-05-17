@@ -210,3 +210,12 @@ div.tab button.active {
 :focus {
   outline: none!important;
 }
+/*search bar*/
+.searchbar{
+  margin-left: 16%;
+  width: 320px;
+}
+
+.searchbtn{
+  margin-left: 10%;
+}
