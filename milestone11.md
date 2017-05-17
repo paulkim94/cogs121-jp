@@ -15,3 +15,19 @@ the Saved Places section.
 
 ![Map Screenshot](/milestone11_images/milestone11_screenshot1.jpg?raw=true)
 ![Map Screenshot](/milestone11_images/milestone11_screenshot2.jpg?raw=true)
+
+Anthony Grandle:
+- Added filter checkboxes that filter the markers based off of price. Implemented
+a function that is able to parse all the markers and flilter out markers that 
+don't fit the requirements set by unchecking certain price checkboxes. 
+- Redesigned the filter section (categories and prices) to be both more visually
+appealing and take up less room above the map
+- Implemented a function (That will be apparent on next milestone) that prints 
+both the websiteURL and images for each location after they are clicked on the 
+sidebar. 
+- The screenshots below show the filter boxes that were redesigned as well as 
+the price filters in action. The second screenshot shows the code I wrote for 
+the image and websiteURL that will be implemented by the next milestone. 
+
+![Map Screenshot](/milestone11_images/milestone11_screenshot3.jpg?raw=true)
+![Map Screenshot](/milestone11_images/milestone11_screenshot4.jpg?raw=true)
