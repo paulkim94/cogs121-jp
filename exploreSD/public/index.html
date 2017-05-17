@@ -22,7 +22,7 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
       integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
       crossorigin=""></script>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Noto+Sans|Nunito+Sans" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="mainNavBar">
           <ul class="nav navbar-nav">
               <li><a href="#mapfeature">Map</a></li>
-              <li><a href="#facts">Fun Facts</a></li>
+              <li><a href="#facts">Facts</a></li>
           </ul>
           <!-- will put this form at the bottom of first page -->
           <form action="" class="navbar-form navbar-right" role="search">
@@ -178,30 +178,68 @@
 <hr>
 <!-- fun facts page -->
 <div id="facts">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-12 text-center">
-          <h3>Why San Diego?</h3>
+      <div class="col-lg-12 text-center factsheader">
+          <h3><u>Why San Diego?</u></h3>
       </div>
     </div>
-  </div>
-  <div class="container">
+
+  <!-- info on fun facts page -->
     <div class="row">
-      <div class="history-column col-lg-4">
-        <img src="images/BalboaPark.jpg">
-        <h3>History<h3>
+
+      <div class="col-md-4 border-right text-center">
+        <div class="history-column">
+          <img src="images/BalboaPark.jpg" class="img-thumbnail">
+          <h3>History<h3>
+            <div class="column-info">
+              <ul>
+                <li>San Diego is rich in history.</li>
+                <li>The city has many museums and landmarks for you to explore.</li>
+                <li>Come and take a stroll through history in Old Town San Diego.</li>
+              </ul>
+            </div>
+        </div>
       </div>
-      <div class="attraction-column col-lg-4">
-        <img src="images/Gaslamp.jpg">
-        <h3>Attractions</h3>
+
+      <div class="col-md-4 border-right text-center">
+        <div class="attraction-column">
+          <img src="images/Gaslamp.jpg" class="img-thumbnail">
+          <h3>Attractions</h3>
+            <div class="column-info">
+              <ul>
+                <li>There are countless attractions to see!</li>
+                <li>Come visit the San Diego Zoo, home to over 3,700 animals of more than 650 species and subspecies.</li>
+                <li>From parks to art galleries, there's always an adventure.</li>
+              </ul>
+            </div>
+        </div>
       </div>
-      <div class="beaches-column col-lg-4">
-        <img src="images/Windansea.jpg">
-        <h3>Beaches</h3>
+
+      <div class="col-md-4 text-center">
+        <div class="beaches-column">
+          <img src="images/Windansea.jpg" class="img-thumbnail">
+          <h3>Beaches</h3>
+          <div class="column-info">
+              <ul>
+                <li>Weather is around 70&deg;F all year round.</li>
+                <li>San Diego is home to some of the best beaches in the world.</li>
+                <li>Come surf, kayak, or just hang around the beach!</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of overall row -->
+    <hr>
+
+    <div class="row">
+      <div class="col-lg-12 factsfooter text-center">
+          <h3>Now Go Explore!</h3>
       </div>
     </div>
-  </div>
-</div>
+
+  </div> <!-- end of container-fluid -->
+</div> <!-- end of facts page -->
 
 <footer>
     <p class="center">&copy;Team Guo-po 2017</p>
