@@ -187,7 +187,7 @@ function initializeList(locationsArray, map) {
 
     $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
-    $('#location-button' + i).click(initializeSavedList(place, i));
+    $('#location-button' + i).click(initializeSavedList(place, i, map));
 
   }
 }
@@ -196,12 +196,16 @@ function initializeSavedList(savedPlace, i, map) {
   return function(e) {
     var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
-    '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
+    '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
+    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
+    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="saved-button' +
     + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
-    savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
+    savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
+    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
+    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="saved-button' +
     + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     if(savedPlace.price[0] === savedPlace.price[1])
@@ -213,7 +217,9 @@ function initializeSavedList(savedPlace, i, map) {
 
     $('#saved-button' + i).click(function(e) {
       $('#saved-location' + i).remove();
-    })
+    });
+
+    $('#saved-view-map-button' + i).click(centerOnMap(map, savedPlace.marker));
   }
 
 }
