@@ -91,27 +91,39 @@
         <h2 style="text-align: center">Saved Places</h2>
         <br>
       </div>
-      <!-- <br>
-      <div id="instruction" style="text-align: center">
-        Click on a marker on the map to see information about that location below.
+
+      <!-- Modal -->
+      <div class="modal fade" id="location-modal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" id="location-name"></h4>
+            </div>
+            <div class="modal-body" id="location-info">
+                <div id="name"></div>
+                <br>
+                <div id="description"></div>
+                <br>
+                <div id="address"></div>
+                <br>
+                <div id="price"></div>
+                <br>
+                <div id="category"></div>
+                <br>
+                <div id="websiteURL"></div>
+                <br>
+                <div id="image1"></div>
+                <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <br>
-      <div id="information" style="margin-left: 15px;">
-        <div id="name"></div>
-        <br>
-        <div id="description"></div>
-        <br>
-        <div id="address"></div>
-        <br>
-        <div id="price"></div>
-        <br>
-        <div id="category"></div>
-        <br>
-        <div id="websiteURL"></div>
-        <br>
-        <div id="image1"></div>
-        <br>
-      </div> -->
     </div>
     <div class="col-md-9 text-center">
       <h2>Map</h2>

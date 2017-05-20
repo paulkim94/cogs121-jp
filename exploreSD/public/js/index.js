@@ -112,30 +112,12 @@ function drawRoute(start, end, map) {
   }
 }
 
-function onClick(e) {
-  $("#name").text("Name: " + this.name);
-  $("#description").text("Description: " + this.description);
-  $("#address").text("Address: " + this.address);
-
-  if(this.price[0] === this.price[1])
-    $("#price").text("Price: " + "Free");
-  else
-    $("#price").text("Price: " + "$" + this.price[0] + " - " + "$" + this.price[1]);
-
-  $("#category").text("Category: " + this.category);
-  if(this.websiteURL !== null) {
-    $("#websiteURL").html("Website URL: <a href= '" + this.websiteURL + "'>" + this.websiteURL + "</a>");
-  }
-  $("#image1").html("<img src = " + this.imageURL1 + ">");
-}
-
 function createButton(label, container) {
     var btn = L.DomUtil.create('button', '', container);
     btn.setAttribute('type', 'button');
     btn.innerHTML = label;
     return btn;
 }
-
 
 function startEnd(map, control) {
   return function(e) {
@@ -168,14 +150,14 @@ function initializeList(locationsArray, map) {
     'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
     '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
     + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
     + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
     '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
     '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
     + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
     + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     if(place.price[0] === place.price[1])
@@ -186,6 +168,9 @@ function initializeList(locationsArray, map) {
     $('#location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
 
     $('#view-map-button' + i).click(centerOnMap(map, place.marker));
+
+    // When View Details button clicked
+    $('#view-details-button' + i).click(fillLocationModal(place));
 
     $('#location-button' + i).click(initializeSavedList(place, i, map));
 
@@ -198,14 +183,14 @@ function initializeSavedList(savedPlace, i, map) {
     'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
     '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
     + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="saved-button' +
+    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
     + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
     savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
     + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="saved-button' +
+    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
     + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     if(savedPlace.price[0] === savedPlace.price[1])
@@ -220,6 +205,8 @@ function initializeSavedList(savedPlace, i, map) {
     });
 
     $('#saved-view-map-button' + i).click(centerOnMap(map, savedPlace.marker));
+
+    $('#saved-view-details-button' + i).click(fillLocationModal(savedPlace));
   }
 
 }
@@ -252,7 +239,6 @@ function initializeMapMarkers(locationsArray) {
     var locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude]).bindPopup('<b>' + locationsArray[i].name + '</b>');
     locMarker.on('mouseover', onHover);
     locMarker.on('mouseout', closePopup);
-    locMarker.on('click', onClick, locationsArray[i]);
     locMarker.on('click', startEnd(map, control));
     displayedmarkers.push(locMarker);
     //locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
@@ -286,5 +272,26 @@ function centerOnMap(map, placeMarker) {
     // Center map on corresponding marker & display popup message
     map.setView(placeMarker.getLatLng());
     placeMarker.openPopup();
+  }
+}
+
+function fillLocationModal(place) {
+  return function(e) {
+    // Fill in place name
+    $('#location-name').text(place.name);
+
+    $("#description").text("Description: " + place.description);
+    $("#address").text("Address: " + place.address);
+
+    if(place.price[0] === place.price[1])
+      $("#price").text("Price: " + "Free");
+    else
+      $("#price").text("Price: " + "$" + place.price[0] + " - " + "$" + place.price[1]);
+
+    $("#category").text("Category: " + place.category);
+    if(place.websiteURL !== null) {
+      $("#websiteURL").html("Website URL: <a href= '" + place.websiteURL + "'>" + place.websiteURL + "</a>");
+    }
+    $("#image1").html("<img src = " + place.imageURL1 + ">");
   }
 }
