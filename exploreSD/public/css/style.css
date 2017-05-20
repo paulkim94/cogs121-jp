@@ -223,3 +223,8 @@ div.tab button.active {
 .searchbtn{
   margin-left: 10%;
 }
+
+
+#locations-list button {
+  margin: 0 5px;
+}

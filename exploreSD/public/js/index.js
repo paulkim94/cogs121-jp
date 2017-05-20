@@ -7,8 +7,10 @@ var map;
 
 $(document).ready(function() {
 
+
+
     $.getJSON( "./locations", function( data ) {
-      initializeList(data);
+      //initializeList(data);
       initializeMapMarkers(data);
     });
 
@@ -158,19 +160,23 @@ function startEnd(map, control) {
   }
 }
 
-function initializeList(locationsArray) {
+function initializeList(locationsArray, map) {
   for(i = 0; i < locationsArray.length; i++) {
     var place = locationsArray[i];
 
     var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
     'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-    '</div></div><div style="text-align: center"><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>';
+    '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
+    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
+    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
     '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-    '</div></div><div style="text-align: center"><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="height: 5px"></div>';
+    '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
+    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
+    + i + '"' + ' class="btn btn-default">View Details</button><button type="button" id="location-button' +
+    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     if(place.price[0] === place.price[1])
       $('#locations-list').append(freePlaceHTML);
@@ -179,26 +185,24 @@ function initializeList(locationsArray) {
 
     $('#location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
 
-    $('#location' + i).click(function() {
-      // Code when a place is clicked
-    });
+    $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
     $('#location-button' + i).click(initializeSavedList(place, i));
 
   }
 }
 
-function initializeSavedList(savedPlace, i) {
+function initializeSavedList(savedPlace, i, map) {
   return function(e) {
     var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
     '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
-    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="height: 5px"></div>';
+    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
     '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
     savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-button' +
-    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="height: 5px"></div>';
+    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
     if(savedPlace.price[0] === savedPlace.price[1])
       $('#saved-list').append(savedPlaceFreeHTML);
@@ -233,18 +237,6 @@ function initializeMapMarkers(locationsArray) {
         routeWhileDragging: true
     }).addTo(map);
 
-  // geosearch stuff
-  // var searchControl = L.esri.Geocoding.geosearch().addTo(map);
-  // var results = L.layerGroup().addTo(map);
-
-  // searchControl.on('results', function(data){
-  //   results.clearLayers();
-  //   //for (var i = data.results.length - 1; i >= 0; i--) {
-  //     //results.addLayer(L.marker(data.results[i].latlng));
-  //   //}
-  //   results.addLayer(L.marker(data.results[data.results.length - 1].latlng))
-  // });
-
   // Added a fixed start location marker for now
   //var startLocation = L.marker([32.872891,-117.215663]).addTo(map).bindPopup('<b>Start Location</b>').openPopup();
 
@@ -263,6 +255,8 @@ function initializeMapMarkers(locationsArray) {
   }
   displayed = L.layerGroup(displayedmarkers);
   displayed.addTo(map);
+
+  initializeList(locationsArray, map);
 }
 
 // Open tab function
@@ -278,4 +272,13 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+// On hover over location in sidebar, center map on corresponding marker & display popup message
+function centerOnMap(map, placeMarker) {
+  return function(e) {
+    // Center map on corresponding marker & display popup message
+    map.setView(placeMarker.getLatLng());
+    placeMarker.openPopup();
+  }
 }
