@@ -165,7 +165,7 @@ function initializeList(locationsArray, map) {
     else
       $('#locations-list').append(placeHTML);
 
-    $('#location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
+    $('#location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
 
     $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
@@ -179,36 +179,40 @@ function initializeList(locationsArray, map) {
 
 function initializeSavedList(savedPlace, i, map) {
   return function(e) {
-    var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
-    'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
-    '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
-    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
-    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+    // When there's no saved location div created yet
+    if($('#saved-location' + i).length === 0) {
+      var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
+      'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
+      '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
+      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
+      + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-    var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
-    '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
-    savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
-    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
-    + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
+      '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
+      savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
+      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
+      + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-    if(savedPlace.price[0] === savedPlace.price[1])
-      $('#saved-list').append(savedPlaceFreeHTML);
-    else
-      $('#saved-list').append(savedPlaceHTML);
+      if(savedPlace.price[0] === savedPlace.price[1])
+        $('#saved-list').append(savedPlaceFreeHTML);
+      else
+        $('#saved-list').append(savedPlaceHTML);
 
-    $('#saved-location' + i).attr('style', 'cursor: pointer; width: 400px; font-size: 16px; margin: 1px auto; ');
+      $('#saved-location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
 
-    $('#saved-button' + i).click(function(e) {
-      $('#saved-location' + i).remove();
-    });
+      $('#saved-button' + i).click(function(e) {
+        $('#saved-location' + i).remove();
+      });
 
-    $('#saved-view-map-button' + i).click(centerOnMap(map, savedPlace.marker));
+      $('#saved-view-map-button' + i).click(centerOnMap(map, savedPlace.marker));
 
-    $('#saved-view-details-button' + i).click(fillLocationModal(savedPlace));
+      $('#saved-view-details-button' + i).click(fillLocationModal(savedPlace));
+    }
+
+
   }
-
 }
 
 function initializeMapMarkers(locationsArray) {

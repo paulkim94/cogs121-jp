@@ -132,6 +132,11 @@ footer .center {
   overflow: scroll;
 }
 
+#saved-list {
+  height: 800px;
+  overflow: scroll;
+}
+
 /* Tab Style (Credit to Bootstrap example) */
 div.tab {
     overflow: hidden;
