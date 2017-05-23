@@ -96,7 +96,7 @@ function drawRoute(start, end, map) {
             start,
             end
         ],
-        routeWhileDragging: true
+        routeWhileDragging: false
       }).addTo(map);
     }
     else {
