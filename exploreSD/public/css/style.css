@@ -237,3 +237,28 @@ div.tab button.active {
 #saved-list button {
   margin: 0 5px;
 }
+
+.search-bar{
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+#search-criteria{
+  width:80%;
+}
+
+.randomsearchbtn{
+  background-color: #3687d8;
+  color: #fff;
+  border-color: #237fef;
+  margin-left: 8%;
+  transition-duration: 0.4s;
+  width: 46%;
+  height: 40px;
+  font-size: 22px;
+}
+
+.randomsearchbtn: hover{
+  background-color: #fff;
+  color: #3687d8;
+  border-color: #237fef;
+}

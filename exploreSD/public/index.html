@@ -81,13 +81,12 @@
   <div id="mapfeature">
   <div class="row">
     <div class="col-md-3">
-      <div>
-        <form action="" class="searchbar" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search for places..">
-          </div>
-        </form>
-      </div>
+      <!-- seach bar -->
+      <div class= "search-bar"> <input type="text" id="search-criteria" placeholder="Search for places..">
+         <!-- onkeyup="search()" -->
+        <input type="button" id="search" value="search">
+     </div>
+
       <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'locations-list')">SD Places</button>
         <button class="tablinks" onclick="openTab(event, 'saved-list')">Saved Places</button>
@@ -192,6 +191,10 @@
             <div class = "col-sm-4">
              <label><input type="checkbox" name="51" checked> > $50 </label>
             </div>
+        </div>
+
+        <div class = "randomsearch">
+          <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Suggest a Random place</button>
         </div>
       </div>
       <div id="map"></div>

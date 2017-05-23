@@ -12,6 +12,11 @@ $(document).ready(function() {
     $.getJSON( "./locations", function( data ) {
       //initializeList(data);
       initializeMapMarkers(data);
+      search(data);
+
+      $('#randomsearch').click(function(){
+             randomSearch(data);
+          });
     });
 
     // Check to see what filters are clicked, if so add to filter array
@@ -217,7 +222,8 @@ function initializeSavedList(savedPlace, i, map) {
 
 function initializeMapMarkers(locationsArray) {
   // initializes map and sets center coordinates and zoom level
-  map = L.map('map').setView([32.716, -117.161], 11);
+  map = L.map('map').setView([32.716, -117.161], 11
+  );
 
   // mapbox tile layer, can also adjust max zoom level
   L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamdhdGJvbnRvbiIsImEiOiJjajF2ZTFoYXMwMDA5MzJtdzZpNjN3dTZnIn0._REegf1q-yPULYDHXmQNeQ', {
@@ -340,3 +346,43 @@ function fillLocationModal(place) {
     $("#image1").html("<img src = " + place.imageURL1 + ">");
   }
 }
+
+
+//  search function
+function search(locations){
+var i, g,s;
+var places= [];
+
+for (i = 0; i < locations.length; i++){
+    places[i]= locations[i];
+}
+
+
+
+}
+
+//random search function
+function randomSearch(locations){
+var i, locMarker;
+var places = [];
+var random = Math.floor((Math.random() * 1000) % 72);
+locMarker = random;
+for(i=0; i<locations.length; i++){
+  places[i]= locations[i];
+}
+
+$('#randomsearch').click(centerOnMap(map, places[random].marker));
+// $('#randomsearch').click(fillLocationModal(places[random])); 
+// find out why it does not work on first click.
+}
+// $("#search-criteria").on("keyup", function() {
+//   $.getJSON( "./locations", function(data){
+//   });
+//   var places = data;
+//   console.log(places);
+//     var g = $(this).val().toLowerCase();
+//     $(".fbbox .fix label").each(function() {
+//         var s = $(this).text().toLowerCase();
+//         $(this).closest('.fbbox')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
+//     });
+// });
