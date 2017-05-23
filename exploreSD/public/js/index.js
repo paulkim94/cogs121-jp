@@ -234,6 +234,23 @@ function initializeMapMarkers(locationsArray) {
         routeWhileDragging: true
     }).addTo(map);
 
+    // create custom icon
+    // parks
+    L.marker([32.64701, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'tree', prefix: 'fa', markerColor: 'green', iconColor: 'white'}) }).addTo(map);
+    // museums
+    L.marker([32.67, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'institution', prefix: 'fa', markerColor: 'red', iconColor: 'white'}) }).addTo(map);
+    // college campuses
+    L.marker([32.70, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'graduation-cap', prefix: 'fa', markerColor: 'cadetblue', iconColor: 'white'}) }).addTo(map);
+    // attractions
+    L.marker([32.73, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'rocket', prefix: 'fa', markerColor: 'purple', iconColor: 'white'}) }).addTo(map);
+    // beaches
+    L.marker([32.75, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'anchor', prefix: 'fa', markerColor: 'darkblue', iconColor: 'white'}) }).addTo(map);
+    // historical buildings
+    L.marker([32.77, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'building', prefix: 'fa', markerColor: 'darkpurple', iconColor: 'white'}) }).addTo(map);
+    // landmarks
+    L.marker([32.80, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'image', prefix: 'fa', markerColor: 'orange', iconColor: 'white'}) }).addTo(map);
+
+
   // Added a fixed start location marker for now
   //var startLocation = L.marker([32.872891,-117.215663]).addTo(map).bindPopup('<b>Start Location</b>').openPopup();
 
