@@ -46,4 +46,4 @@ Ranvijay Singh:
 - created a function that randomly generates a place on the map for the user to possibly explore. 
 - created a button that selects and shows a random place to explore on the map upon being clicked. 
 ![Map Screenshot](/milestone13_images/Milestone_13.1.png?raw=true)
-![Map Screenshot](/milestone13_images/Milestone 13.2.png?raw=true)
+![Map Screenshot](/milestone13_images/Milestone_13.2.png?raw=true)
