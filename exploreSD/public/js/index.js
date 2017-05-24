@@ -169,9 +169,9 @@ function initializeList(locationsArray, map) {
       + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       if(place.price[0] === place.price[1])
-        $('#locations-list').append(freePlaceHTML);
+        $('#locations-list').prepend(freePlaceHTML);
       else
-        $('#locations-list').append(placeHTML);
+        $('#locations-list').prepend(placeHTML);
 
       $('#location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
 
@@ -366,6 +366,7 @@ function fillLocationModal(place) {
       $("#websiteURL").html("Website URL: <a href= '" + place.websiteURL + "'>" + place.websiteURL + "</a>");
     }
     $("#image1").html("<img src = " + place.imageURL1 + ">");
+    $("#image2").html("<img src = " + place.imageURL2 + ">");
   }
 }
 
