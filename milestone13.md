@@ -27,3 +27,13 @@ Judd Gatbonton:
 
 ![Map Screenshot](/milestone13_images/milestone13_screenshot4.jpg?raw=true)
 ![Map Screenshot](/milestone13_images/milestone13_screenshot5.jpg?raw=true)
+
+Anthony Grandle:
+- Made filter row take up less space by organizing them into two rows
+- User can now filter the list when he/she selects one of the filter checkboxes
+- After a user clicks "view details" on the list he/she can now see an image
+slider than the user can browse 
+- The screenshots below are what I worked on 
+
+![Map Screenshot](/milestone13_images/milestone13_screenshot6.jpg?raw=true)
+![Map Screenshot](/milestone13_images/milestone13_screenshot7.jpg?raw=true)
