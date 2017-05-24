@@ -29,6 +29,7 @@ function filterChange(e) {
     filters.push(checkbox.name);
     $.getJSON( "./locations", function( data ) {
       applyFilters(data);
+      initializeList(data, map);
     });
   } else {
     // Get index of filter being removed and remove it from array
@@ -38,6 +39,7 @@ function filterChange(e) {
     // reinitialize markers
     $.getJSON( "./locations", function( data ) {
       applyFilters(data);
+      initializeList(data, map);
     });
 
   }
@@ -149,36 +151,39 @@ function startEnd(map, control) {
 
 function initializeList(locationsArray, map) {
   for(i = 0; i < locationsArray.length; i++) {
-    var place = locationsArray[i];
+    if(matchesFilters(locationsArray[i])) { /* loops through to see what locations match the current filters */
+      var place = locationsArray[i];
 
-    var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-    'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-    '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
-    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+      'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
+      '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
+      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
+      + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-    var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-    '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-    '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
-    + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-    + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
-    + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+      '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
+      '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
+      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
+      + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-    if(place.price[0] === place.price[1])
-      $('#locations-list').append(freePlaceHTML);
-    else
-      $('#locations-list').append(placeHTML);
+      if(place.price[0] === place.price[1])
+        $('#locations-list').append(freePlaceHTML);
+      else
+        $('#locations-list').append(placeHTML);
 
-    $('#location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
+      $('#location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
 
-    $('#view-map-button' + i).click(centerOnMap(map, place.marker));
+      $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
-    // When View Details button clicked
-    $('#view-details-button' + i).click(fillLocationModal(place));
+      // When View Details button clicked
+      $('#view-details-button' + i).click(fillLocationModal(place));
 
-    $('#location-button' + i).click(initializeSavedList(place, i, map));
-
+      $('#location-button' + i).click(initializeSavedList(place, i, map));
+    } else {
+      $('#location' + i).remove(); /* if it doesn't match any current filters remove it from list */
+    }
   }
 }
 
