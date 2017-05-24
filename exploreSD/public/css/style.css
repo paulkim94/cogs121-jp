@@ -1,34 +1,28 @@
+/* filtering */
 .filter {
   margin-bottom: 10px;
 }
 
-.filter_title {
-  padding-left: 0;
-  padding-right: 0;
-  width: 420px;
+.filter_container {
+  margin-top: 10px;
 }
 
-#filter_title_right {
-  padding-left: 120px;
+.filter_title {
+  margin-top: 8px;
+  float: left;
+  font-size: 11px;
 }
 
 #left_filter {
+  width: 88%;
   padding-top: 7px;
-  padding-bottom: 7px;
-  float: left;
-  width: 49%;
+  padding-bottom: 2px;
 }
 
 #right_filter {
+  max-width: 700px;
   padding-top: 7px;
-  padding-bottom: 7px;
-  float: right;
-  width: 420px;
-}
-
-.container {
-  margin-top: 10px;
-  max-width: 900px;
+  padding-bottom: 2px;
 }
 
 .panel {
@@ -36,15 +30,52 @@
 }
 
 .filter input {
-  margin-right: 3px !important;
+  margin-right: 4px !important;
   float: left;
 }
 
 .filter label {
+  font-size: 11px;
   float: left;
 }
 
+.filter div {
+  padding-right: 0;
+}
 
+#left_filter {
+  margin-left: 102px;
+}
+
+#right_filter {
+  margin-left: 102px;
+}
+
+#left_filter div {
+  margin-left: 4px;
+}
+
+#right_filter div {
+  margin-left: 4px;
+}
+
+.sm {
+  width: 120px;
+}
+
+.xxs {
+  width: 70px;
+}
+
+.xs {
+  width: 100px;
+}
+
+.lg {
+  width: 150px;
+}
+
+/* end filtering */
 #map {
     height: 600px;
 }
