@@ -302,6 +302,23 @@ function initializeMapMarkers(locationsArray) {
   initializeList(locationsArray, map);
 }
 
+// getting current location
+function onLocationFound(e) {
+   var radius = e.accuracy / 2;
+   var location = e.latlng
+   L.marker(location).addTo(map)
+   L.circle(location, radius).addTo(map);
+}
+function onLocationError(e) {
+   alert(e.message);
+}
+function getLocationLeaflet() {
+   map.on('locationfound', onLocationFound);
+   map.on('locationerror', onLocationError);
+
+   map.locate({setView: true, maxZoom: 14});
+}
+
 // Open tab function
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
