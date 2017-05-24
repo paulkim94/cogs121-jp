@@ -12,11 +12,14 @@ $(document).ready(function() {
     $.getJSON( "./locations", function( data ) {
       //initializeList(data);
       initializeMapMarkers(data);
-      search(data);
 
+      $('#search').click(function(){
+      search(data);
+      });
       $('#randomsearch').click(function(){
              randomSearch(data);
-          });
+      });
+
     });
 
     // Check to see what filters are clicked, if so add to filter array
@@ -148,6 +151,45 @@ function startEnd(map, control) {
           .openOn(map);
   }
 }
+
+
+
+//  search function
+function search(locations){
+var input, filter, s;
+var searchArray = [];
+input = document.getElementById('search-criteria');
+filter = input.value.toUpperCase();
+  for (i = 0; i < locations.length; i++){
+      s = locations[i].name.toUpperCase();
+
+      if(s.indexOf(filter) < 0) {
+        $('#location' + i).hide();
+      //  searchArray.push(locations[i]);
+        console.log(s);
+      }
+      else if (s.indexOf(filter > -1)){
+        $('#location' +i).show();
+      }
+  }
+
+}
+
+//randomizer function
+function randomSearch(locations){
+var i, locMarker;
+var places = [];
+var random = Math.floor((Math.random() * 1000) % locations.length);
+
+for(i=0; i<locations.length; i++){
+  places[i]= locations[i];
+}
+console.log(places[random]);
+$('#randomsearch').click(centerOnMap(map, places[random].marker));
+
+// find out why it does not work on first click.
+}
+
 
 function initializeList(locationsArray, map) {
   for(i = 0; i < locationsArray.length; i++) {
@@ -371,41 +413,4 @@ function fillLocationModal(place) {
 }
 
 
-//  search function
-function search(locations){
-var i, g,s;
-var places= [];
-
-for (i = 0; i < locations.length; i++){
-    places[i]= locations[i];
-}
-
-
-
-}
-
-//random search function
-function randomSearch(locations){
-var i, locMarker;
-var places = [];
-var random = Math.floor((Math.random() * 1000) % 72);
-locMarker = random;
-for(i=0; i<locations.length; i++){
-  places[i]= locations[i];
-}
-
-$('#randomsearch').click(centerOnMap(map, places[random].marker));
-// $('#randomsearch').click(fillLocationModal(places[random])); 
-// find out why it does not work on first click.
-}
-// $("#search-criteria").on("keyup", function() {
-//   $.getJSON( "./locations", function(data){
-//   });
-//   var places = data;
-//   console.log(places);
-//     var g = $(this).val().toLowerCase();
-//     $(".fbbox .fix label").each(function() {
-//         var s = $(this).text().toLowerCase();
-//         $(this).closest('.fbbox')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
-//     });
-// });
+ 
