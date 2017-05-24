@@ -18,3 +18,12 @@ the button is clicked.
 ![Map Screenshot](/milestone13_images/milestone13_screenshot1.jpg?raw=true)
 ![Map Screenshot](/milestone13_images/milestone13_screenshot2.jpg?raw=true)
 ![Map Screenshot](/milestone13_images/milestone13_screenshot3.jpg?raw=true)
+
+Judd Gatbonton:
+- Created custom markers for each category on the map utilizing FontAwesome for their iconkit.
+- Implemented code that initializes these markers instead of the old markers onto the map.
+- Added a "Get Your Location" button underneath the map.
+- Implemented functions that will utilizes Leaflet's locate() method in order to get the current location of the user. When the user clicks on the "Get Your Location" button, the map will create a marker and zoom in around the user's current location.
+
+![Map Screenshot](/milestone13_images/milestone13_screenshot4.jpg?raw=true)
+![Map Screenshot](/milestone13_images/milestone13_screenshot5.jpg?raw=true)
