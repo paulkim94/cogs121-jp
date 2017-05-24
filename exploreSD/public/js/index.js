@@ -365,8 +365,8 @@ function fillLocationModal(place) {
     if(place.websiteURL !== null) {
       $("#websiteURL").html("Website URL: <a href= '" + place.websiteURL + "'>" + place.websiteURL + "</a>");
     }
-    $("#image1").html("<img src = " + place.imageURL1 + ">");
-    $("#image2").html("<img src = " + place.imageURL2 + ">");
+    $(".img_1").html("<img src = " + place.imageURL1 + ">");
+    $(".img_2").html("<img src = " + place.imageURL2 + ">");
   }
 }
 
