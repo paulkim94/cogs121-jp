@@ -148,6 +148,12 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-3">
+      <!-- button locations subject to change -->
+      <input type="button" value="Get Your Location" onclick="getLocationLeaflet()">
+      
+      <div class = "randomsearch">
+          <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Random Place</button>
+      </div>
       <!-- seach bar -->
       <div class= "search-bar"> <input type="text" id="search-criteria" placeholder="Search for places..">
          <!-- onkeyup="search()" -->
@@ -229,12 +235,9 @@
       </div>
     </div>
     <div class="col-md-7 text-center">
-      <h2>Map</h2>
       <!-- div for leaflet map -->
       <!-- div for map's filter-->
-      <div class = "randomsearch">
-          <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Suggest a Random place</button>
-      </div>
+
       <!--<div class = "container">
         <div class = "row">
           <div class = "col-lg-6 filter_title">
@@ -291,7 +294,6 @@
         </div>
       </div>
       <div id="map"></div>
-      <input type="button" value="Get Your Location" onclick="getLocationLeaflet()">
 
     </div>
     <div class="col-md-1"></div>

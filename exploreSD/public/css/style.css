@@ -82,7 +82,7 @@ body {
 
 /* end filtering */
 #map {
-    height: 600px;
+    height: 60vh;
 }
 
 .infoSection {
@@ -169,12 +169,12 @@ footer .center {
 
 /* Locations Sidebar */
 #locations-list {
-  height: 800px;
+  height: 50vh;
   overflow: scroll;
 }
 
 #saved-list {
-  height: 800px;
+  height: 50vh;
   overflow: scroll;
 }
 
