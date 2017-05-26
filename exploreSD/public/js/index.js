@@ -196,12 +196,17 @@ function initializeList(locationsArray, map) {
     if(matchesFilters(locationsArray[i])) { /* loops through to see what locations match the current filters */
       var place = locationsArray[i];
 
-      var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-      '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
-      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
-      + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7"><b>' + place.name + '</b><br>' +
+      'Free' + '<br>' + place.category + '</div><div class="col-md-5"><div><button type="button" id="view-map-button' +
+      + i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><br><button type="button" id="view-details-button' +
+      + i + '"' + ' class="btn btn-default" style="margin-top: 10px; width: 110px" data-toggle="modal" data-target="#location-modal">View Details</button></div></div></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+
+      // var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
+      // 'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
+      // '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
+      // + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
+      // + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
+      // + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
       '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
@@ -286,24 +291,6 @@ function initializeMapMarkers(locationsArray) {
         geocoder: L.Control.Geocoder.nominatim(),
         routeWhileDragging: true
     }).addTo(map);
-
-    // create custom icon practice
-    // parks
-/*    L.marker([32.64701, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'tree', prefix: 'fa', markerColor: 'green', iconColor: 'white'}) }).addTo(map);
-    // museums
-    L.marker([32.67, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'institution', prefix: 'fa', markerColor: 'red', iconColor: 'white'}) }).addTo(map);
-    // college campuses
-    L.marker([32.70, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'graduation-cap', prefix: 'fa', markerColor: 'cadetblue', iconColor: 'white'}) }).addTo(map);
-    // attractions
-    L.marker([32.73, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'star', prefix: 'fa', markerColor: 'purple', iconColor: 'white'}) }).addTo(map);
-    // beaches
-    L.marker([32.75, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'anchor', prefix: 'fa', markerColor: 'darkblue', iconColor: 'white'}) }).addTo(map);
-    // historical buildings
-    L.marker([32.77, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'building', prefix: 'fa', markerColor: 'darkpurple', iconColor: 'white'}) }).addTo(map);
-    // landmarks
-    L.marker([32.80, -117.39425], {icon: L.AwesomeMarkers.icon({icon: 'image', prefix: 'fa', markerColor: 'orange', iconColor: 'white'}) }).addTo(map);
-*/
-
 
   var i, locMarker;
 

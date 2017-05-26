@@ -141,7 +141,7 @@ h3{
 
 #mapfeature {
   padding-top: 50px;
-
+  height: 90vh;
 }
 
 /* Facts Section */
@@ -170,12 +170,14 @@ footer .center {
 /* Locations Sidebar */
 #locations-list {
   height: 50vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #saved-list {
   height: 50vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Tab Style (Credit to Bootstrap example) */
