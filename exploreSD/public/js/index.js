@@ -313,25 +313,25 @@ function initializeMapMarkers(locationsArray) {
     // trying to use these if-statements to access locations.json categories
     // to see which marker to create
     if(locationsArray[i].category == "Attractions") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'star', prefix: 'fa', markerColor: 'purple', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'star', prefix: 'fa', markerColor: 'purple', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else if(locationsArray[i].category == "Parks") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'tree', prefix: 'fa', markerColor: 'green', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'tree', prefix: 'fa', markerColor: 'green', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else if(locationsArray[i].category == "Landmarks") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'image', prefix: 'fa', markerColor: 'orange', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'image', prefix: 'fa', markerColor: 'orange', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else if(locationsArray[i].category == "Historical Buildings") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'building', prefix: 'fa', markerColor: 'darkpurple', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'building', prefix: 'fa', markerColor: 'darkpurple', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else if(locationsArray[i].category == "Museums") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'institution', prefix: 'fa', markerColor: 'red', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'institution', prefix: 'fa', markerColor: 'red', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else if(locationsArray[i].category == "College Campuses") {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'graduation-cap', prefix: 'fa', markerColor: 'cadetblue', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'graduation-cap', prefix: 'fa', markerColor: 'cadetblue', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
     else {
-      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'anchor', prefix: 'fa', markerColor: 'darkblue', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b>');
+      locMarker = L.marker([locationsArray[i].lat, locationsArray[i].longitude], {icon: L.AwesomeMarkers.icon({icon: 'anchor', prefix: 'fa', markerColor: 'darkblue', iconColor: 'white'}) }).bindPopup('<b>' + locationsArray[i].name + '</b><br>' + '<img src="' + locationsArray[i].imageURL1 + '" class="img-thumbnail">');
     }
 
 
@@ -411,6 +411,3 @@ function fillLocationModal(place) {
     $(".img_2").html("<img src = " + place.imageURL2 + ">");
   }
 }
-
-
- 
