@@ -203,14 +203,14 @@ function initializeList(locationsArray, map) {
 
       var freePlaceHTML = '<div id="location' + i + '">' + place.name + '<br>' + 'Free' + '<br>' + place.category +
       '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
-       i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><button type="button" id="view-details-button' +
+       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="view-details-button' +
       + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       var placeHTML = '<div id="location' + i + '">' + place.name + '<br>' + '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category +
       '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
-       i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><button type="button" id="view-details-button' +
+       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="view-details-button' +
       + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-      
+
       if(place.price[0] === place.price[1])
         $('#locations-list').prepend(freePlaceHTML);
       else
@@ -221,7 +221,7 @@ function initializeList(locationsArray, map) {
       $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
       // When View Details button clicked
-      $('#view-details-button' + i).click(fillLocationModal(place));
+      $('#view-details-button' + i).click(fillLocationModal(place, i, map));
 
       $('#save-button' + i).click(initializeSavedList(place, i, map));
     } else {
@@ -234,34 +234,34 @@ function initializeSavedList(savedPlace, i, map) {
   return function(e) {
     // When there's no saved location div created yet
     if($('#saved-location' + i).length === 0) {
-      var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
-      'Free' + '<br>' + savedPlace.category + '</div><div class="col-md-5">' + savedPlace.address +
-      '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
-      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
-      + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-      var savedPlaceHTML = '<div id="saved-location' + i + '">' + '<div class="row"><div class="col-md-7">' + savedPlace.name + '<br>' +
-      '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category + '</div><div class="col-md-5">' +
-      savedPlace.address + '</div></div><div style="text-align: center"><button type="button" id="saved-view-map-button' +
-      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="saved-view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="saved-button' +
-      + i + '"' + ' class="btn btn-default">Remove</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' + 'Free' + '<br>' + savedPlace.category +
+      '<div style="text-align: center; margin-top: 10px"><button type="button" id="saved-view-map-button' +
+       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+
+      var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
+      '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category +
+      '<div style="text-align: center; margin-top: 10px"><i class="icon-remove-sign"></i><button type="button" id="saved-view-map-button' +
+       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       if(savedPlace.price[0] === savedPlace.price[1])
         $('#saved-list').append(savedPlaceFreeHTML);
       else
         $('#saved-list').append(savedPlaceHTML);
 
-      $('#saved-location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
+      $('#saved-location' + i).attr('style', 'margin: 1px auto; ');
 
-      $('#saved-button' + i).click(function(e) {
+      $('#remove-button' + i).click(function(e) {
         $('#saved-location' + i).remove();
       });
 
       $('#saved-view-map-button' + i).click(centerOnMap(map, savedPlace.marker));
 
-      $('#saved-view-details-button' + i).click(fillLocationModal(savedPlace));
+      $('#saved-view-details-button' + i).click(fillLocationModal(savedPlace, i, map));
     }
 
 
@@ -374,7 +374,7 @@ function centerOnMap(map, placeMarker) {
   }
 }
 
-function fillLocationModal(place) {
+function fillLocationModal(place, i, map) {
   return function(e) {
     // Fill in place name
     $('#location-name').text(place.name);
@@ -393,5 +393,7 @@ function fillLocationModal(place) {
     }
     $(".img_1").html("<img src = " + place.imageURL1 + ">");
     $(".img_2").html("<img src = " + place.imageURL2 + ">");
+
+    $("#modal-save").click(initializeSavedList(place, i, map))
   }
 }
