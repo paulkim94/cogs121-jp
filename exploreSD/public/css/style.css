@@ -8,6 +8,10 @@ body {
   margin-bottom: 10px;
 }
 
+.md {
+  width: 20%;
+}
+
 .row_2 div {
   margin-left: 0px !important;
 }
@@ -52,6 +56,7 @@ body {
 }
 
 .filter input {
+  margin-top: 2px;
   margin-right: 4px !important;
   float: left;
 }
