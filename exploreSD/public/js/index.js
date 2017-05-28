@@ -196,38 +196,34 @@ function initializeList(locationsArray, map) {
     if(matchesFilters(locationsArray[i])) { /* loops through to see what locations match the current filters */
       var place = locationsArray[i];
 
-      var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7"><b>' + place.name + '</b><br>' +
-      'Free' + '<br>' + place.category + '</div><div class="col-md-5"><div><button type="button" id="view-map-button' +
-      + i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><br><button type="button" id="view-details-button' +
-      + i + '"' + ' class="btn btn-default" style="margin-top: 10px; width: 110px" data-toggle="modal" data-target="#location-modal">View Details</button></div></div></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      // var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7"><b>' + place.name + '</b><br>' +
+      // 'Free' + '<br>' + place.category + '</div><div class="col-md-5"><div><button type="button" id="view-map-button' +
+      // + i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><br><button type="button" id="view-details-button' +
+      // + i + '"' + ' class="btn btn-default" style="margin-top: 10px; width: 110px" data-toggle="modal" data-target="#location-modal">View Details</button></div></div></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-      // var freePlaceHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      // 'Free' + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-      // '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
-      // + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-      // + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
-      // + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      var freePlaceHTML = '<div id="location' + i + '">' + place.name + '<br>' + 'Free' + '<br>' + place.category +
+      '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
+       i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-      var placeHTML = '<div id="location' + i + '">' + '<div class="row"><div class="col-md-7">' + place.name + '<br>' +
-      '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category + '</div><div class="col-md-5">' + place.address +
-      '</div></div><div style="text-align: center"><button type="button" id="view-map-button' +
-      + i + '"' + ' class="btn btn-default">View on Map</button><button type="button" id="view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">View Details</button><button type="button" id="location-button' +
-      + i + '"' + ' class="btn btn-default">Save</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-
+      var placeHTML = '<div id="location' + i + '">' + place.name + '<br>' + '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category +
+      '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
+       i + '"' + ' class="btn btn-default" style="width: 110px">View on Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      
       if(place.price[0] === place.price[1])
         $('#locations-list').prepend(freePlaceHTML);
       else
         $('#locations-list').prepend(placeHTML);
 
-      $('#location' + i).attr('style', 'font-size: 16px; margin: 1px auto; ');
+      $('#location' + i).attr('style', 'margin: 1px auto; ');
 
       $('#view-map-button' + i).click(centerOnMap(map, place.marker));
 
       // When View Details button clicked
       $('#view-details-button' + i).click(fillLocationModal(place));
 
-      $('#location-button' + i).click(initializeSavedList(place, i, map));
+      $('#save-button' + i).click(initializeSavedList(place, i, map));
     } else {
       $('#location' + i).remove(); /* if it doesn't match any current filters remove it from list */
     }
@@ -371,6 +367,7 @@ function openTab(evt, tabName) {
 // On hover over location in sidebar, center map on corresponding marker & display popup message
 function centerOnMap(map, placeMarker) {
   return function(e) {
+
     // Center map on corresponding marker & display popup message
     map.setView(placeMarker.getLatLng());
     placeMarker.openPopup();

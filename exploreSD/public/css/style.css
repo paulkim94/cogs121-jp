@@ -204,7 +204,6 @@ div.tab button {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -312,4 +311,13 @@ div.tab button.active {
   background-color: #fff;
   color: #3687d8;
   border-color: #237fef;
+}
+
+#location-modal {
+  height: 90vh;
+}
+
+#location-info {
+  max-height: 60vh;
+  overflow-y: auto;
 }
