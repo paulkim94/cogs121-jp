@@ -171,15 +171,18 @@
         <div class="col-sm-4">
           <!-- button locations subject to change -->
           <!-- <input type="button" value="Current Location" onclick="getLocationLeaflet()"> -->
-          <button type="submit" class="" id="" onclick="getLocationLeaflet()">Current Location</button>
+          <button type="submit" class="" id="" onclick="getLocationLeaflet()" data-toggle="tooltip" data-placement="top"
+          title="Click to get current location on the map">Current Location</button>
         </div>
         <div class="col-sm-4">
           <div class="randomsearch">
-              <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Random Place</button>
+              <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)" data-toggle="tooltip" data-placement="top"
+              title="Click to see a random place on the map">Random Place</button>
           </div>
         </div>
         <div class="col-sm-4">
-          <button type="submit" class="" id="routing-button" onclick="showHideRouting();">Show Routing</button>
+          <button type="submit" class="" id="routing-button" onclick="showHideRouting();" data-toggle="tooltip" data-placement="top"
+          title="Click to show/hide routing section on map.">Show Routing</button>
         </div>
       </div>
       <br>
@@ -355,6 +358,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- smooth scrolling -->
   <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
       // Select all links with hashes
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
