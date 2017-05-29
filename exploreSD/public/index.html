@@ -167,18 +167,90 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-3">
-      <!-- button locations subject to change -->
-      <input type="button" value="Get Your Location" onclick="getLocationLeaflet()">
-
-      <div class = "randomsearch">
-          <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Random Place</button>
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- button locations subject to change -->
+          <!-- <input type="button" value="Current Location" onclick="getLocationLeaflet()"> -->
+          <button type="submit" class="" id="" onclick="">Current Location</button>
+        </div>
+        <div class="col-sm-4">
+          <div class="randomsearch">
+              <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Random Place</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="" id="" onclick="">Routing</button>
+        </div>
       </div>
+      <br>
       <!-- seach bar -->
-      <div class= "search-bar"> <input type="text" id="search-criteria" placeholder="Search for places..">
-         <!-- onkeyup="search()" -->
+      <div class="search-bar">
+        <input type="text" id="search-criteria" placeholder="Search for places..">
+        <!-- onkeyup="search()" -->
         <input type="button" id="search" value="search" onclick="search(72)">
-     </div>
-
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class = "filter_container">
+        <p class="filter_title"><b> Filter by: Category </b> </p>
+        <div class="filter row panel panel-default" id="left_filter">
+          <div class = "col-sm-2 md">
+            <label><input type="checkbox" name="Attractions" checked>Attractions -</label>
+            <img src="/images/attractions.png" class="thumbnail legend">
+          </div>
+          <div class = "col-sm-2">
+            <label><input type="checkbox" name="Beaches" checked>Beaches -</label>
+            <img src="/images/beaches.png" class="thumbnail legend">
+          </div>
+          <div class = "col-sm-3">
+           <label><input type="checkbox" name="College Campuses" checked>College Campuses -</label>
+           <img src="/images/colleges.png" class="thumbnail legend">
+          </div>
+          <div class = "col-sm-3">
+            <label><input type="checkbox" name="Historical Buildings" checked>Historical Buildings -</label>
+            <img src="/images/buildings.png" class="thumbnail legend">
+          </div>
+        <div class="row row_2">
+          <div class = "col-sm-2 md">
+            <label><input type="checkbox" name="Landmarks" checked>Landmarks -</label>
+            <img src="/images/landmarks.png" class="thumbnail legend">
+          </div>
+          <div class = "col-sm-2">
+            <label><input type="checkbox" name="Museums" checked>Museums -</label>
+            <img src="/images/musums.png" class="thumbnail legend">
+          </div>
+          <div class = "col-sm-2">
+            <label><input type="checkbox" name="Parks" checked>Parks -</label>
+            <img src="/images/parks.png" class="thumbnail legend">
+          </div>
+        </div>
+      </div>
+      <!-- div for price filter -->
+        <p class="filter_title"> <b> Filter by: Price </b> </p>
+        <div class="filter row panel panel-default" id="right_filter">
+            <div class = "col-sm-2">
+              <label><input type="checkbox" name="FREE" checked> FREE </label>
+            </div>
+            <div class = "col-sm-2">
+              <label><input type="checkbox" name="9" checked> < $10 </label>
+            </div>
+            <div class = "col-sm-2">
+              <label><input type="checkbox" name="10" style="" checked> $10 - $20 </label>
+            </div>
+            <div class = "col-sm-2">
+             <label><input type="checkbox" name="21" checked> $21 - 50 </label>
+            </div>
+            <div class = "col-sm-2">
+             <label><input type="checkbox" name="51" checked> > $50 </label>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3" id="list-section">
       <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'locations-list')">SD Places</button>
         <button class="tablinks" onclick="openTab(event, 'saved-list')">Saved Places</button>
@@ -249,7 +321,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7 text-center">
+    <div class="col-md-7">
       <!-- div for leaflet map -->
       <!-- div for map's filter-->
 
@@ -263,60 +335,7 @@
           </div>
         </div>
       </div>-->
-      <div class = "filter_container">
-        <p class="filter_title"><b> Filter by: Category </b> </p>
-        <div class="filter row panel panel-default" id="left_filter">
-          <div class = "col-sm-2 md">
-            <label><input type="checkbox" name="Attractions" checked>Attractions -</label>
-            <img src="/images/attractions.png" class="thumbnail legend">
-          </div>
-          <div class = "col-sm-2">
-            <label><input type="checkbox" name="Beaches" checked>Beaches -</label>
-            <img src="/images/beaches.png" class="thumbnail legend">
-          </div>
-          <div class = "col-sm-3">
-           <label><input type="checkbox" name="College Campuses" checked>College Campuses -</label>
-           <img src="/images/colleges.png" class="thumbnail legend">
-          </div>
-          <div class = "col-sm-3">
-            <label><input type="checkbox" name="Historical Buildings" checked>Historical Buildings -</label>
-            <img src="/images/buildings.png" class="thumbnail legend">
-          </div>
-        <div class="row row_2">
-          <div class = "col-sm-2 md">
-            <label><input type="checkbox" name="Landmarks" checked>Landmarks -</label>
-            <img src="/images/landmarks.png" class="thumbnail legend">
-          </div>
-          <div class = "col-sm-2">
-            <label><input type="checkbox" name="Museums" checked>Museums -</label>
-            <img src="/images/musums.png" class="thumbnail legend">
-          </div>
-          <div class = "col-sm-2">
-            <label><input type="checkbox" name="Parks" checked>Parks -</label>
-            <img src="/images/parks.png" class="thumbnail legend">
-          </div>
-        </div>
-      </div>
-      <!-- div for price filter -->
-        <p class="filter_title"> <b> Filter by: Price </b> </p>
-        <div class="filter row panel panel-default" id="right_filter">
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="FREE" checked> FREE </label>
-            </div>
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="9" checked> < $10 </label>
-            </div>
-            <div class = "col-sm-2">
-              <label><input type="checkbox" name="10" style="" checked> $10 - $20 </label>
-            </div>
-            <div class = "col-sm-2">
-             <label><input type="checkbox" name="21" checked> $21 - 50 </label>
-            </div>
-            <div class = "col-sm-2">
-             <label><input type="checkbox" name="51" checked> > $50 </label>
-            </div>
-        </div>
-      </div>
+
       <div id="map"></div>
 
     </div>

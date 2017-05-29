@@ -104,7 +104,7 @@ body {
 
 /* end filtering */
 #map {
-    height: 60vh;
+    height: 50vh;
 }
 
 .infoSection {
@@ -175,7 +175,7 @@ h3{
 
 #facts {
   padding-top: 70px;
-  height: 100vh;
+  height: 90vh;
 }
 
 
@@ -184,26 +184,34 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  height: 100px;
+  height: 10vh;
   width: 100%;
   background-color: #323232;
 }
 
-footer .center {
+footer p {
+    color: white;
+    padding-top: 3.5vh;
+}
+/*footer .center {
   float: center;
   line-height: 90px;
   color: white;
+}*/
+
+#list-section {
+  height: 50vh;
 }
 
 /* Locations Sidebar */
 #locations-list {
-  height: 50vh;
+  height: 44vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 #saved-list {
-  height: 50vh;
+  height: 44vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -316,7 +324,7 @@ div.tab button.active {
   width:80%;
 }
 
-.randomsearchbtn{
+/*.randomsearchbtn{
   background-color: #3687d8;
   color: #fff;
   border-color: #237fef;
@@ -331,7 +339,7 @@ div.tab button.active {
   background-color: #fff;
   color: #3687d8;
   border-color: #237fef;
-}
+}*/
 
 #location-modal {
   height: 90vh;
