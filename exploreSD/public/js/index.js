@@ -4,6 +4,7 @@ var filters = ["Attractions", "Museums", "Parks", "College Campuses", "Landmarks
 var displayedmarkers = [];
 var displayed;
 var map;
+var passedLoc;
 
 $(document).ready(function() {
 
@@ -230,6 +231,25 @@ function initializeList(locationsArray, map) {
   }
 }
 
+function fbPublish() {
+  FB.ui(
+  {
+    method: 'feed',
+    name: 'Facebook Dialogs',
+    link: passedLoc.websiteURL,
+    caption: 'Check out a picture from my intinerary!',
+    description: 'Check out a picture from my intinerary!'
+  },
+  function(response) {
+    if (response && response.post_id) {
+      alert('Post was published.');
+    } else {
+      alert('Post was not published.');
+    }
+  }
+  );
+}
+
 function initializeSavedList(savedPlace, i, map) {
   return function(e) {
     // When there's no saved location div created yet
@@ -239,20 +259,26 @@ function initializeSavedList(savedPlace, i, map) {
       '<div style="text-align: center; margin-top: 10px"><button type="button" id="saved-view-map-button' +
        i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
       + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
       '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category +
       '<div style="text-align: center; margin-top: 10px"><i class="icon-remove-sign"></i><button type="button" id="saved-view-map-button' +
        i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
       + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
-      if(savedPlace.price[0] === savedPlace.price[1])
+      passedLoc = savedPlace;
+
+      if(savedPlace.price[0] === savedPlace.price[1]) {
         $('#saved-list').append(savedPlaceFreeHTML);
-      else
+      } else {
         $('#saved-list').append(savedPlaceHTML);
+      }
 
+      /*if($('.btn-facebook').length == 0) {
+        $('#saved-list').prepend(shareHTML);
+      }*/
       $('#saved-location' + i).attr('style', 'margin: 1px auto; ');
 
       $('#remove-button' + i).click(function(e) {
