@@ -98,23 +98,36 @@ function closePopup(e) {
 function createButton(label, container) {
     var btn = L.DomUtil.create('button', '', container);
     btn.setAttribute('type', 'button');
+    btn.setAttribute('style', 'margin: 0 5px');
     btn.innerHTML = label;
     return btn;
 }
 
-function startEnd(map, control) {
+function startEnd(map, control, place, i) {
   return function(e) {
       var container = L.DomUtil.create('div'),
-          startBtn = createButton('Start from this location', container),
-          destBtn = createButton('Go to this location', container);
+          startBtn = createButton('Start', container),
+          destBtn = createButton('End', container),
+          detailsBtn = createButton('Details', container);
+
+          detailsBtn.setAttribute('data-toggle', 'modal');
+          detailsBtn.setAttribute('data-target', '#location-modal');
 
       L.DomEvent.on(startBtn, 'click', function() {
           control.spliceWaypoints(0, 1, e.latlng);
+          $('.leaflet-routing-container').show();
           map.closePopup();
       });
 
       L.DomEvent.on(destBtn, 'click', function() {
         control.spliceWaypoints(control.getWaypoints().length - 1, 1, e.latlng);
+        $('.leaflet-routing-container').show();
+        map.closePopup();
+      });
+
+      L.DomEvent.on(detailsBtn, 'click', fillLocationModal(place, i, map));
+
+      L.DomEvent.on(detailsBtn, 'click', function() {
         map.closePopup();
       });
 
@@ -196,7 +209,7 @@ function initializeList(locationsArray, map) {
       // When View Details button clicked
       $('#view-details-button' + i).click(fillLocationModal(place, i, map));
 
-      $('#save-button' + i).click(initializeSavedList(place, i, map));
+      //$('#save-button' + i).click(initializeSavedList(place, i, map));
     } else {
       $('#location' + i).remove(); /* if it doesn't match any current filters remove it from list */
     }
@@ -223,28 +236,29 @@ function fbPublish() {
 }
 
 function initializeSavedList(savedPlace, i, map) {
+  // Shouldn't return now because a single modal "Save" button handles appending to the list
   return function(e) {
     // When there's no saved location div created yet
     if($('#saved-location' + i).length === 0) {
 
-      var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' + 'Free' + '<br>' + savedPlace.category +
-      '<div style="text-align: center; margin-top: 10px"><button type="button" id="saved-view-map-button' +
-       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-
-      var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
-      '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category +
-      '<div style="text-align: center; margin-top: 10px"><i class="icon-remove-sign"></i><button type="button" id="saved-view-map-button' +
-       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-      + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-
       passedLoc = savedPlace;
 
       if(savedPlace.price[0] === savedPlace.price[1]) {
+        var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' + 'Free' + '<br>' + savedPlace.category +
+        '<div style="text-align: center; margin-top: 10px"><button type="button" id="saved-view-map-button' +
+         i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
+        + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+        + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+        console.log("Free Append");
         $('#saved-list').append(savedPlaceFreeHTML);
       } else {
+        var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
+        '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category +
+        '<div style="text-align: center; margin-top: 10px"><i class="icon-remove-sign"></i><button type="button" id="saved-view-map-button' +
+         i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
+        + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+        + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+console.log("Price Append");
         $('#saved-list').append(savedPlaceHTML);
       }
 
@@ -320,7 +334,7 @@ function initializeMapMarkers(locationsArray) {
 
     locMarker.on('mouseover', onHover);
     locMarker.on('mouseout', closePopup);
-    locMarker.on('click', startEnd(map, control));
+    locMarker.on('click', startEnd(map, control, locationsArray[i], i));
     displayedmarkers.push(locMarker);
 
     locationsArray[i].marker = locMarker;
@@ -394,7 +408,9 @@ function fillLocationModal(place, i, map) {
     $(".img_1").html("<img src = " + place.imageURL1 + ">");
     $(".img_2").html("<img src = " + place.imageURL2 + ">");
 
-    $("#modal-save").click(initializeSavedList(place, i, map))
+
+
+    $("#modal-save").click(initializeSavedList(place, i, map));
   }
 }
 
