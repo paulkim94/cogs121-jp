@@ -95,34 +95,6 @@ function closePopup(e) {
   this.closePopup();
 }
 
-function drawRoute(start, end, map) {
-  // Review why this works exactly
-  return function(e) {
-    if(route != null) {
-      // removes route
-      map.removeControl(route);
-      // Re-create new route
-      route = L.Routing.control({
-        waypoints: [
-            start,
-            end
-        ],
-        routeWhileDragging: false
-      }).addTo(map);
-    }
-    else {
-      // Create new route
-      route = L.Routing.control({
-        waypoints: [
-            start,
-            end
-        ],
-        routeWhileDragging: true
-      }).addTo(map);
-    }
-  }
-}
-
 function createButton(label, container) {
     var btn = L.DomUtil.create('button', '', container);
     btn.setAttribute('type', 'button');
@@ -314,6 +286,8 @@ function initializeMapMarkers(locationsArray) {
         routeWhileDragging: true
     }).addTo(map);
 
+    $('.leaflet-routing-container').hide();
+
   var i, locMarker;
 
   for(i = 0; i < locationsArray.length; i++) {
@@ -348,7 +322,7 @@ function initializeMapMarkers(locationsArray) {
     locMarker.on('mouseout', closePopup);
     locMarker.on('click', startEnd(map, control));
     displayedmarkers.push(locMarker);
-    //locMarker.on('click', drawRoute(startLocation.getLatLng(), locMarker.getLatLng(),map));
+
     locationsArray[i].marker = locMarker;
     // Push markers to displayed markers array
   }
@@ -421,5 +395,19 @@ function fillLocationModal(place, i, map) {
     $(".img_2").html("<img src = " + place.imageURL2 + ">");
 
     $("#modal-save").click(initializeSavedList(place, i, map))
+  }
+}
+
+function showHideRouting() {
+  var routingButtonText = $('#routing-button').text();
+
+  if(routingButtonText === "Show Routing") {
+    // show leaflet routing
+    $('.leaflet-routing-container').show();
+    $('#routing-button').text("Hide Routing");
+  }
+  else {
+    $('.leaflet-routing-container').hide();
+    $('#routing-button').text("Show Routing");
   }
 }
