@@ -324,23 +324,17 @@ div.tab button.active {
 #search-criteria{
   width:80%;
 }
-
-/*.randomsearchbtn{
-  background-color: #3687d8;
+.getlocationbtn {
+  background-color: #4285F4;
   color: #fff;
-  border-color: #237fef;
+  border-color: #4285F4;
   margin-left: 8%;
   transition-duration: 0.4s;
   width: 46%;
   height: 40px;
-  font-size: 22px;
+  font-size: 15px;
 }
 
-.randomsearchbtn: hover{
-  background-color: #fff;
-  color: #3687d8;
-  border-color: #237fef;
-}*/
 
 #location-modal {
   height: 90vh;
@@ -349,4 +343,8 @@ div.tab button.active {
 #location-info {
   max-height: 60vh;
   overflow-y: auto;
+=======
+  color: #4285F4;
+  border-color: #4285F4;
+>>>>>>> Stashed changes
 }

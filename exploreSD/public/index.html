@@ -66,16 +66,9 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
           <ul class="nav navbar-nav">
+              <li><a href="#facts">About</a></li>
               <li><a href="#mapfeature">Map</a></li>
-              <li><a href="#facts">Facts</a></li>
           </ul>
-          <!-- will put this form at the bottom of first page -->
-          <form action="" class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter your address">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -89,7 +82,7 @@
         </div>
         <div class="caption">
           <h1>Welcome to Explore SD</h1>
-          <h3>Share your adventure</h3>
+          <h3>Let's go on an adventure</h3>
         </div>
       </div>
     </div>
@@ -167,6 +160,7 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-3">
+
       <div class="row">
         <div class="col-sm-4">
           <!-- button locations subject to change -->
@@ -190,6 +184,14 @@
         Hovering over places on the map shows the name &amp; details. When you click on a place, you can
         set it as a start location or destination. There's a details button too.
       </div> -->
+
+      <!-- button locations subject to change -->
+      <input type="button" class="getlocationbtn" value="Get Your Location" onclick="getLocationLeaflet()">
+
+      <div class = "randomsearch">
+          <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)">Random Place</button>
+      </div>
+
 
       <!-- seach bar -->
       <div class="search-bar">
