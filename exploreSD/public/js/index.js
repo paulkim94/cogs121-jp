@@ -408,9 +408,9 @@ function fillLocationModal(place, i, map) {
     $(".img_1").html("<img src = " + place.imageURL1 + ">");
     $(".img_2").html("<img src = " + place.imageURL2 + ">");
 
-
-
-    $("#modal-save").click(initializeSavedList(place, i, map));
+    $('.modal-footer').empty();
+    $('.modal-footer').append('<button type="button" id="modal-save-' + i + '" class="btn btn-default"  data-dismiss="modal">Save</button>');
+    $("#modal-save-" + i).click(initializeSavedList(place, i, map));
   }
 }
 
