@@ -29,6 +29,18 @@ Judd Gatbonton:
 - I took out the unnecessary form in the nav bar and switched the About and Map links
 - I put the facts page right after the homepage instead of the very end.
 
+Anthony Grandle:
+- I worked on removing the extra buttons that were on the left of the map
+- I implemented a facebook sharing feature using facebook's UI in order to 
+allow for users to share links to websites for individual places on their 
+saved itinerary
+- I made thumbnails for all the filter markers in photoshop and illustrator
+- I added a legend for all the filter markers next to all the filters
+- I added CSS that resized all of the images on the image slider
+- I worked on making sure the filters were responsive when resizing the window to a smaller window size until it reaches tablet size
+- I worked on fixing any remaining bugs with the filters as well as with the facebook sharing feature
+
+
 Completed Features of Application
 
 1) Save Feature
@@ -42,9 +54,21 @@ can either enter in addresses manually or click on a place marker on the map
 to set it as a start location or destination.
 
 3) Filter
+A user can see what markers are currently displayed on the map based off of category
+(including a legend) and price. The user can choose to filter out what markers they want
+based off of what they check in the category and price options. 
 
 4) Randomizer
 
 5) Search
 
 6) Current Location
+
+7) View Details
+Whenever a user clicks on the view details button for a list item or marker a modal pops up 
+that displays all of the information about that location including name, description, category,
+price, website URL, and an image slideshow displaying photos for that particular location
+
+8) Share itinerary on Facebook
+A user has the ability to share a link on Facebook to a website URL for a particular saved item on the itinerary
+in order to show off potential places that they are looking at visiting while they are in San Diego. 
