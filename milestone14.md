@@ -23,11 +23,11 @@ clicked on the map.
 Completed Features of Application
 
 1) Save Feature
-- A user can save places onto a list. There's a Save button in the details modal
+A user can save places onto a list. There's a Save button in the details modal
 of each place that the user can use to save it onto the list.
 
 2) Routing
-- A user can visualize a route from a start location to a destination on the map
+A user can visualize a route from a start location to a destination on the map
 and get directions in the routing section at the top-right of the map. The user
 can either enter in addresses manually or click on a place marker on the map
 to set it as a start location or destination.
