@@ -349,7 +349,7 @@ div.tab button.active {
   margin-left: 5%;
 }
 #search-criteria{
-  width:80%;
+  width:50%;
 }
 .getlocationbtn {
   background-color: #4285F4;
@@ -370,6 +370,5 @@ div.tab button.active {
 #location-info {
   max-height: 60vh;
   overflow-y: auto;
-  color: #4285F4;
   border-color: #4285F4;
 }
