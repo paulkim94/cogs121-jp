@@ -1,23 +1,14 @@
 Team Member Work Done
 
 Paul Kim:
-- I worked on making the application responsive as a whole by setting the width
-and height of elements in the application to a percentage of the viewport width
-and height.
-- I added images to the popup message for the place markers on the map. When the
-user hovers over a marker, the name and image of the place are displayed in the
-popup.
-- I changed the layout of each place in the list of SD Places. I removed
-the address and kept the Map and Details button.
-- I moved the Save button to the details modal because we thought it made more
-sense for the user to save a place after viewing the details.
+- I worked on making the application responsive as a whole by setting the width and height of elements in the application to a percentage of the viewport width and height.
+- I added images to the popup message for the place markers on the map. When the user hovers over a marker, the name and image of the place are displayed in the popup.
+- I changed the layout of each place in the list of SD Places. I removed the address and kept the Map and Details button.
+- I moved the Save button to the details modal because we thought it made more sense for the user to save a place after viewing the details.
 - I aligned the map and the places list.
-- I created a Show/Hide Routing button that shows/hides the routing section on
-the top-right of the map when it's clicked.
-- I added tooltips to the buttons above the places list to show users what
-those buttons do.
-- I added a Details button to the marker popup that shows up when a place is
-clicked on the map.
+- I created a Show/Hide Routing button that shows/hides the routing section on the top-right of the map when it's clicked.
+- I added tooltips to the buttons above the places list to show users what those buttons do.
+- I added a Details button to the marker popup that shows up when a place is clicked on the map.
 - I worked on fixing bugs and positioning elements in the right place.
 
 Judd Gatbonton:
@@ -31,21 +22,24 @@ Judd Gatbonton:
 
 Anthony Grandle:
 - I worked on removing the extra buttons that were on the left of the map
-- I implemented a facebook sharing feature using facebook's UI in order to 
-allow for users to share links to websites for individual places on their 
-saved itinerary
+- I implemented a facebook sharing feature using facebook's UI in order to allow for users to share links to websites for individual places on their saved itinerary
 - I made thumbnails for all the filter markers in photoshop and illustrator
 - I added a legend for all the filter markers next to all the filters
 - I added CSS that resized all of the images on the image slider
 - I worked on making sure the filters were responsive when resizing the window to a smaller window size until it reaches tablet size
 - I worked on fixing any remaining bugs with the filters as well as with the facebook sharing feature
 
+Ranvijay Singh
+- Expanded the search function's scope to search through the categories and descriptions as well as the names of the places in SD.
+- Changed the visual scheme of the whole app including the buttons and the background of the whole app(which is still under discussion)
+- gave all the buttons a hover and click effect with CSS(tbd)
+
+
 
 Completed Features of Application
 
 1) Save Feature
-A user can save places onto a list. There's a Save button in the details modal
-of each place that the user can use to save it onto the list.
+A user can save places onto a list. There's a Save button in the details modal of each place that the user can use to save it onto the list.
 
 2) Routing
 A user can visualize a route from a start location to a destination on the map
