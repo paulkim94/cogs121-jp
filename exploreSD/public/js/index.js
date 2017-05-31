@@ -174,6 +174,7 @@ var random = Math.floor((Math.random() * 1000) % locations.length);
 for(i=0; i<locations.length; i++){
   places[i]= locations[i];
 }
+
 console.log(places[random]);
 $('#randomsearch').click(centerOnMap(map, places[random].marker));
 
@@ -250,18 +251,18 @@ function initializeSavedList(savedPlace, i, map) {
       if(savedPlace.price[0] === savedPlace.price[1]) {
         var savedPlaceFreeHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' + 'Free' + '<br>' + savedPlace.category +
         '<div style="text-align: center; margin-top: 10px"><button type="button" id="saved-view-map-button' +
-         i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
-        + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-        + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+         i + '"' + ' class="map-btn">Map</button><button type="button" id="saved-view-details-button' +
+        + i + '"' + ' class="details-btn" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+        + i + '"' + ' class="rmvbtn"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg btn-fb"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
         $('#saved-list').append(savedPlaceFreeHTML);
       } else {
         var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
         '$' + savedPlace.price[0] + ' to $' + savedPlace.price[1] + '<br>' + savedPlace.category +
         '<div style="text-align: center; margin-top: 10px"><i class="icon-remove-sign"></i><button type="button" id="saved-view-map-button' +
-         i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
-        + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
-        + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+         i + '"' + ' class="map-btn">Map</button><button type="button" id="saved-view-details-button' +
+        + i + '"' + ' class="details-btn" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
+        + i + '"' + ' class="rmvbtn"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-fb"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
         $('#saved-list').append(savedPlaceHTML);
       }
