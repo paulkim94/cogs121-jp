@@ -148,14 +148,18 @@ input = document.getElementById('search-criteria');
 filter = input.value.toUpperCase();
   for (i = 0; i < locations.length; i++){
       s = locations[i].name.toUpperCase();
+      t = locations[i].description.toUpperCase();
+      v = locations[i].category.toUpperCase();
 
-      if(s.indexOf(filter) < 0) {
+      if ( t.indexOf(filter) > -1 || v.indexOf(filter) > -1 || s.indexOf(filter) > -1){
+        $('#location' +i).show();
+        console.log(v);
+        console.log(t);
+      }
+      else if(s.indexOf(filter) < 0 ) {
         $('#location' + i).hide();
       //  searchArray.push(locations[i]);
-        console.log(s);
-      }
-      else if (s.indexOf(filter > -1)){
-        $('#location' +i).show();
+
       }
   }
 
@@ -189,13 +193,13 @@ function initializeList(locationsArray, map) {
 
       var freePlaceHTML = '<div id="location' + i + '">' + place.name + '<br>' + 'Free' + '<br>' + place.category +
       '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
-       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+       i + '"' + ' class="map-btn">Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="details-btn" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       var placeHTML = '<div id="location' + i + '">' + place.name + '<br>' + '$' + place.price[0] + ' to $' + place.price[1] + '<br>' + place.category +
       '<div style="text-align: center; margin-top: 10px"><button type="button" id="view-map-button' +
-       i + '"' + ' class="btn btn-default">Map</button><button type="button" id="view-details-button' +
-      + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
+       i + '"' + ' class="map-btn">Map</button><button type="button" id="view-details-button' +
+      + i + '"' + ' class="details-btn" data-toggle="modal" data-target="#location-modal">Details</button></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
 
       if(place.price[0] === place.price[1])
         $('#locations-list').prepend(freePlaceHTML);
@@ -249,7 +253,7 @@ function initializeSavedList(savedPlace, i, map) {
          i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
         + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
         + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-        console.log("Free Append");
+
         $('#saved-list').append(savedPlaceFreeHTML);
       } else {
         var savedPlaceHTML = '<div id="saved-location' + i + '">' + savedPlace.name + '<br>' +
@@ -258,7 +262,7 @@ function initializeSavedList(savedPlace, i, map) {
          i + '"' + ' class="btn btn-default">Map</button><button type="button" id="saved-view-details-button' +
         + i + '"' + ' class="btn btn-default" data-toggle="modal" data-target="#location-modal">Details</button><button type="button" id="remove-button' +
         + i + '"' + ' class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button><br><a onclick="fbPublish()"><button style="width:75%; margin-top:10px; margin-bottom: 0px !important;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a></div><hr style="border-top: 1px solid #8c8b8b;"></div>';
-console.log("Price Append");
+
         $('#saved-list').append(savedPlaceHTML);
       }
 

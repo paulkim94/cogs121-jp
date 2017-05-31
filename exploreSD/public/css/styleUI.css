@@ -1,0 +1,181 @@
+/* map screen */
+#mapfeature {
+  padding-top: 25px;
+  height: 125vh;
+  background-color: #fcf7ea;
+}
+/* sd fun facts page*/
+#facts {
+  padding-top: 70px;
+  height: 90vh;
+  background-color: #c9deed;
+}
+
+
+
+/* Tab Style (Credit to Bootstrap example) */
+div.tab {
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    margin-left: -25px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: #000;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.1s;
+    border 1px;
+    color: #fff;
+    padding-left: 15.25%;
+    padding-right: 13.5%;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover
+div.tab button:active{
+  border: 2px solid #000;
+  color: #000;
+  font-size: 17px;
+  background-color: #f9fdff;
+  border-radius: 5%;
+}
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #fff;
+    border: 2px #inherit;
+    border-style: double;
+
+    color: #000;
+
+    /**/
+
+
+}
+
+#view-map-button{
+  background-color: black;
+  color: red;
+}
+#locations-list{
+  background-color:#3b4147;
+  color: white;
+  margin-left: -25px;
+}
+
+#saved-list{
+  background-color: #3b4147;
+  color: white;
+  margin-left: -25px;
+}
+
+.map-btn{
+  background-color: inherit;
+  width: 80px;
+  border-radius: 10%;
+  border: 1px solid #b5f1ff;
+  height: 37px;
+  color: #b5f1ff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.map-btn:hover,
+.map-btn:active{
+background-color: #b5f1ff;
+color: #000;
+font-size: 18px;
+}
+
+.details-btn{
+  background-color: inherit;
+  width: 80px;
+  border-radius: 10%;
+  border: 1px solid #f7b74a;
+  height: 37px;
+  color: #f7b74a;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.details-btn:hover,
+.details-btn:active{
+background-color: #f7b74a;
+color: #000;
+font-size: 18px;
+}
+
+.buttons{
+  width: 125%;
+  margin-top: 30px;
+  margin-left: -25px;
+  border: 2px solid #000;
+  border-radius: 10%;
+  font-size: 17px;
+  background-color: #000;
+  color: #fff;
+}
+
+.randomsearchbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.randomsearchbtn:active{
+  background-color: #bbb;
+  color:inherit;
+  font-size: 16px;
+}
+
+.currentlocbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.currentlocbtn:active{
+  background-color: #bbb;
+  color:inherit;
+  font-size: 16px;
+}
+.routingbtn{
+  font-size: 17.5px;
+}
+.routingbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.routingbtn:active{
+  background-color: #bbb;
+  color:inherit;
+  font-size: 17px;
+}
+
+.searchbtn{
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  margin-left: auto;
+  border: 1px solid #000;
+  border-radius: 10%;
+  width: 31%;
+}
+
+
+.searchbar{
+  margin-left: -40px;
+
+}
+.searchbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.searchbtn:active{
+  background-color: #bbb;
+  color:inherit;
+  font-size: 17px;
+}

@@ -17,6 +17,7 @@
       integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
       crossorigin=""/>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/styleUI.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="css/Control.Geocoder.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
@@ -85,7 +86,8 @@
           <h3>Let's go on an adventure</h3>
         </div>
         <div class="img-overlay get-started">
-          <a href="#facts" class="btn btn-primary btn-lg round" role="button">Get Started</a>
+          <a href="#facts" class="get-started btn btn-success btn-lg btn-rounded
+          " role="button">Get Started</a>
         </div>
       </div>
     </div>
@@ -147,7 +149,7 @@
           </div>
         </div>
       </div> <!-- end of overall row -->
-      <hr>
+
 
       <!-- <div class="row">
         <div class="col-lg-12 factsfooter text-center">
@@ -168,17 +170,17 @@
         <div class="col-sm-4">
           <!-- button locations subject to change -->
           <!-- <input type="button" value="Current Location" onclick="getLocationLeaflet()"> -->
-          <button type="submit" class="" id="" onclick="getLocationLeaflet()" data-toggle="tooltip" data-placement="top"
+          <button type="submit" class="buttons currentlocbtn" id="" onclick="getLocationLeaflet()" data-toggle="tooltip" data-placement="top"
           title="Click to get current location on the map">Current Location</button>
         </div>
         <div class="col-sm-4">
           <div class="randomsearch">
-              <button type="submit" class="randomsearchbtn" id="randomsearch" onclick="randomSearch(72)" data-toggle="tooltip" data-placement="top"
+              <button type="submit" class="buttons randomsearchbtn" id="randomsearch" onclick="randomSearch(72)" data-toggle="tooltip" data-placement="top"
               title="Click to see a random place on the map">Random Place</button>
           </div>
         </div>
         <div class="col-sm-4">
-          <button type="submit" class="" id="routing-button" onclick="showHideRouting();" data-toggle="tooltip" data-placement="top"
+          <button type="submit" class="buttons routingbtn" id="routing-button" onclick="showHideRouting();" data-toggle="tooltip" data-placement="top"
           title="Click to show/hide routing section on map.">Show Routing</button>
         </div>
       </div>
@@ -190,9 +192,9 @@
 
       <!-- seach bar -->
       <div class="search-bar">
-        <input type="text" id="search-criteria" placeholder="Search for places..">
+        <input type="text" id="search-criteria" class = "searchbar" placeholder="Search for places or categories..">
         <!-- onkeyup="search()" -->
-        <input type="button" id="search" value="search" onclick="search(72)">
+        <input type="button" id="search" class= "searchbtn" value="search" onclick="search(72)">
       </div>
     </div>
     <div class="col-md-7">
@@ -258,7 +260,7 @@
     <div class="col-md-3" id="list-section">
       <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'locations-list')">SD Places</button>
-        <button class="tablinks" onclick="openTab(event, 'saved-list')">Saved Places</button>
+        <button class="tablinks" onclick="openTab(event, 'saved-list')">Itinerary</button>
       </div>
       <!-- Locations List -->
       <div id="locations-list" class="tabcontent">
