@@ -53,10 +53,16 @@ A user can see what markers are currently displayed on the map based off of cate
 based off of what they check in the category and price options. 
 
 4) Randomizer
+A user had the ability to pick a location at random if they are indecisive about which location they want
+to discover in San Diego. 
 
 5) Search
+A user can search for different locations based off of name, description, or keywords (categories) that
+display on the list. 
 
 6) Current Location
+A user can get their current location, and have it placed as a marker on the map so the user can visualize where they are in relation to the rest
+of the marker locations on the map. 
 
 7) View Details
 Whenever a user clicks on the view details button for a list item or marker a modal pops up 
