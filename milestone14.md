@@ -1,4 +1,4 @@
-Team Member Work Don
+Team Member Work Done
 
 Paul Kim:
 - I worked on making the application responsive as a whole by setting the width
@@ -19,6 +19,15 @@ those buttons do.
 - I added a Details button to the marker popup that shows up when a place is
 clicked on the map.
 - I worked on fixing bugs and positioning elements in the right place.
+
+Judd Gatbonton:
+- I worked on adding a bootstrap button on the homepage of the app and linked it to the About section. Button helps user know there is more to the app.
+- I worked on making slight adjustments on the UI on the facts page.
+- I helped work on positioning the Get Location button.
+- I fixed the UI in the homepage and adjusted the fonts to make the title more visible.
+- I also changed the image of the background of the homepage.
+- I took out the unnecessary form in the nav bar and switched the About and Map links
+- I put the facts page right after the homepage instead of the very end.
 
 Completed Features of Application
 
